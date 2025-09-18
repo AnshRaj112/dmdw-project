@@ -1,0 +1,182 @@
+// Mixins for common patterns
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin button-reset {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+@mixin input-reset {
+  background: none;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+}
+
+@mixin card {
+  background: var(--white);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-lg);
+}
+
+@mixin button-primary {
+  background: var(--primary-600);
+  color: var(--white);
+  border: 1px solid var(--primary-600);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+
+  &:hover {
+    background: var(--primary-700);
+    border-color: var(--primary-700);
+  }
+
+  &:active {
+    background: var(--primary-800);
+    border-color: var(--primary-800);
+  }
+
+  &:disabled {
+    background: var(--gray-300);
+    border-color: var(--gray-300);
+    color: var(--gray-500);
+    cursor: not-allowed;
+  }
+}
+
+@mixin button-secondary {
+  background: var(--white);
+  color: var(--primary-600);
+  border: 1px solid var(--primary-600);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+
+  &:hover {
+    background: var(--primary-50);
+    border-color: var(--primary-700);
+  }
+
+  &:active {
+    background: var(--primary-100);
+    border-color: var(--primary-800);
+  }
+
+  &:disabled {
+    background: var(--gray-100);
+    border-color: var(--gray-300);
+    color: var(--gray-500);
+    cursor: not-allowed;
+  }
+}
+
+@mixin input-field {
+  width: 100%;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+  background: var(--white);
+  transition: all var(--transition-fast);
+
+  &:focus {
+    border-color: var(--primary-500);
+    box-shadow: 0 0 0 3px var(--primary-100);
+  }
+
+  &:disabled {
+    background: var(--gray-50);
+    color: var(--text-tertiary);
+    cursor: not-allowed;
+  }
+
+  &::placeholder {
+    color: var(--text-tertiary);
+  }
+}
+
+@mixin text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin line-clamp($lines: 2) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: 640px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+  @if $breakpoint == large {
+    @media (max-width: 1280px) {
+      @content;
+    }
+  }
+}
+
+@mixin gradient-bg($start, $end) {
+  background: linear-gradient(135deg, $start 0%, $end 100%);
+}
+
+@mixin glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
