@@ -44,6 +44,11 @@ const Recommendations: React.FC<RecommendationsProps> = ({ recommendations }) =>
             </div>
             
             <h4 className="recommendations__role">{rec.role}</h4>
+            <div className="mb-2">
+              <span className="inline-block px-2 py-1 text-xs font-medium rounded bg-blue-50 text-blue-700 border border-blue-100">
+                {rec.sector}
+              </span>
+            </div>
             
             <div className="flex items-center gap-4 mb-3 text-sm text-gray-600">
               <div className="flex items-center gap-1">

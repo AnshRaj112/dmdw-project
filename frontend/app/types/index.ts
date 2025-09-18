@@ -7,6 +7,7 @@ export interface Interest {
 export interface Recommendation {
   id: string;
   company: string;
+  sector: string;
   role: string;
   description: string;
   matchScore: number;
