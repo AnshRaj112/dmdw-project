@@ -179,7 +179,7 @@ pm-internship-recommender/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/username/pm-internship-recommender.git
+   git clone https://github.com/username/sih2025.git
    cd pm-internship-recommender
    ```
 
