@@ -20,21 +20,57 @@ export default function Home() {
     setError(null);
     
     try {
-      const formData = new FormData();
-      
-      if (selectedOption === 'resume' && uploadedFile) {
+      const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000';
+      let response: Response;
+
+      if (selectedOption === 'interests') {
+        const payload = { interests: selectedInterests.map(i => i.name) };
+        response = await fetch(`${backendUrl}/api/recommend`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+      } else if (selectedOption === 'resume' && uploadedFile) {
+        // Step 1: Upload resume to backend to parse
+        const formData = new FormData();
         formData.append('resume', uploadedFile);
-      } else if (selectedOption === 'interests') {
-        formData.append('interests', JSON.stringify(selectedInterests.map(i => i.name)));
+        const uploadRes = await fetch(`${backendUrl}/api/upload`, {
+          method: 'POST',
+          body: formData,
+        });
+        if (!uploadRes.ok) {
+          const errJson = await uploadRes.json().catch(() => null);
+          throw new Error(errJson?.message || 'Failed to parse resume');
+        }
+        const uploadJson = await uploadRes.json();
+        const parsed = uploadJson?.data;
+
+        // Step 2: Call recommend with parsed resume JSON
+        const resumePayload = {
+          skills: parsed?.skills || [],
+          interests: parsed?.interests || [],
+          experience: parsed?.experience || [],
+          projects: parsed?.projects || [],
+          education: parsed?.education || [],
+          location: parsed?.location || null,
+        };
+
+        if (!resumePayload.interests || resumePayload.interests.length === 0) {
+          throw new Error('Could not infer interests from resume. Please select interests instead.');
+        }
+
+        response = await fetch(`${backendUrl}/api/recommend`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(resumePayload),
+        });
+      } else {
+        throw new Error('Please provide required input');
       }
 
-      const response = await fetch('/api/recommend', {
-        method: 'POST',
-        body: formData,
-      });
-
       if (!response.ok) {
-        throw new Error('Failed to get recommendations');
+        const errJson = await response.json().catch(() => null);
+        throw new Error(errJson?.message || 'Failed to get recommendations');
       }
 
       const data = await response.json();
