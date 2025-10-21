@@ -1,0 +1,58 @@
+# NLP-based Resume to Internship Matching Pipeline
+# -----------------------------------------------
+
+from sentence_transformers import SentenceTransformer, util
+import docx
+import PyPDF2
+
+# -------------------------
+# 📂 Step 1: Resume Reader
+# -------------------------
+def read_resume(file_path):
+    text = ""
+    if file_path.endswith(".docx"):
+        doc = docx.Document(file_path)
+        text = "\n".join([p.text for p in doc.paragraphs])
+    elif file_path.endswith(".pdf"):
+        reader = PyPDF2.PdfReader(file_path)
+        text = "\n".join([page.extract_text() for page in reader.pages if page.extract_text()])
+    else:
+        raise ValueError("Unsupported file type. Please upload PDF or DOCX.")
+    return text
+
+# -------------------------
+# 📊 Step 2: NLP Model
+# -------------------------
+model = SentenceTransformer("all-MiniLM-L6-v2")
+
+def match_internships(resume_text, internships):
+    # Encode resume
+    resume_embedding = model.encode(resume_text, convert_to_tensor=True)
+    
+    # Encode internships
+    internship_embeddings = model.encode(internships, convert_to_tensor=True)
+    
+    # Compute similarity
+    similarities = util.pytorch_cos_sim(resume_embedding, internship_embeddings)
+    
+    # Rank results
+    results = sorted(list(enumerate(similarities[0])), key=lambda x: x[1], reverse=True)
+    
+    print("Top Internship Recommendations:\n")
+    for idx, score in results:
+        print(f"- {internships[idx]} (score: {score:.4f})")
+
+# -------------------------
+# 🚀 Step 3: Run Example
+# -------------------------
+if __name__ == "__main__":
+    resume_path = "sample_resume.pdf"   # Replace with actual file path
+    resume_text = read_resume(resume_path)
+    
+    internships = [
+        "We need a data analyst with strong Python, SQL, and Tableau skills for business insights.",
+        "Looking for an ML intern with experience in NLP, Transformers, and model deployment.",
+        "Internship for a web developer skilled in React, Node.js, and MongoDB."
+    ]
+    
+    match_internships(resume_text, internships)

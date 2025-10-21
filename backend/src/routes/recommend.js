@@ -15,7 +15,8 @@ const resumeSchema = Joi.object({
   experience: Joi.array().items(Joi.string()).required(),
   projects: Joi.array().items(Joi.string()).required(),
   education: Joi.array().items(Joi.string()).optional(),
-  location: Joi.string().optional()
+  location: Joi.string().allow(null).optional(),
+  type: Joi.string().valid('resume').optional()
 });
 
 // Get recommendations endpoint
@@ -23,23 +24,23 @@ router.post('/', async (req, res) => {
   try {
     const mlServiceUrl = process.env.ML_SERVICE_URL || 'http://localhost:8000';
     
-    // Check if request contains interests or resume data
-    if (req.body.interests) {
-      // Validate interests input
-      const { error, value } = interestsSchema.validate(req.body);
+    // Check if request contains resume data (skills + interests) or just interests
+    if (req.body.skills && req.body.interests) {
+      // Validate resume data
+      const { error, value } = resumeSchema.validate(req.body);
       if (error) {
         return res.status(400).json({
           success: false,
-          message: 'Invalid input data',
+          message: 'Invalid resume data',
           error: error.details[0].message
         });
       }
 
-      // Forward to ML service for recommendations based on interests
+      // Forward to ML service for recommendations based on parsed resume
       try {
         const response = await axios.post(`${mlServiceUrl}/recommend`, {
-          interests: value.interests,
-          type: 'interests'
+          ...value,
+          type: 'resume'
         }, {
           timeout: 30000
         });
@@ -59,22 +60,22 @@ router.post('/', async (req, res) => {
         });
       }
 
-    } else if (req.body.skills && req.body.interests) {
-      // Validate resume data
-      const { error, value } = resumeSchema.validate(req.body);
+    } else if (req.body.interests) {
+      // Validate interests input
+      const { error, value } = interestsSchema.validate(req.body);
       if (error) {
         return res.status(400).json({
           success: false,
-          message: 'Invalid resume data',
+          message: 'Invalid input data',
           error: error.details[0].message
         });
       }
 
-      // Forward to ML service for recommendations based on parsed resume
+      // Forward to ML service for recommendations based on interests
       try {
         const response = await axios.post(`${mlServiceUrl}/recommend`, {
-          ...value,
-          type: 'resume'
+          interests: value.interests,
+          type: 'interests'
         }, {
           timeout: 30000
         });

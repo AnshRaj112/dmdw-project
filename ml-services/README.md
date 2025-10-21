@@ -1,4 +1,4 @@
-ML Services (Python 3.9.13)
+ML Services (Python 3.13 Compatible)
 
 This FastAPI service exposes:
 - GET /health
@@ -8,7 +8,7 @@ This FastAPI service exposes:
 Backend expects ML_SERVICE_URL to point here (default http://localhost:8000).
 
 Prerequisites
-- Python 3.9.13
+- Python 3.13 (or Python 3.9+)
 - pip
 
 Setup (Windows)
@@ -16,7 +16,7 @@ Setup (Windows)
 # From repo root
 cd ml-services
 
-# Ensure Python 3.9.13 is used
+# Ensure Python 3.13 is used
 python --version
 
 # Create venv (optional)
@@ -28,8 +28,11 @@ python -m venv .venv
 # Install deps
 pip install -r requirements.txt
 
-# Run the server
-uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+# Run the server (using the startup script)
+python start_server.py
+
+# Alternative: Run directly with uvicorn (requires PYTHONPATH)
+# PYTHONPATH=. uvicorn app.main:app --host localhost --port 8000 --reload
 ```
 
 Environment

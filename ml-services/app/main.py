@@ -98,101 +98,343 @@ def load_company_names() -> List[str]:
 
 COMPANY_NAMES = load_company_names()
 
-# Sector taxonomy and indicative intern roles (for documentation/reference)
-SECTOR_TO_SAMPLE_ROLES = {
-    "Automotive / Manufacturing / Industrial": [
-        "Production & manufacturing", "maintenance", "operations", "quality control", "technical assistance",
-    ],
-    "Oil, Gas & Energy": [
-        "Energy production", "management functions", "operations", "sustainability", "environment roles",
-    ],
-    "IT / Software / Digital Services": [
-        "Coding", "basic IT support", "software work", "data entry", "digital tools",
-    ],
-    "Banking, Finance, Insurance": [
-        "Back office", "clerical", "teller", "customer service", "finance operations",
-    ],
-    "Retail / FMCG / Consumer Goods": [
-        "Sales & Marketing", "distribution support", "merchandising", "supply chain support",
-    ],
-    "Travel & Hospitality": [
-        "Hotel operations", "front desk", "housekeeping", "customer service",
-    ],
-    "Infrastructure & Construction": [
-        "On-site assistance", "civil engineering support", "project assistance", "safety roles",
-    ],
-    "Metals & Mining": [
-        "Operations", "safety", "maintenance support",
-    ],
-    "Pharmaceuticals & Healthcare": [
-        "Lab support", "hospital support", "quality", "compliance", "clinic support",
-    ],
+# Enhanced sector taxonomy with detailed roles, skills, and benefits
+SECTOR_TO_DETAILS = {
+    "Technology / Software / Digital Services": {
+        "roles": [
+            "Software Development Intern", "Data Science Intern", "DevOps Intern", 
+            "UI/UX Design Intern", "Product Management Intern", "QA Testing Intern",
+            "Cloud Engineering Intern", "AI/ML Intern", "Cybersecurity Intern",
+            "Video Editing Intern", "Graphic Design Intern", "Content Creation Intern",
+            "Photography Intern", "Music Production Intern", "Game Development Intern",
+            "Motion Graphics Intern", "Creative Director Intern", "Digital Marketing Intern"
+        ],
+        "skills": [
+            "Programming Languages", "Problem Solving", "Analytical Thinking", 
+            "Team Collaboration", "Version Control", "Agile Methodologies",
+            "Database Management", "API Development", "System Design"
+        ],
+        "requirements": [
+            "Currently pursuing Computer Science/IT degree", "Basic programming knowledge",
+            "Strong problem-solving skills", "Good communication skills", "Eager to learn"
+        ],
+        "benefits": [
+            "Mentorship from senior developers", "Real-world project experience",
+            "Flexible working hours", "Learning resources", "Networking opportunities",
+            "Certificate of completion", "Potential full-time offer"
+        ]
+    },
+    "Fintech / Banking / Finance": {
+        "roles": [
+            "Fintech Development Intern", "Risk Analysis Intern", "Data Analytics Intern",
+            "Product Management Intern", "UX Research Intern", "Compliance Intern"
+        ],
+        "skills": [
+            "Financial Analysis", "Data Interpretation", "Risk Assessment", 
+            "Regulatory Knowledge", "Customer Service", "Problem Solving"
+        ],
+        "requirements": [
+            "Finance/Economics/Commerce background preferred", "Analytical mindset",
+            "Attention to detail", "Basic understanding of financial products"
+        ],
+        "benefits": [
+            "Industry exposure", "Financial modeling training", "Regulatory insights",
+            "Professional networking", "Performance bonus potential"
+        ]
+    },
+    "E-commerce / Retail / Consumer": {
+        "roles": [
+            "E-commerce Operations Intern", "Digital Marketing Intern", "Supply Chain Intern",
+            "Customer Experience Intern", "Data Analytics Intern", "Product Management Intern"
+        ],
+        "skills": [
+            "Digital Marketing", "Customer Analysis", "Supply Chain Management",
+            "Data Analytics", "User Experience", "Project Management"
+        ],
+        "requirements": [
+            "Business/Marketing background preferred", "Digital literacy",
+            "Customer service orientation", "Analytical thinking"
+        ],
+        "benefits": [
+            "E-commerce platform experience", "Digital marketing tools training",
+            "Customer insights", "Supply chain optimization knowledge"
+        ]
+    },
+    "Automotive / Manufacturing / Industrial": {
+        "roles": [
+            "Manufacturing Engineering Intern", "Quality Control Intern", "Process Optimization Intern",
+            "Supply Chain Intern", "Safety Engineering Intern", "R&D Intern"
+        ],
+        "skills": [
+            "Process Analysis", "Quality Management", "Safety Protocols", 
+            "Manufacturing Systems", "Problem Solving", "Technical Documentation"
+        ],
+        "requirements": [
+            "Engineering background preferred", "Safety consciousness",
+            "Technical aptitude", "Process improvement mindset"
+        ],
+        "benefits": [
+            "Manufacturing process exposure", "Safety training certification",
+            "Quality management insights", "Industrial automation knowledge"
+        ]
+    },
+    "Energy / Oil & Gas / Utilities": {
+        "roles": [
+            "Energy Analytics Intern", "Sustainability Intern", "Operations Intern",
+            "Environmental Compliance Intern", "Project Management Intern"
+        ],
+        "skills": [
+            "Energy Analysis", "Environmental Awareness", "Regulatory Compliance",
+            "Project Management", "Data Analysis", "Sustainability Planning"
+        ],
+        "requirements": [
+            "Engineering/Environmental Science background", "Sustainability interest",
+            "Regulatory awareness", "Analytical capabilities"
+        ],
+        "benefits": [
+            "Energy sector insights", "Sustainability practices", "Regulatory knowledge",
+            "Environmental impact assessment"
+        ]
+    },
+    "Healthcare / Pharmaceuticals / Biotech": {
+        "roles": [
+            "Research Intern", "Clinical Data Intern", "Regulatory Affairs Intern",
+            "Quality Assurance Intern", "Medical Writing Intern", "Lab Assistant"
+        ],
+        "skills": [
+            "Research Methodology", "Data Analysis", "Regulatory Knowledge",
+            "Laboratory Techniques", "Medical Writing", "Quality Standards"
+        ],
+        "requirements": [
+            "Life Sciences/Medical background", "Research aptitude",
+            "Attention to detail", "Regulatory awareness"
+        ],
+        "benefits": [
+            "Research experience", "Regulatory insights", "Laboratory techniques",
+            "Medical writing skills", "Clinical trial exposure"
+        ]
+    },
+    "Consulting / Professional Services": {
+        "roles": [
+            "Business Analysis Intern", "Strategy Intern", "Research Intern",
+            "Client Services Intern", "Data Analytics Intern", "Project Management Intern"
+        ],
+        "skills": [
+            "Business Analysis", "Strategic Thinking", "Client Communication",
+            "Research Skills", "Presentation Skills", "Problem Solving"
+        ],
+        "requirements": [
+            "Strong analytical skills", "Communication abilities", "Business acumen",
+            "Research capabilities", "Presentation skills"
+        ],
+        "benefits": [
+            "Business strategy exposure", "Client interaction experience",
+            "Industry insights", "Professional networking", "Case study experience"
+        ]
+    }
 }
 
-# Company-to-sector heuristics using name keywords
+# Enhanced company-to-sector mapping with modern tech companies
 SECTOR_KEYWORDS = {
-    "Automotive / Manufacturing / Industrial": ["auto", "maruti", "mahindra", "bajaj auto", "l&t", "larsen", "ultratech", "suzuki", "manufactur", "industrial"],
-    "Oil, Gas & Energy": ["oil", "ongc", "gail", "bharat petroleum", "hpcl", "bpcl", "ntpc", "nhpc", "power grid", "nuclear"],
-    "IT / Software / Digital Services": ["tcs", "infosys", "wipro", "hcl", "tech mahindra", "accenture", "cognizant", "jio", "samsung", "technology", "software", "digital", "it"],
-    "Banking, Finance, Insurance": ["bank", "hdfc", "icici", "axis", "kotak", "indusind", "bajaj finance", "shriram finance", "muthoot", "pfc", "rec"],
-    "Retail / FMCG / Consumer Goods": ["reliance retail", "hindustan unilever", "itc", "fmcg", "retail"],
-    "Travel & Hospitality": ["hotel", "hospitality", "travel"],
-    "Infrastructure & Construction": ["larsen", "l&t", "construction", "infrastructure"],
-    "Metals & Mining": ["steel", "coal", "nmdc", "hindustan zinc", "vedanta", "mining", "jsw", "sail"],
-    "Pharmaceuticals & Healthcare": ["serum", "pharma", "pharmaceutical", "health", "hospital"],
+    "Technology / Software / Digital Services": [
+        "microsoft", "google", "amazon", "meta", "adobe", "oracle", "salesforce", "netflix", 
+        "uber", "flipkart", "paytm", "zomato", "swiggy", "oyo", "byju", "unacademy", "vedantu", 
+        "upgrad", "cred", "razorpay", "phonepe", "bharatpe", "juspay", "payu", "cashfree", 
+        "freshworks", "zoho", "postman", "hashicorp", "docker", "atlassian", "slack", "twilio", 
+        "stripe", "shopify", "woocommerce", "magento", "wix", "squarespace", "webflow", "figma", 
+        "canva", "notion", "asana", "trello", "miro", "invision", "sketch", "principle", "framer",
+        "spotify", "soundcloud", "bandcamp", "apple", "samsung", "oneplus", "xiaomi", "oppo", 
+        "vivo", "realme", "intel", "amd", "nvidia", "qualcomm", "broadcom", "mediatek", "arm",
+        "tcs", "infosys", "wipro", "hcl", "tech mahindra", "accenture", "cognizant", "capgemini", 
+        "ibm", "deloitte", "kpmg", "pwc", "ernst", "mckinsey", "bain", "boston consulting", 
+        "oliver wyman", "at kearney", "strategy", "booz allen", "youtube", "instagram", "tiktok",
+        "twitter", "linkedin", "snapchat", "pinterest", "reddit", "discord", "twitch", "vimeo",
+        "dailymotion", "unity", "epic games", "unreal engine", "steam", "sony", "nintendo", "valve",
+        "blizzard", "electronic arts", "ubisoft", "rockstar", "activision", "bungie", "riot games",
+        "supercell", "mojang", "roblox", "fortnite", "minecraft", "league of legends", "world of warcraft",
+        "call of duty", "grand theft auto", "fifa", "assassin's creed", "far cry", "watch dogs", "just dance",
+        "technology", "software", "digital", "it"
+    ],
+    "Fintech / Banking / Finance": [
+        "hdfc bank", "icici bank", "axis bank", "kotak mahindra bank", "indusind bank", 
+        "bajaj finance", "lic housing finance", "power finance corporation", 
+        "rural electrification", "shriram finance", "muthoot finance", "pfc", "rec",
+        "bank", "finance", "fintech", "payment", "credit", "lending", "investment", 
+        "wealth", "insurance", "mutual fund", "trading", "housing finance"
+    ],
+    "E-commerce / Retail / Consumer": [
+        "reliance retail", "hindustan unilever", "itc", "flipkart", "amazon", "swiggy", "zomato", 
+        "oyo", "retail", "ecommerce", "e-commerce", "consumer", "fmcg", "fashion", "lifestyle", 
+        "grocery", "marketplace", "logistics", "supply chain", "merchandising"
+    ],
+    "Automotive / Manufacturing / Industrial": [
+        "auto", "maruti", "mahindra", "bajaj auto", "hero", "tvs", "eicher", "ashok leyland", 
+        "hyundai", "kia", "volkswagen", "skoda", "audi", "bmw", "mercedes", "jaguar", "volvo", 
+        "ford", "general motors", "chrysler", "jeep", "ram", "dodge", "fiat", "alfa romeo", 
+        "maserati", "ferrari", "lamborghini", "bentley", "rolls-royce", "aston martin", 
+        "mclaren", "porsche", "lotus", "morgan", "caterham", "tvr", "noble", "koenigsegg", 
+        "bugatti", "pagani", "rimac", "l&t", "larsen", "ultratech", "suzuki", "manufactur", "industrial"
+    ],
+    "Energy / Oil & Gas / Utilities": [
+        "oil", "ongc", "gail", "bharat petroleum", "hpcl", "bpcl", "indian oil", "oil india", 
+        "adani", "reliance", "ntpc", "nhpc", "power grid", "nuclear", "energy", "gas", "power", 
+        "utilities", "renewable", "solar", "wind", "hydro", "thermal", "coal", "petroleum"
+    ],
+    "Healthcare / Pharmaceuticals / Biotech": [
+        "serum", "pharma", "pharmaceutical", "health", "hospital", "medical", "biotech", 
+        "biotechnology", "clinical", "research", "drug", "medicine", "therapeutic", "diagnostic", 
+        "vaccine", "biomedical", "life sciences", "healthcare", "wellness"
+    ],
+    "Consulting / Professional Services": [
+        "deloitte", "kpmg", "pwc", "ernst", "mckinsey", "bain", "boston consulting", 
+        "oliver wyman", "at kearney", "strategy", "booz allen", "consulting", "advisory", 
+        "professional services", "management consulting", "strategy consulting"
+    ]
 }
 
-# Interest keywords to sectors mapping
+# Enhanced interest keywords to sectors mapping
 INTEREST_TO_SECTORS = {
+    # Technology interests
+    "software": ["Technology / Software / Digital Services"],
+    "coding": ["Technology / Software / Digital Services"],
+    "programming": ["Technology / Software / Digital Services"],
+    "it": ["Technology / Software / Digital Services"],
+    "digital": ["Technology / Software / Digital Services"],
+    "web development": ["Technology / Software / Digital Services"],
+    "ai-ml": ["Technology / Software / Digital Services"],
+    "machine learning": ["Technology / Software / Digital Services"],
+    "artificial intelligence": ["Technology / Software / Digital Services"],
+    "data science": ["Technology / Software / Digital Services"],
+    "cloud": ["Technology / Software / Digital Services"],
+    "devops": ["Technology / Software / Digital Services"],
+    "cybersecurity": ["Technology / Software / Digital Services"],
+    "mobile": ["Technology / Software / Digital Services"],
+    "ui/ux": ["Technology / Software / Digital Services"],
+    "product design": ["Technology / Software / Digital Services"],
+    "ux": ["Technology / Software / Digital Services"],
+    "ui": ["Technology / Software / Digital Services"],
+    "design": ["Technology / Software / Digital Services"],
+    "video editing": ["Technology / Software / Digital Services"],
+    "graphic design": ["Technology / Software / Digital Services"],
+    "content creation": ["Technology / Software / Digital Services"],
+    "photography": ["Technology / Software / Digital Services"],
+    "music production": ["Technology / Software / Digital Services"],
+    "gaming": ["Technology / Software / Digital Services"],
+    "product management": ["Technology / Software / Digital Services"],
+    "blockchain": ["Technology / Software / Digital Services"],
+    "iot": ["Technology / Software / Digital Services"],
+    "ar/vr": ["Technology / Software / Digital Services"],
+    "gaming": ["Technology / Software / Digital Services"],
+    
+    # Finance interests
+    "banking": ["Fintech / Banking / Finance"],
+    "finance": ["Fintech / Banking / Finance"],
+    "fintech": ["Fintech / Banking / Finance"],
+    "insurance": ["Fintech / Banking / Finance"],
+    "investment": ["Fintech / Banking / Finance"],
+    "trading": ["Fintech / Banking / Finance"],
+    "cryptocurrency": ["Fintech / Banking / Finance"],
+    "blockchain": ["Fintech / Banking / Finance"],
+    "payments": ["Fintech / Banking / Finance"],
+    "lending": ["Fintech / Banking / Finance"],
+    
+    # E-commerce interests
+    "retail": ["E-commerce / Retail / Consumer"],
+    "ecommerce": ["E-commerce / Retail / Consumer"],
+    "e-commerce": ["E-commerce / Retail / Consumer"],
+    "fmcg": ["E-commerce / Retail / Consumer"],
+    "consumer": ["E-commerce / Retail / Consumer"],
+    "sales": ["E-commerce / Retail / Consumer"],
+    "marketing": ["E-commerce / Retail / Consumer"],
+    "digital marketing": ["E-commerce / Retail / Consumer"],
+    "supply chain": ["E-commerce / Retail / Consumer"],
+    "logistics": ["E-commerce / Retail / Consumer"],
+    
+    # Automotive/Manufacturing interests
     "automotive": ["Automotive / Manufacturing / Industrial"],
     "manufacturing": ["Automotive / Manufacturing / Industrial"],
     "industrial": ["Automotive / Manufacturing / Industrial"],
-    "energy": ["Oil, Gas & Energy"],
-    "oil": ["Oil, Gas & Energy"],
-    "gas": ["Oil, Gas & Energy"],
-    "power": ["Oil, Gas & Energy"],
-    "software": ["IT / Software / Digital Services"],
-    "coding": ["IT / Software / Digital Services"],
-    "it": ["IT / Software / Digital Services"],
-    "digital": ["IT / Software / Digital Services"],
-    "web development": ["IT / Software / Digital Services"],
-    "ai-ml": ["IT / Software / Digital Services"],
-    "cloud": ["IT / Software / Digital Services"],
-    "devops": ["IT / Software / Digital Services"],
-    "cybersecurity": ["IT / Software / Digital Services"],
-    "banking": ["Banking, Finance, Insurance"],
-    "finance": ["Banking, Finance, Insurance"],
-    "insurance": ["Banking, Finance, Insurance"],
-    "retail": ["Retail / FMCG / Consumer Goods"],
-    "fmcg": ["Retail / FMCG / Consumer Goods"],
-    "consumer": ["Retail / FMCG / Consumer Goods"],
-    "sales": ["Retail / FMCG / Consumer Goods"],
-    "hospitality": ["Travel & Hospitality"],
-    "hotel": ["Travel & Hospitality"],
-    "travel": ["Travel & Hospitality"],
-    "infrastructure": ["Infrastructure & Construction"],
-    "construction": ["Infrastructure & Construction"],
-    "civil": ["Infrastructure & Construction"],
-    "mining": ["Metals & Mining"],
-    "steel": ["Metals & Mining"],
-    "zinc": ["Metals & Mining"],
-    "pharma": ["Pharmaceuticals & Healthcare"],
-    "healthcare": ["Pharmaceuticals & Healthcare"],
+    "mechanical": ["Automotive / Manufacturing / Industrial"],
+    "automotive engineering": ["Automotive / Manufacturing / Industrial"],
+    "production": ["Automotive / Manufacturing / Industrial"],
+    "quality control": ["Automotive / Manufacturing / Industrial"],
+    
+    # Energy interests
+    "energy": ["Energy / Oil & Gas / Utilities"],
+    "oil": ["Energy / Oil & Gas / Utilities"],
+    "gas": ["Energy / Oil & Gas / Utilities"],
+    "power": ["Energy / Oil & Gas / Utilities"],
+    "renewable energy": ["Energy / Oil & Gas / Utilities"],
+    "solar": ["Energy / Oil & Gas / Utilities"],
+    "wind": ["Energy / Oil & Gas / Utilities"],
+    "sustainability": ["Energy / Oil & Gas / Utilities"],
+    "environmental": ["Energy / Oil & Gas / Utilities"],
+    "utilities": ["Energy / Oil & Gas / Utilities"],
+    
+    # Healthcare interests
+    "pharma": ["Healthcare / Pharmaceuticals / Biotech"],
+    "pharmaceutical": ["Healthcare / Pharmaceuticals / Biotech"],
+    "healthcare": ["Healthcare / Pharmaceuticals / Biotech"],
+    "medical": ["Healthcare / Pharmaceuticals / Biotech"],
+    "biotech": ["Healthcare / Pharmaceuticals / Biotech"],
+    "biotechnology": ["Healthcare / Pharmaceuticals / Biotech"],
+    "clinical": ["Healthcare / Pharmaceuticals / Biotech"],
+    "research": ["Healthcare / Pharmaceuticals / Biotech"],
+    "life sciences": ["Healthcare / Pharmaceuticals / Biotech"],
+    "medicine": ["Healthcare / Pharmaceuticals / Biotech"],
+    
+    # Consulting interests
+    "consulting": ["Consulting / Professional Services"],
+    "strategy": ["Consulting / Professional Services"],
+    "management": ["Consulting / Professional Services"],
+    "business analysis": ["Consulting / Professional Services"],
+    "advisory": ["Consulting / Professional Services"],
+    "professional services": ["Consulting / Professional Services"],
 }
 
 
 def _company_sector(company: str) -> str:
     name = company.lower()
-    for sector, keywords in SECTOR_KEYWORDS.items():
-        for kw in keywords:
-            if kw in name:
-                return sector
-    # Defaults
-    if any(k in name for k in ["bank", "finance"]):
-        return "Banking, Finance, Insurance"
-    if any(k in name for k in ["tech", "software", "digital", "it"]):
-        return "IT / Software / Digital Services"
-    return "Automotive / Manufacturing / Industrial"
+    
+    # Remove common suffixes for better matching
+    name_clean = name.replace(" limited", "").replace(" private limited", "").replace(" corporation", "")
+    
+    # Check for finance companies first (most specific)
+    if any(k in name_clean for k in ["hdfc bank", "icici bank", "axis bank", "kotak mahindra bank", "indusind bank", 
+                                    "bajaj finance", "lic housing finance", "power finance corporation", 
+                                    "rural electrification", "shriram finance", "muthoot finance"]):
+        return "Fintech / Banking / Finance"
+    
+    # Check for banking/finance keywords
+    if any(k in name_clean for k in ["bank", "finance", "fintech", "payment", "credit", "lending", "investment", "wealth", "insurance", "mutual fund", "trading", "housing finance"]):
+        return "Fintech / Banking / Finance"
+    
+    # Check for technology companies (including social media and gaming)
+    if any(k in name_clean for k in ["microsoft", "google", "amazon", "meta", "adobe", "oracle", "salesforce", "netflix", "uber", "flipkart", "paytm", "zomato", "swiggy", "oyo", "byju", "unacademy", "vedantu", "upgrad", "cred", "razorpay", "phonepe", "bharatpe", "juspay", "payu", "cashfree", "freshworks", "zoho", "postman", "hashicorp", "docker", "atlassian", "slack", "twilio", "stripe", "shopify", "woocommerce", "magento", "wix", "squarespace", "webflow", "figma", "canva", "notion", "asana", "trello", "miro", "invision", "sketch", "principle", "framer", "spotify", "soundcloud", "bandcamp", "apple", "samsung", "oneplus", "xiaomi", "oppo", "vivo", "realme", "intel", "amd", "nvidia", "qualcomm", "broadcom", "mediatek", "arm", "tcs", "infosys", "wipro", "hcl", "tech mahindra", "accenture", "cognizant", "capgemini", "ibm", "deloitte", "kpmg", "pwc", "ernst", "mckinsey", "bain", "boston consulting", "oliver wyman", "at kearney", "strategy", "booz allen", "youtube", "instagram", "tiktok", "twitter", "linkedin", "snapchat", "pinterest", "reddit", "discord", "twitch", "vimeo", "dailymotion", "unity", "epic games", "unreal engine", "steam", "sony", "nintendo", "valve", "blizzard", "electronic arts", "ubisoft", "rockstar", "activision", "bungie", "riot games", "supercell", "mojang", "roblox", "fortnite", "minecraft", "league of legends", "world of warcraft", "call of duty", "grand theft auto", "fifa", "assassin's creed", "far cry", "watch dogs", "just dance"]):
+        return "Technology / Software / Digital Services"
+    
+    # Check for e-commerce/retail
+    if any(k in name_clean for k in ["retail", "ecommerce", "e-commerce", "consumer", "fmcg", "fashion", "lifestyle", "grocery", "marketplace", "logistics", "supply chain", "merchandising"]):
+        return "E-commerce / Retail / Consumer"
+    
+    # Check for automotive/manufacturing
+    if any(k in name_clean for k in ["auto", "maruti", "mahindra", "bajaj auto", "hero", "tvs", "eicher", "ashok leyland", "hyundai", "kia", "volkswagen", "skoda", "audi", "bmw", "mercedes", "jaguar", "volvo", "ford", "general motors", "chrysler", "jeep", "ram", "dodge", "fiat", "alfa romeo", "maserati", "ferrari", "lamborghini", "bentley", "rolls-royce", "aston martin", "mclaren", "porsche", "lotus", "morgan", "caterham", "tvr", "noble", "koenigsegg", "bugatti", "pagani", "rimac", "l&t", "larsen", "ultratech", "suzuki", "manufactur", "industrial"]):
+        return "Automotive / Manufacturing / Industrial"
+    
+    # Check for energy/oil & gas
+    if any(k in name_clean for k in ["oil", "ongc", "gail", "bharat petroleum", "hpcl", "bpcl", "indian oil", "oil india", "adani", "reliance", "ntpc", "nhpc", "power grid", "nuclear", "energy", "gas", "power", "utilities", "renewable", "solar", "wind", "hydro", "thermal", "coal", "petroleum"]):
+        return "Energy / Oil & Gas / Utilities"
+    
+    # Check for healthcare/pharma
+    if any(k in name_clean for k in ["serum", "pharma", "pharmaceutical", "health", "hospital", "medical", "biotech", "biotechnology", "clinical", "research", "drug", "medicine", "therapeutic", "diagnostic", "vaccine", "biomedical", "life sciences", "healthcare", "wellness"]):
+        return "Healthcare / Pharmaceuticals / Biotech"
+    
+    # Check for consulting
+    if any(k in name_clean for k in ["deloitte", "kpmg", "pwc", "ernst", "mckinsey", "bain", "boston consulting", "oliver wyman", "at kearney", "strategy", "booz allen", "consulting", "advisory", "professional services", "management consulting", "strategy consulting"]):
+        return "Consulting / Professional Services"
+    
+    # Default to technology sector
+    return "Technology / Software / Digital Services"
 
 
 @app.get("/health")
@@ -261,7 +503,14 @@ def _infer_from_text(text: str) -> dict:
         "cloud": ["aws", "azure", "gcp", "kubernetes", "docker", "cloud"],
         "devops": ["docker", "kubernetes", "ci", "cd", "jenkins", "pipeline"],
         "cybersecurity": ["security", "owasp", "vulnerability", "penetration", "threat"],
-        "mobile": ["android", "ios", "flutter", "react native"]
+        "mobile": ["android", "ios", "flutter", "react native"],
+        "product design": ["product design", "ui/ux", "ux", "ui", "design", "wireframe", "prototype", "figma", "sketch", "invision", "framer", "adobe xd", "adobe"],
+        "video editing": ["video editing", "video", "editing", "premiere", "after effects", "final cut", "davinci", "resolve", "film", "cinematography", "motion graphics", "animation", "post production"],
+        "graphic design": ["graphic design", "photoshop", "illustrator", "indesign", "canva", "visual design", "branding", "logo", "typography", "layout"],
+        "content creation": ["content creation", "content", "social media", "youtube", "instagram", "tiktok", "blogging", "writing", "copywriting", "marketing"],
+        "photography": ["photography", "photo", "camera", "lightroom", "photoshop", "portrait", "landscape", "wedding", "fashion", "commercial"],
+        "music production": ["music production", "music", "audio", "sound", "mixing", "mastering", "recording", "studio", "pro tools", "ableton", "logic"],
+        "gaming": ["gaming", "game development", "unity", "unreal", "game design", "level design", "game art", "3d modeling", "animation", "game programming"]
     }
 
     found_skills = []
@@ -387,34 +636,158 @@ def _score_company(company: str, interests: List[str]) -> int:
     sector = _company_sector(company)
     target_sectors = _infer_target_sectors(interests)
     score = 0
-    # Sector match dominates
+    
+    # Enhanced scoring algorithm
+    # 1. Sector match (highest priority)
     if sector in target_sectors:
-        score += 60
-    # Company name keyword overlap still contributes
+        score += 70  # Increased from 60
+    
+    # 2. Company name keyword matching with weighted scoring
     for term in interests:
         t = term.lower()
         if t in text:
-            score += 20
+            # Exact match gets higher score
+            score += 25
         elif any(word in text for word in t.split()):
-            score += 8
+            # Partial match gets moderate score
+            score += 12
+        # Additional scoring for tech companies with tech interests
+        if any(tech_interest in t for tech_interest in ["ai-ml", "data science", "web development", "cloud", "devops"]) and any(tech_company in text for tech_company in ["microsoft", "google", "amazon", "meta", "adobe", "oracle", "salesforce"]):
+            score += 15
+    
+    # 3. Company size and reputation bonus
+    if any(premium_company in text for premium_company in ["microsoft", "google", "amazon", "meta", "apple", "netflix", "uber", "spotify"]):
+        score += 10
+    elif any(established_company in text for established_company in ["tcs", "infosys", "wipro", "hcl", "accenture", "cognizant"]):
+        score += 8
+    
+    # 4. Startup/Innovation bonus for certain interests
+    if any(startup_interest in interests for startup_interest in ["ai-ml", "data science", "blockchain", "fintech"]) and any(startup_company in text for startup_company in ["freshworks", "zoho", "postman", "razorpay", "phonepe", "cred"]):
+        score += 12
+    
+    # 5. Creative interest boosts creative companies
+    if any(d in " ".join(interests) for d in ["product design", "ui/ux", "ux", "ui", "design"]):
+        if any(brand in text for brand in ["figma", "canva", "adobe", "sketch", "invision", "framer", "notion", "miro"]):
+            score += 18
+    
+    # 6. Video editing interest boosts video/creative companies
+    if any(d in " ".join(interests) for d in ["video editing", "video", "editing", "premiere", "after effects", "film", "cinematography", "animation"]):
+        if any(brand in text for brand in ["adobe", "apple", "netflix", "youtube", "spotify", "canva", "figma", "notion", "miro"]):
+            score += 20
+    
+    # 7. Content creation interest boosts content companies
+    if any(d in " ".join(interests) for d in ["content creation", "content", "social media", "youtube", "instagram", "tiktok", "blogging", "marketing"]):
+        if any(brand in text for brand in ["netflix", "youtube", "spotify", "instagram", "tiktok", "facebook", "meta", "twitter", "linkedin", "snapchat"]):
+            score += 20
+    
+    # 8. Gaming interest boosts gaming companies
+    if any(d in " ".join(interests) for d in ["gaming", "game development", "unity", "unreal", "game design", "game art", "3d modeling", "animation"]):
+        if any(brand in text for brand in ["unity", "unreal", "epic", "nvidia", "amd", "intel", "microsoft", "sony", "nintendo", "steam"]):
+            score += 20
+
     return max(0, min(100, score))
 
 
-def _make_recommendation(company: str, match_score: int, location_hint: Optional[str]) -> Recommendation:
-    role = "Intern"
+def _select_role_for_sector(sector: str, interests: List[str]) -> str:
+    desired = " ".join(interests).lower()
+    
+    # Creative and design roles
+    if any(k in desired for k in ["video editing", "video", "editing", "premiere", "after effects", "final cut", "davinci", "resolve", "film", "cinematography", "motion graphics", "animation", "post production"]):
+        return "Video Editing Intern"
+    if any(k in desired for k in ["graphic design", "photoshop", "illustrator", "indesign", "canva", "visual design", "branding", "logo", "typography", "layout"]):
+        return "Graphic Design Intern"
+    if any(k in desired for k in ["content creation", "content", "social media", "youtube", "instagram", "tiktok", "blogging", "writing", "copywriting", "marketing"]):
+        return "Content Creation Intern"
+    if any(k in desired for k in ["photography", "photo", "camera", "lightroom", "portrait", "landscape", "wedding", "fashion", "commercial"]):
+        return "Photography Intern"
+    if any(k in desired for k in ["music production", "music", "audio", "sound", "mixing", "mastering", "recording", "studio", "pro tools", "ableton", "logic"]):
+        return "Music Production Intern"
+    if any(k in desired for k in ["gaming", "game development", "unity", "unreal", "game design", "level design", "game art", "3d modeling", "animation", "game programming"]):
+        return "Game Development Intern"
+    if any(k in desired for k in ["product design", "ui/ux", "ux", "ui", "design", "wireframe", "prototype", "figma", "sketch", "invision", "framer", "adobe xd", "adobe"]):
+        if "Technology" in sector:
+            return "UI/UX Design Intern"
+        if "E-commerce" in sector:
+            return "Product Design Intern"
+        if "Fintech" in sector:
+            return "UX Research Intern"
+    
+    # Technical roles
+    if "product management" in desired:
+        return "Product Management Intern"
+    if any(k in desired for k in ["ai-ml", "machine learning", "artificial intelligence", "data science", "ml", "neural", "deep learning"]):
+        return "AI/ML Intern"
+    if any(k in desired for k in ["cybersecurity", "security", "penetration", "vulnerability", "threat"]):
+        return "Cybersecurity Intern"
+    if any(k in desired for k in ["devops", "cloud", "aws", "azure", "gcp", "kubernetes", "docker"]):
+        return "DevOps Intern"
+    if any(k in desired for k in ["web development", "react", "javascript", "typescript", "node", "frontend", "backend", "full stack"]):
+        return "Software Development Intern"
+    
+    # Sector-based fallbacks
+    if "Technology" in sector:
+        return "Software Development Intern"
+    if "Fintech" in sector:
+        return "Data Analytics Intern"
+    if "E-commerce" in sector:
+        return "Digital Marketing Intern"
+    if "Automotive" in sector:
+        return "Quality Control Intern"
+    if "Energy" in sector:
+        return "Sustainability Intern"
+    if "Healthcare" in sector:
+        return "Research Intern"
+    if "Consulting" in sector:
+        return "Business Analysis Intern"
+    return "Intern"
+
+
+def _make_recommendation(company: str, match_score: int, location_hint: Optional[str], interests: List[str]) -> Recommendation:
+    import random
+    
+    sector = _company_sector(company)
+    sector_details = SECTOR_TO_DETAILS.get(sector, {
+        "roles": ["Intern"],
+        "skills": ["Communication", "Problem Solving", "Teamwork"],
+        "requirements": ["Currently enrolled in a degree program", "Eager to learn"],
+        "benefits": ["Mentorship", "Flexible hours"]
+    })
+    
+    # Select role based on sector and interests
+    role = _select_role_for_sector(sector, interests)
     job_type: Literal["internship", "full-time", "part-time"] = "internship"
     location = location_hint or "Remote"
-    skills = ["Communication", "Problem Solving", "Teamwork"]
-    requirements = ["Currently enrolled in a degree program", "Eager to learn"]
-    benefits = ["Mentorship", "Flexible hours"]
+    
+    # Enhanced skills, requirements, and benefits based on sector
+    skills = sector_details["skills"][:6]  # Limit to 6 skills
+    requirements = sector_details["requirements"][:5]  # Limit to 5 requirements
+    benefits = sector_details["benefits"][:6]  # Limit to 6 benefits
+    
     apply_url = None
     rec_id = f"{abs(hash(company)) % 10_000_000}"
-    description = f"Opportunity at {company}. Contribute to projects and learn from industry professionals."
+    
+    # Enhanced description based on company and sector
+    if "Technology" in sector:
+        description = f"Join {company} as a {role} and work on cutting-edge technology projects. Gain hands-on experience with modern development tools and methodologies while contributing to real-world solutions."
+    elif "Finance" in sector:
+        description = f"Explore the world of finance and technology at {company} as a {role}. Work on innovative financial products and gain insights into digital banking and fintech solutions."
+    elif "E-commerce" in sector:
+        description = f"Be part of {company}'s digital transformation as a {role}. Learn about e-commerce operations, digital marketing, and customer experience optimization."
+    elif "Automotive" in sector:
+        description = f"Contribute to automotive innovation at {company} as a {role}. Work on manufacturing processes, quality control, and automotive technology development."
+    elif "Energy" in sector:
+        description = f"Join {company} in shaping the future of energy as a {role}. Work on sustainable energy solutions, environmental compliance, and energy analytics."
+    elif "Healthcare" in sector:
+        description = f"Make a difference in healthcare at {company} as a {role}. Contribute to medical research, regulatory compliance, and healthcare technology development."
+    elif "Consulting" in sector:
+        description = f"Develop strategic thinking at {company} as a {role}. Work on business analysis, client projects, and gain exposure to various industries."
+    else:
+        description = f"Opportunity at {company} as a {role}. Contribute to projects and learn from industry professionals."
 
     return Recommendation(
         id=rec_id,
         company=company,
-        sector=_company_sector(company),
+        sector=sector,
         role=role,
         description=description,
         type=job_type,
@@ -451,12 +824,39 @@ def recommend(payload: Union[InterestsPayload, ResumePayload]):
     # Sort by score desc, then name
     scored.sort(key=lambda x: (-x[1], x[0]))
 
-    top = [s for s in scored if s[1] > 0][:3]  # top 3 with positive score
-    if not top:
-        # If nothing scored, fallback to first few companies with low score
-        top = [(name, 50) for name in COMPANY_NAMES[:3]]
+    # Enhanced selection algorithm
+    high_score = [s for s in scored if s[1] >= 70]  # High confidence matches
+    medium_score = [s for s in scored if 40 <= s[1] < 70]  # Medium confidence matches
+    low_score = [s for s in scored if 20 <= s[1] < 40]  # Low confidence matches
+    
+    # Select diverse recommendations
+    selected = []
+    
+    # Prioritize high-score matches
+    if high_score:
+        selected.extend(high_score[:2])  # Take up to 2 high-score matches
+    
+    # Add medium-score matches if we need more
+    if len(selected) < 3 and medium_score:
+        remaining_slots = 3 - len(selected)
+        selected.extend(medium_score[:remaining_slots])
+    
+    # Add low-score matches if we still need more
+    if len(selected) < 3 and low_score:
+        remaining_slots = 3 - len(selected)
+        selected.extend(low_score[:remaining_slots])
+    
+    # Fallback to any companies if nothing scored well
+    if not selected:
+        selected = [(name, 50) for name in COMPANY_NAMES[:3]]
+    
+    # Ensure we have exactly 3 recommendations
+    if len(selected) < 3:
+        remaining_slots = 3 - len(selected)
+        fallback_companies = [name for name in COMPANY_NAMES if name not in [s[0] for s in selected]]
+        selected.extend([(name, 30) for name in fallback_companies[:remaining_slots]])
 
-    recommendations = [_make_recommendation(name, score, location) for name, score in top]
+    recommendations = [_make_recommendation(name, score, location, interests) for name, score in selected]
 
     return {"recommendations": [r.dict() for r in recommendations]}
 
