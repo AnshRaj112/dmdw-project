@@ -7,6 +7,9 @@ import io
 import re
 from collections import Counter
 
+# Import advanced ML engine
+from app.services.ml_engine import ml_engine
+
 try:
     # Optional dependencies; declared in requirements.txt
     import PyPDF2  # type: ignore
@@ -485,6 +488,97 @@ def _extract_text_generic(filename: str, data: bytes, mime: Optional[str]) -> st
 
 
 def _infer_from_text(text: str) -> dict:
+    """Enhanced resume parsing using advanced ML engine"""
+    try:
+        # Use advanced ML engine for better parsing
+        features = ml_engine.extract_advanced_features(text)
+        skills_with_confidence = ml_engine.extract_skills_with_confidence(text)
+        
+        # Extract skills from confidence-based extraction
+        found_skills = [skill for skill, confidence in skills_with_confidence if confidence > 0.5]
+        
+        # Enhanced interest detection using ML
+        lowered = text.lower()
+        interest_keywords_map = {
+            "data science": ["data", "pandas", "numpy", "ml", "machine", "analytics", "statistics", "analysis"],
+            "ai-ml": ["ml", "machine", "deep", "neural", "ai", "pytorch", "tensorflow", "artificial intelligence"],
+            "web development": ["react", "node", "javascript", "typescript", "css", "html", "frontend", "backend"],
+            "cloud": ["aws", "azure", "gcp", "kubernetes", "docker", "cloud", "devops"],
+            "devops": ["docker", "kubernetes", "ci", "cd", "jenkins", "pipeline", "automation"],
+            "cybersecurity": ["security", "owasp", "vulnerability", "penetration", "threat", "cyber"],
+            "mobile": ["android", "ios", "flutter", "react native", "mobile development"],
+            "product design": ["product design", "ui/ux", "ux", "ui", "design", "wireframe", "prototype", "figma", "sketch", "invision", "framer", "adobe xd", "adobe"],
+            "video editing": ["video editing", "video", "editing", "premiere", "after effects", "final cut", "davinci", "resolve", "film", "cinematography", "motion graphics", "animation", "post production"],
+            "graphic design": ["graphic design", "photoshop", "illustrator", "indesign", "canva", "visual design", "branding", "logo", "typography", "layout"],
+            "content creation": ["content creation", "content", "social media", "youtube", "instagram", "tiktok", "blogging", "writing", "copywriting", "marketing"],
+            "photography": ["photography", "photo", "camera", "lightroom", "photoshop", "portrait", "landscape", "wedding", "fashion", "commercial"],
+            "music production": ["music production", "music", "audio", "sound", "mixing", "mastering", "recording", "studio", "pro tools", "ableton", "logic"],
+            "gaming": ["gaming", "game development", "unity", "unreal", "game design", "level design", "game art", "3d modeling", "animation", "game programming"]
+        }
+
+        inferred_interests = []
+        for label, kws in interest_keywords_map.items():
+            if any((kw in lowered) for kw in kws):
+                inferred_interests.append(label)
+
+        # Enhanced experience and project extraction
+        experience = []
+        projects = []
+        education = []
+
+        for line in lowered.splitlines():
+            line_stripped = line.strip()
+            if not line_stripped:
+                continue
+            if any(h in line_stripped for h in ["experience", "intern", "worked", "company", "employment", "position", "role"]):
+                experience.append(line.strip())
+            if any(h in line_stripped for h in ["project", "built", "developed", "created", "implemented", "designed"]):
+                projects.append(line.strip())
+            if any(h in line_stripped for h in ["b.tech", "btech", "bachelor", "master", "university", "college", "degree", "education", "graduated"]):
+                education.append(line.strip())
+
+        # Enhanced location extraction
+        location = None
+        loc_patterns = [
+            r"\b(location|based in|residing in|located in|from)[:\s]+([a-zA-Z ,.-]+)\b",
+            r"\b([A-Z][a-z]+ [A-Z][a-z]+)\b",  # City names
+            r"\b(New York|San Francisco|London|Mumbai|Delhi|Bangalore|Chennai|Hyderabad|Pune|Kolkata)\b"
+        ]
+        
+        for pattern in loc_patterns:
+            loc_match = re.search(pattern, text, re.IGNORECASE)
+            if loc_match:
+                location = loc_match.group(2) if len(loc_match.groups()) > 1 else loc_match.group(1)
+                location = location.title()
+                break
+
+        # Ensure at least one interest to avoid downstream errors
+        if not inferred_interests and found_skills:
+            # Map some common skills to interests using ML confidence
+            if any(s in found_skills for s in ["pandas", "numpy", "scikit-learn", "tensorflow", "pytorch"]):
+                inferred_interests.append("ai-ml")
+            if any(s in found_skills for s in ["react", "javascript", "typescript", "html", "css", "node"]):
+                inferred_interests.append("web development")
+            if any(s in found_skills for s in ["aws", "azure", "gcp", "docker", "kubernetes"]):
+                inferred_interests.append("cloud")
+
+        return {
+            "skills": sorted(set(found_skills)),
+            "interests": sorted(set(inferred_interests)),
+            "experience": experience[:20],
+            "projects": projects[:20],
+            "education": education[:20],
+            "location": location,
+            "ml_features": features,  # Include ML-extracted features
+            "skills_confidence": skills_with_confidence
+        }
+    except Exception as e:
+        print(f"Error in advanced parsing: {e}")
+        # Fallback to basic parsing
+        return _basic_infer_from_text(text)
+
+def _basic_infer_from_text(text: str) -> dict:
+    """Basic fallback parsing method"""
     lowered = text.lower()
     tokens = re.findall(r"[a-zA-Z][a-zA-Z+.#-]+", lowered)
     counts = Counter(tokens)
@@ -496,22 +590,6 @@ def _infer_from_text(text: str) -> dict:
         "tensorflow", "pytorch", "scikit-learn", "nlp", "ml", "machine learning",
         "data science", "pandas", "numpy", "git", "html", "css"
     ]
-    interest_keywords_map = {
-        "data science": ["data", "pandas", "numpy", "ml", "machine", "analytics"],
-        "ai-ml": ["ml", "machine", "deep", "neural", "ai", "pytorch", "tensorflow"],
-        "web development": ["react", "node", "javascript", "typescript", "css", "html"],
-        "cloud": ["aws", "azure", "gcp", "kubernetes", "docker", "cloud"],
-        "devops": ["docker", "kubernetes", "ci", "cd", "jenkins", "pipeline"],
-        "cybersecurity": ["security", "owasp", "vulnerability", "penetration", "threat"],
-        "mobile": ["android", "ios", "flutter", "react native"],
-        "product design": ["product design", "ui/ux", "ux", "ui", "design", "wireframe", "prototype", "figma", "sketch", "invision", "framer", "adobe xd", "adobe"],
-        "video editing": ["video editing", "video", "editing", "premiere", "after effects", "final cut", "davinci", "resolve", "film", "cinematography", "motion graphics", "animation", "post production"],
-        "graphic design": ["graphic design", "photoshop", "illustrator", "indesign", "canva", "visual design", "branding", "logo", "typography", "layout"],
-        "content creation": ["content creation", "content", "social media", "youtube", "instagram", "tiktok", "blogging", "writing", "copywriting", "marketing"],
-        "photography": ["photography", "photo", "camera", "lightroom", "photoshop", "portrait", "landscape", "wedding", "fashion", "commercial"],
-        "music production": ["music production", "music", "audio", "sound", "mixing", "mastering", "recording", "studio", "pro tools", "ableton", "logic"],
-        "gaming": ["gaming", "game development", "unity", "unreal", "game design", "level design", "game art", "3d modeling", "animation", "game programming"]
-    }
 
     found_skills = []
     for skill in known_skills:
@@ -522,49 +600,22 @@ def _infer_from_text(text: str) -> dict:
             if counts.get(skill, 0) > 0:
                 found_skills.append(skill)
 
+    # Basic interest mapping
     inferred_interests = []
-    for label, kws in interest_keywords_map.items():
-        if any((kw in lowered) for kw in kws):
-            inferred_interests.append(label)
-
-    # Simple heuristics for other sections
-    experience = []
-    projects = []
-    education = []
-
-    for line in lowered.splitlines():
-        line_stripped = line.strip()
-        if not line_stripped:
-            continue
-        if any(h in line_stripped for h in ["experience", "intern", "worked", "company"]):
-            experience.append(line.strip())
-        if any(h in line_stripped for h in ["project", "built", "developed"]):
-            projects.append(line.strip())
-        if any(h in line_stripped for h in ["b.tech", "btech", "bachelor", "master", "university", "college"]):
-            education.append(line.strip())
-
-    location = None
-    loc_match = re.search(r"\b(location|based in|residing in)[:\s]+([a-zA-Z ,.-]+)\b", lowered)
-    if loc_match:
-        location = loc_match.group(2).title()
-
-    # Ensure at least one interest to avoid downstream errors
-    if not inferred_interests and found_skills:
-        # Map some common skills to interests
-        if any(s in found_skills for s in ["pandas", "numpy", "scikit-learn", "tensorflow", "pytorch"]):
-            inferred_interests.append("ai-ml")
-        if any(s in found_skills for s in ["react", "javascript", "typescript", "html", "css", "node"]):
-            inferred_interests.append("web development")
-        if any(s in found_skills for s in ["aws", "azure", "gcp", "docker", "kubernetes"]):
-            inferred_interests.append("cloud")
+    if any(s in found_skills for s in ["pandas", "numpy", "scikit-learn", "tensorflow", "pytorch"]):
+        inferred_interests.append("ai-ml")
+    if any(s in found_skills for s in ["react", "javascript", "typescript", "html", "css", "node"]):
+        inferred_interests.append("web development")
+    if any(s in found_skills for s in ["aws", "azure", "gcp", "docker", "kubernetes"]):
+        inferred_interests.append("cloud")
 
     return {
         "skills": sorted(set(found_skills)),
         "interests": sorted(set(inferred_interests)),
-        "experience": experience[:20],
-        "projects": projects[:20],
-        "education": education[:20],
-        "location": location,
+        "experience": [],
+        "projects": [],
+        "education": [],
+        "location": None,
     }
 
 
@@ -631,7 +682,24 @@ def _infer_target_sectors(interests: List[str]) -> List[str]:
     return ordered
 
 
-def _score_company(company: str, interests: List[str]) -> int:
+def _score_company(company: str, interests: List[str], resume_data: Dict = None) -> int:
+    """Enhanced company scoring using ML engine and company database"""
+    try:
+        # Use advanced ML engine for scoring
+        if resume_data:
+            score = ml_engine.calculate_advanced_match_score(resume_data, company, interests)
+        else:
+            # Fallback to basic scoring for interests-only matching
+            score = _basic_company_score(company, interests)
+        
+        return int(score)
+    except Exception as e:
+        print(f"Error in advanced scoring: {e}")
+        # Fallback to basic scoring
+        return _basic_company_score(company, interests)
+
+def _basic_company_score(company: str, interests: List[str]) -> int:
+    """Basic company scoring fallback"""
     text = company.lower()
     sector = _company_sector(company)
     target_sectors = _infer_target_sectors(interests)
@@ -688,7 +756,46 @@ def _score_company(company: str, interests: List[str]) -> int:
     return max(0, min(100, score))
 
 
+def _select_role_for_company(company: str, sector: str, interests: List[str]) -> str:
+    """Select role based on company-specific information and interests"""
+    try:
+        # Get company information from ML engine database
+        company_info = ml_engine.company_database.get('companies', {}).get(company, {})
+        
+        if company_info and company_info.get('preferred_roles'):
+            # Use company-specific preferred roles
+            preferred_roles = company_info['preferred_roles']
+            
+            # Match interests with preferred roles
+            desired = " ".join(interests).lower()
+            
+            for role in preferred_roles:
+                role_lower = role.lower()
+                # Check if any interest keywords match the role
+                if any(interest in role_lower for interest in desired.split()):
+                    return role
+                # Check for specific role-interest mappings
+                if any(k in desired for k in ["ai", "ml", "machine learning", "data science"]) and "ai" in role_lower:
+                    return role
+                if any(k in desired for k in ["design", "ui", "ux"]) and any(d in role_lower for d in ["design", "ui", "ux"]):
+                    return role
+                if any(k in desired for k in ["development", "programming", "coding"]) and "development" in role_lower:
+                    return role
+                if any(k in desired for k in ["data", "analytics"]) and "analytics" in role_lower:
+                    return role
+            
+            # Return first preferred role if no specific match
+            return preferred_roles[0]
+        
+        # Fallback to sector-based role selection
+        return _select_role_for_sector(sector, interests)
+        
+    except Exception as e:
+        print(f"Error in company-specific role selection: {e}")
+        return _select_role_for_sector(sector, interests)
+
 def _select_role_for_sector(sector: str, interests: List[str]) -> str:
+    """Fallback role selection based on sector and interests"""
     desired = " ".join(interests).lower()
     
     # Creative and design roles
@@ -753,8 +860,8 @@ def _make_recommendation(company: str, match_score: int, location_hint: Optional
         "benefits": ["Mentorship", "Flexible hours"]
     })
     
-    # Select role based on sector and interests
-    role = _select_role_for_sector(sector, interests)
+    # Select role based on company-specific information and interests
+    role = _select_role_for_company(company, sector, interests)
     job_type: Literal["internship", "full-time", "part-time"] = "internship"
     location = location_hint or "Remote"
     
@@ -818,7 +925,17 @@ def recommend(payload: Union[InterestsPayload, ResumePayload]):
     # Score all companies and pick top N
     scored = []
     for name in COMPANY_NAMES:
-        score = _score_company(name, interests)
+        # Create resume data structure for enhanced scoring
+        resume_data = {
+            'skills': payload.skills if hasattr(payload, 'skills') else [],
+            'interests': interests,
+            'experience': payload.experience if hasattr(payload, 'experience') else [],
+            'projects': payload.projects if hasattr(payload, 'projects') else [],
+            'text': ' '.join(interests + (payload.skills if hasattr(payload, 'skills') else [])),
+            'location': payload.location if hasattr(payload, 'location') else None
+        }
+        
+        score = _score_company(name, interests, resume_data)
         scored.append((name, score))
 
     # Sort by score desc, then name

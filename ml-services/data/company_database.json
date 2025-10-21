@@ -1,0 +1,948 @@
+{
+  "companies": {
+    "MICROSOFT INDIA PRIVATE LIMITED": {
+      "description": "Global technology leader focused on cloud computing, productivity software, and AI. Known for Azure cloud platform, Office 365, and Windows ecosystem.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Cloud Computing", "Enterprise Software", "AI/ML", "Productivity Tools"],
+      "preferred_roles": [
+        "Software Development Intern",
+        "Cloud Engineering Intern", 
+        "AI/ML Intern",
+        "Product Management Intern",
+        "QA Testing Intern",
+        "DevOps Intern"
+      ],
+      "required_skills": ["C#", "Azure", "Python", "JavaScript", "SQL", "Git"],
+      "company_culture": "Innovation-focused, collaborative, growth-oriented",
+      "internship_focus": "Cloud technologies, AI/ML, enterprise solutions"
+    },
+    "GOOGLE INDIA PRIVATE LIMITED": {
+      "description": "Search engine and technology giant specializing in search, advertising, cloud computing, and AI. Known for Google Search, Android, and Google Cloud Platform.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Search Technology", "AI/ML", "Cloud Computing", "Mobile Development"],
+      "preferred_roles": [
+        "Software Development Intern",
+        "AI/ML Intern",
+        "Data Science Intern",
+        "Product Management Intern",
+        "UI/UX Design Intern",
+        "Cloud Engineering Intern"
+      ],
+      "required_skills": ["Python", "Java", "Go", "TensorFlow", "Kubernetes", "BigQuery"],
+      "company_culture": "Data-driven, innovative, user-focused",
+      "internship_focus": "AI/ML, search algorithms, cloud technologies"
+    },
+    "AMAZON INDIA PRIVATE LIMITED": {
+      "description": "E-commerce and cloud computing giant. Known for AWS cloud services, Amazon marketplace, and Alexa AI assistant.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["E-commerce", "Cloud Computing", "AI/ML", "Logistics"],
+      "preferred_roles": [
+        "Software Development Intern",
+        "Cloud Engineering Intern",
+        "Data Science Intern",
+        "Product Management Intern",
+        "DevOps Intern",
+        "AI/ML Intern"
+      ],
+      "required_skills": ["Java", "Python", "AWS", "Docker", "Kubernetes", "Machine Learning"],
+      "company_culture": "Customer-obsessed, innovative, fast-paced",
+      "internship_focus": "Cloud technologies, e-commerce solutions, AI/ML"
+    },
+    "META PLATFORMS INDIA PRIVATE LIMITED": {
+      "description": "Social media and virtual reality company. Known for Facebook, Instagram, WhatsApp, and Metaverse technologies.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Social Media", "VR/AR", "AI/ML", "Mobile Development"],
+      "preferred_roles": [
+        "Software Development Intern",
+        "AI/ML Intern",
+        "UI/UX Design Intern",
+        "Product Management Intern",
+        "Data Science Intern",
+        "VR/AR Development Intern"
+      ],
+      "required_skills": ["React", "Python", "JavaScript", "Machine Learning", "Mobile Development"],
+      "company_culture": "Innovative, social impact-focused, fast-moving",
+      "internship_focus": "Social media technologies, VR/AR, AI/ML"
+    },
+    "APPLE INDIA PRIVATE LIMITED": {
+      "description": "Consumer electronics and software company. Known for iPhone, Mac, iPad, and iOS/macOS ecosystems.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Consumer Electronics", "Mobile Development", "Product Design", "Hardware"],
+      "preferred_roles": [
+        "Software Development Intern",
+        "Product Design Intern",
+        "UI/UX Design Intern",
+        "Hardware Engineering Intern",
+        "iOS Development Intern",
+        "Product Management Intern"
+      ],
+      "required_skills": ["Swift", "Objective-C", "iOS", "macOS", "Design Tools", "Hardware"],
+      "company_culture": "Design-focused, innovative, quality-oriented",
+      "internship_focus": "Mobile development, product design, hardware engineering"
+    },
+    "ADOBE SYSTEMS INDIA PRIVATE LIMITED": {
+      "description": "Creative software company. Known for Photoshop, Illustrator, Creative Cloud, and digital marketing tools.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Creative Software", "Digital Marketing", "Design Tools", "Cloud Services"],
+      "preferred_roles": [
+        "Software Development Intern",
+        "UI/UX Design Intern",
+        "Product Design Intern",
+        "Digital Marketing Intern",
+        "Creative Technology Intern",
+        "Product Management Intern"
+      ],
+      "required_skills": ["JavaScript", "C++", "Design Tools", "Creative Software", "Cloud Technologies"],
+      "company_culture": "Creative, innovative, design-focused",
+      "internship_focus": "Creative software development, design tools, digital marketing"
+    },
+    "NETFLIX INDIA PRIVATE LIMITED": {
+      "description": "Streaming entertainment service. Known for original content, recommendation algorithms, and global streaming platform.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Streaming Technology", "AI/ML", "Content Creation", "Data Analytics"],
+      "preferred_roles": [
+        "Software Development Intern",
+        "AI/ML Intern",
+        "Data Science Intern",
+        "Content Creation Intern",
+        "Product Management Intern",
+        "Video Engineering Intern"
+      ],
+      "required_skills": ["Python", "Java", "Machine Learning", "Video Processing", "Data Analytics"],
+      "company_culture": "Innovative, data-driven, content-focused",
+      "internship_focus": "Streaming technologies, recommendation systems, content creation"
+    },
+    "TATA CONSULTANCY SERVICES LIMITED": {
+      "description": "Global IT services and consulting company. Known for enterprise solutions, digital transformation, and IT consulting.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["IT Consulting", "Enterprise Software", "Digital Transformation", "Business Solutions"],
+      "preferred_roles": [
+        "Software Development Intern",
+        "Business Analysis Intern",
+        "QA Testing Intern",
+        "Data Analytics Intern",
+        "Project Management Intern",
+        "Consulting Intern"
+      ],
+      "required_skills": ["Java", "Python", "SQL", "Business Analysis", "Project Management"],
+      "company_culture": "Professional, growth-oriented, client-focused",
+      "internship_focus": "Enterprise software, business analysis, IT consulting"
+    },
+    "INFOSYS LIMITED": {
+      "description": "Global technology services company. Known for digital transformation, consulting, and IT services.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Digital Transformation", "IT Services", "Consulting", "Business Solutions"],
+      "preferred_roles": [
+        "Software Development Intern",
+        "Business Analysis Intern",
+        "Data Analytics Intern",
+        "QA Testing Intern",
+        "Project Management Intern",
+        "Digital Transformation Intern"
+      ],
+      "required_skills": ["Java", "Python", "SQL", "Business Analysis", "Agile Methodologies"],
+      "company_culture": "Professional, innovative, client-centric",
+      "internship_focus": "Digital transformation, business analysis, IT services"
+    },
+    "HDFC BANK LIMITED": {
+      "description": "Leading private sector bank in India. Known for digital banking, financial services, and customer-centric approach.",
+      "sector": "Fintech / Banking / Finance",
+      "specializations": ["Digital Banking", "Financial Services", "Risk Management", "Customer Analytics"],
+      "preferred_roles": [
+        "Fintech Development Intern",
+        "Data Analytics Intern",
+        "Risk Analysis Intern",
+        "Digital Banking Intern",
+        "Product Management Intern",
+        "Compliance Intern"
+      ],
+      "required_skills": ["Java", "Python", "SQL", "Financial Analysis", "Risk Management"],
+      "company_culture": "Customer-focused, innovative, growth-oriented",
+      "internship_focus": "Digital banking, financial technology, risk management"
+    },
+    "ICICI BANK LIMITED": {
+      "description": "Major private sector bank. Known for digital banking, financial products, and customer service excellence.",
+      "sector": "Fintech / Banking / Finance",
+      "specializations": ["Digital Banking", "Financial Products", "Customer Service", "Risk Management"],
+      "preferred_roles": [
+        "Fintech Development Intern",
+        "Data Analytics Intern",
+        "Risk Analysis Intern",
+        "Customer Experience Intern",
+        "Product Management Intern",
+        "Compliance Intern"
+      ],
+      "required_skills": ["Java", "Python", "SQL", "Financial Analysis", "Customer Analytics"],
+      "company_culture": "Customer-centric, innovative, professional",
+      "internship_focus": "Digital banking, financial products, customer experience"
+    },
+    "FLIPKART INTERNET PRIVATE LIMITED": {
+      "description": "Leading e-commerce platform in India. Known for online retail, logistics, and digital payments.",
+      "sector": "E-commerce / Retail / Consumer",
+      "specializations": ["E-commerce", "Logistics", "Digital Payments", "Customer Analytics"],
+      "preferred_roles": [
+        "E-commerce Operations Intern",
+        "Digital Marketing Intern",
+        "Supply Chain Intern",
+        "Data Analytics Intern",
+        "Product Management Intern",
+        "Customer Experience Intern"
+      ],
+      "required_skills": ["Python", "Java", "Data Analytics", "E-commerce", "Digital Marketing"],
+      "company_culture": "Innovative, customer-focused, fast-paced",
+      "internship_focus": "E-commerce operations, digital marketing, supply chain"
+    },
+    "PAYTM PAYMENTS SERVICES PRIVATE LIMITED": {
+      "description": "Leading digital payments and financial services company. Known for mobile payments, digital wallet, and financial services.",
+      "sector": "Fintech / Banking / Finance",
+      "specializations": ["Digital Payments", "Financial Services", "Mobile Technology", "Risk Management"],
+      "preferred_roles": [
+        "Fintech Development Intern",
+        "Mobile Development Intern",
+        "Data Analytics Intern",
+        "Risk Analysis Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern"
+      ],
+      "required_skills": ["Java", "Python", "Mobile Development", "Financial Technology", "Data Analytics"],
+      "company_culture": "Innovative, customer-focused, technology-driven",
+      "internship_focus": "Digital payments, mobile technology, financial services"
+    },
+    "ZOMATO LIMITED": {
+      "description": "Food delivery and restaurant discovery platform. Known for food ordering, restaurant reviews, and logistics.",
+      "sector": "E-commerce / Retail / Consumer",
+      "specializations": ["Food Delivery", "Logistics", "Customer Analytics", "Mobile Technology"],
+      "preferred_roles": [
+        "Mobile Development Intern",
+        "Data Analytics Intern",
+        "Logistics Intern",
+        "Customer Experience Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern"
+      ],
+      "required_skills": ["Mobile Development", "Python", "Data Analytics", "Logistics", "Customer Analytics"],
+      "company_culture": "Customer-focused, innovative, fast-paced",
+      "internship_focus": "Food delivery technology, logistics, customer experience"
+    },
+    "SWIGGY PRIVATE LIMITED": {
+      "description": "Food delivery platform. Known for food ordering, logistics, and customer service.",
+      "sector": "E-commerce / Retail / Consumer",
+      "specializations": ["Food Delivery", "Logistics", "Customer Service", "Mobile Technology"],
+      "preferred_roles": [
+        "Mobile Development Intern",
+        "Logistics Intern",
+        "Data Analytics Intern",
+        "Customer Experience Intern",
+        "Product Management Intern",
+        "Operations Intern"
+      ],
+      "required_skills": ["Mobile Development", "Python", "Data Analytics", "Logistics", "Operations"],
+      "company_culture": "Customer-focused, efficient, growth-oriented",
+      "internship_focus": "Food delivery operations, logistics, customer service"
+    },
+    "OYO ROOMS PRIVATE LIMITED": {
+      "description": "Hospitality and travel technology company. Known for hotel booking, travel services, and hospitality technology.",
+      "sector": "E-commerce / Retail / Consumer",
+      "specializations": ["Hospitality Technology", "Travel Services", "Customer Analytics", "Mobile Technology"],
+      "preferred_roles": [
+        "Mobile Development Intern",
+        "Data Analytics Intern",
+        "Customer Experience Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern",
+        "Operations Intern"
+      ],
+      "required_skills": ["Mobile Development", "Python", "Data Analytics", "Hospitality", "Customer Analytics"],
+      "company_culture": "Customer-focused, innovative, growth-oriented",
+      "internship_focus": "Hospitality technology, travel services, customer experience"
+    },
+    "BYJU'S PRIVATE LIMITED": {
+      "description": "EdTech company. Known for online learning, educational content, and personalized learning experiences.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Educational Technology", "Content Creation", "AI/ML", "Mobile Learning"],
+      "preferred_roles": [
+        "Educational Technology Intern",
+        "Content Creation Intern",
+        "AI/ML Intern",
+        "Mobile Development Intern",
+        "Product Management Intern",
+        "Data Analytics Intern"
+      ],
+      "required_skills": ["Python", "Mobile Development", "AI/ML", "Content Creation", "Educational Technology"],
+      "company_culture": "Learning-focused, innovative, student-centric",
+      "internship_focus": "Educational technology, content creation, AI/ML for education"
+    },
+    "UNACADEMY PRIVATE LIMITED": {
+      "description": "Online learning platform. Known for educational content, live classes, and exam preparation.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Online Education", "Content Creation", "Live Streaming", "Mobile Learning"],
+      "preferred_roles": [
+        "Educational Technology Intern",
+        "Content Creation Intern",
+        "Live Streaming Intern",
+        "Mobile Development Intern",
+        "Product Management Intern",
+        "Data Analytics Intern"
+      ],
+      "required_skills": ["Python", "Mobile Development", "Live Streaming", "Content Creation", "Educational Technology"],
+      "company_culture": "Learning-focused, innovative, student-centric",
+      "internship_focus": "Online education, live streaming, content creation"
+    },
+    "RELIANCE INDUSTRIES LIMITED": {
+      "description": "Conglomerate with interests in petrochemicals, telecommunications, retail, and digital services. Known for Jio, Reliance Retail, and digital transformation.",
+      "sector": "Energy / Oil & Gas / Utilities",
+      "specializations": ["Petrochemicals", "Telecommunications", "Retail", "Digital Services"],
+      "preferred_roles": [
+        "Telecommunications Intern",
+        "Retail Operations Intern",
+        "Digital Services Intern",
+        "Data Analytics Intern",
+        "Product Management Intern",
+        "Business Analysis Intern"
+      ],
+      "required_skills": ["Python", "Data Analytics", "Telecommunications", "Retail", "Business Analysis"],
+      "company_culture": "Innovative, growth-oriented, diversified",
+      "internship_focus": "Telecommunications, retail operations, digital services"
+    },
+    "MARUTI SUZUKI INDIA LIMITED": {
+      "description": "Automobile manufacturer. Known for passenger vehicles, automotive technology, and manufacturing excellence.",
+      "sector": "Automotive / Manufacturing / Industrial",
+      "specializations": ["Automotive Manufacturing", "Vehicle Technology", "Quality Control", "Supply Chain"],
+      "preferred_roles": [
+        "Manufacturing Engineering Intern",
+        "Quality Control Intern",
+        "Automotive Technology Intern",
+        "Supply Chain Intern",
+        "Product Management Intern",
+        "Process Optimization Intern"
+      ],
+      "required_skills": ["Engineering", "Manufacturing", "Quality Control", "Automotive Technology", "Process Improvement"],
+      "company_culture": "Quality-focused, innovative, manufacturing excellence",
+      "internship_focus": "Automotive manufacturing, quality control, process optimization"
+    },
+    "HDFC LIMITED": {
+      "description": "Housing finance company. Known for home loans, financial services, and customer-centric approach.",
+      "sector": "Fintech / Banking / Finance",
+      "specializations": ["Housing Finance", "Financial Services", "Risk Management", "Customer Analytics"],
+      "preferred_roles": [
+        "Financial Analysis Intern",
+        "Risk Analysis Intern",
+        "Customer Analytics Intern",
+        "Product Management Intern",
+        "Compliance Intern",
+        "Data Analytics Intern"
+      ],
+      "required_skills": ["Financial Analysis", "Risk Management", "Data Analytics", "Customer Analytics", "Compliance"],
+      "company_culture": "Customer-focused, professional, growth-oriented",
+      "internship_focus": "Housing finance, risk management, customer analytics"
+    },
+    "UBER INDIA PRIVATE LIMITED": {
+      "description": "Ride-sharing and delivery platform. Known for transportation technology, logistics, and mobility solutions.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Transportation Technology", "Logistics", "Mobility Solutions", "Data Analytics"],
+      "preferred_roles": [
+        "Software Development Intern",
+        "Data Analytics Intern",
+        "Product Management Intern",
+        "Operations Intern",
+        "Logistics Intern",
+        "Customer Experience Intern"
+      ],
+      "required_skills": ["Python", "Java", "Data Analytics", "Logistics", "Mobile Development"],
+      "company_culture": "Innovative, fast-paced, mobility-focused",
+      "internship_focus": "Transportation technology, logistics, data analytics"
+    },
+    "SPOTIFY INDIA PRIVATE LIMITED": {
+      "description": "Music streaming platform. Known for audio streaming, music discovery, and podcast technology.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Audio Streaming", "Music Technology", "Content Discovery", "Machine Learning"],
+      "preferred_roles": [
+        "Software Development Intern",
+        "AI/ML Intern",
+        "Data Science Intern",
+        "Product Management Intern",
+        "Content Creation Intern",
+        "Audio Engineering Intern"
+      ],
+      "required_skills": ["Python", "Machine Learning", "Audio Processing", "Data Analytics", "Content Creation"],
+      "company_culture": "Creative, innovative, music-focused",
+      "internship_focus": "Audio technology, music streaming, content discovery"
+    },
+    "LINKEDIN INDIA PRIVATE LIMITED": {
+      "description": "Professional networking platform. Known for career development, professional connections, and business networking.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Professional Networking", "Career Development", "Business Analytics", "Social Media"],
+      "preferred_roles": [
+        "Software Development Intern",
+        "Data Analytics Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern",
+        "Business Analysis Intern",
+        "Customer Experience Intern"
+      ],
+      "required_skills": ["Python", "Data Analytics", "Social Media", "Business Analysis", "Marketing"],
+      "company_culture": "Professional, growth-oriented, networking-focused",
+      "internship_focus": "Professional networking, career development, business analytics"
+    },
+    "TWITTER INDIA PRIVATE LIMITED": {
+      "description": "Social media platform. Known for microblogging, real-time communication, and social networking.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Social Media", "Real-time Communication", "Content Moderation", "Data Analytics"],
+      "preferred_roles": [
+        "Software Development Intern",
+        "Data Analytics Intern",
+        "Content Moderation Intern",
+        "Digital Marketing Intern",
+        "Product Management Intern",
+        "Social Media Intern"
+      ],
+      "required_skills": ["Python", "Data Analytics", "Social Media", "Content Moderation", "Real-time Systems"],
+      "company_culture": "Fast-paced, communication-focused, social impact",
+      "internship_focus": "Social media technology, content moderation, real-time systems"
+    },
+    "INSTAGRAM INDIA PRIVATE LIMITED": {
+      "description": "Photo and video sharing platform. Known for visual content, social media, and creative expression.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Visual Content", "Social Media", "Mobile Development", "Content Creation"],
+      "preferred_roles": [
+        "Mobile Development Intern",
+        "UI/UX Design Intern",
+        "Content Creation Intern",
+        "Digital Marketing Intern",
+        "Product Management Intern",
+        "Social Media Intern"
+      ],
+      "required_skills": ["Mobile Development", "UI/UX Design", "Content Creation", "Social Media", "Visual Design"],
+      "company_culture": "Creative, visual-focused, social media oriented",
+      "internship_focus": "Visual content, mobile development, social media"
+    },
+    "TIKTOK INDIA PRIVATE LIMITED": {
+      "description": "Short-form video platform. Known for video content, social media, and creative expression.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Video Content", "Social Media", "Content Creation", "Mobile Development"],
+      "preferred_roles": [
+        "Video Editing Intern",
+        "Content Creation Intern",
+        "Mobile Development Intern",
+        "Digital Marketing Intern",
+        "Social Media Intern",
+        "Product Management Intern"
+      ],
+      "required_skills": ["Video Editing", "Content Creation", "Mobile Development", "Social Media", "Digital Marketing"],
+      "company_culture": "Creative, video-focused, social media oriented",
+      "internship_focus": "Video content creation, social media, mobile development"
+    },
+    "YOUTUBE INDIA PRIVATE LIMITED": {
+      "description": "Video sharing platform. Known for video content, content creation, and digital media.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Video Content", "Content Creation", "Digital Media", "Video Technology"],
+      "preferred_roles": [
+        "Video Editing Intern",
+        "Content Creation Intern",
+        "Video Engineering Intern",
+        "Digital Marketing Intern",
+        "Product Management Intern",
+        "Content Moderation Intern"
+      ],
+      "required_skills": ["Video Editing", "Content Creation", "Video Technology", "Digital Marketing", "Content Moderation"],
+      "company_culture": "Creative, content-focused, video-oriented",
+      "internship_focus": "Video content creation, digital media, content technology"
+    },
+    "DISCORD INDIA PRIVATE LIMITED": {
+      "description": "Communication platform for communities. Known for voice/video chat, community building, and gaming.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Communication Technology", "Community Building", "Gaming", "Real-time Systems"],
+      "preferred_roles": [
+        "Software Development Intern",
+        "Community Management Intern",
+        "Gaming Intern",
+        "Product Management Intern",
+        "Customer Support Intern",
+        "Digital Marketing Intern"
+      ],
+      "required_skills": ["Python", "Real-time Systems", "Community Management", "Gaming", "Customer Support"],
+      "company_culture": "Community-focused, gaming-oriented, communication-driven",
+      "internship_focus": "Communication technology, community building, gaming"
+    },
+    "TWITCH INDIA PRIVATE LIMITED": {
+      "description": "Live streaming platform. Known for gaming streams, live content, and community building.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Live Streaming", "Gaming", "Content Creation", "Community Building"],
+      "preferred_roles": [
+        "Live Streaming Intern",
+        "Gaming Intern",
+        "Content Creation Intern",
+        "Community Management Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern"
+      ],
+      "required_skills": ["Live Streaming", "Gaming", "Content Creation", "Community Management", "Digital Marketing"],
+      "company_culture": "Gaming-focused, community-driven, live content oriented",
+      "internship_focus": "Live streaming technology, gaming, community building"
+    },
+    "PINTEREST INDIA PRIVATE LIMITED": {
+      "description": "Visual discovery platform. Known for inspiration, visual content, and creative ideas.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Visual Discovery", "Content Curation", "E-commerce", "Visual Design"],
+      "preferred_roles": [
+        "UI/UX Design Intern",
+        "Content Curation Intern",
+        "Visual Design Intern",
+        "E-commerce Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern"
+      ],
+      "required_skills": ["UI/UX Design", "Visual Design", "Content Curation", "E-commerce", "Digital Marketing"],
+      "company_culture": "Creative, visual-focused, inspiration-driven",
+      "internship_focus": "Visual discovery, content curation, e-commerce"
+    },
+    "SNAPCHAT INDIA PRIVATE LIMITED": {
+      "description": "Multimedia messaging app. Known for ephemeral content, AR filters, and social communication.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Mobile Development", "AR Technology", "Social Media", "Content Creation"],
+      "preferred_roles": [
+        "Mobile Development Intern",
+        "AR Development Intern",
+        "Content Creation Intern",
+        "Social Media Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern"
+      ],
+      "required_skills": ["Mobile Development", "AR Technology", "Content Creation", "Social Media", "Digital Marketing"],
+      "company_culture": "Innovative, mobile-focused, AR-driven",
+      "internship_focus": "Mobile development, AR technology, social media"
+    },
+    "REDDIT INDIA PRIVATE LIMITED": {
+      "description": "Social news aggregation platform. Known for community discussions, content curation, and user-generated content.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Community Management", "Content Moderation", "Social Media", "Data Analytics"],
+      "preferred_roles": [
+        "Community Management Intern",
+        "Content Moderation Intern",
+        "Data Analytics Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern",
+        "Customer Support Intern"
+      ],
+      "required_skills": ["Community Management", "Content Moderation", "Data Analytics", "Social Media", "Customer Support"],
+      "company_culture": "Community-focused, discussion-oriented, user-driven",
+      "internship_focus": "Community management, content moderation, social media"
+    },
+    "UNITY TECHNOLOGIES INDIA PRIVATE LIMITED": {
+      "description": "Game development platform. Known for game engines, 3D development, and interactive content creation.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Game Development", "3D Technology", "Interactive Content", "AR/VR"],
+      "preferred_roles": [
+        "Game Development Intern",
+        "3D Modeling Intern",
+        "AR/VR Development Intern",
+        "Game Design Intern",
+        "Product Management Intern",
+        "Technical Writing Intern"
+      ],
+      "required_skills": ["Game Development", "3D Modeling", "AR/VR", "Game Design", "C#", "Unity"],
+      "company_culture": "Creative, gaming-focused, innovation-driven",
+      "internship_focus": "Game development, 3D technology, AR/VR"
+    },
+    "EPIC GAMES INDIA PRIVATE LIMITED": {
+      "description": "Game development company. Known for Unreal Engine, Fortnite, and game development tools.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Game Development", "Game Engines", "3D Technology", "AR/VR"],
+      "preferred_roles": [
+        "Game Development Intern",
+        "Game Engine Intern",
+        "3D Technology Intern",
+        "AR/VR Development Intern",
+        "Game Design Intern",
+        "Technical Writing Intern"
+      ],
+      "required_skills": ["Game Development", "C++", "3D Technology", "AR/VR", "Game Design", "Unreal Engine"],
+      "company_culture": "Gaming-focused, innovation-driven, creative",
+      "internship_focus": "Game development, game engines, 3D technology"
+    },
+    "SONY INDIA PRIVATE LIMITED": {
+      "description": "Entertainment and technology company. Known for PlayStation, entertainment content, and consumer electronics.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Gaming", "Entertainment", "Consumer Electronics", "Content Creation"],
+      "preferred_roles": [
+        "Gaming Intern",
+        "Entertainment Intern",
+        "Content Creation Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern",
+        "Customer Support Intern"
+      ],
+      "required_skills": ["Gaming", "Entertainment", "Content Creation", "Digital Marketing", "Customer Support"],
+      "company_culture": "Entertainment-focused, innovation-driven, gaming-oriented",
+      "internship_focus": "Gaming, entertainment, content creation"
+    },
+    "NINTENDO INDIA PRIVATE LIMITED": {
+      "description": "Video game company. Known for gaming consoles, game development, and interactive entertainment.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Gaming", "Game Development", "Interactive Entertainment", "Hardware"],
+      "preferred_roles": [
+        "Gaming Intern",
+        "Game Development Intern",
+        "Hardware Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern",
+        "Customer Support Intern"
+      ],
+      "required_skills": ["Gaming", "Game Development", "Hardware", "Digital Marketing", "Customer Support"],
+      "company_culture": "Gaming-focused, family-oriented, creative",
+      "internship_focus": "Gaming, game development, interactive entertainment"
+    },
+    "VALVE INDIA PRIVATE LIMITED": {
+      "description": "Video game company. Known for Steam platform, game development, and digital distribution.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Gaming", "Digital Distribution", "Game Development", "Platform Technology"],
+      "preferred_roles": [
+        "Gaming Intern",
+        "Platform Development Intern",
+        "Game Development Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern",
+        "Customer Support Intern"
+      ],
+      "required_skills": ["Gaming", "Platform Development", "Game Development", "Digital Marketing", "Customer Support"],
+      "company_culture": "Gaming-focused, platform-oriented, innovation-driven",
+      "internship_focus": "Gaming, platform development, digital distribution"
+    },
+    "BLIZZARD INDIA PRIVATE LIMITED": {
+      "description": "Video game company. Known for World of Warcraft, Overwatch, and online gaming.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Gaming", "Online Gaming", "Game Development", "Community Management"],
+      "preferred_roles": [
+        "Gaming Intern",
+        "Online Gaming Intern",
+        "Game Development Intern",
+        "Community Management Intern",
+        "Product Management Intern",
+        "Customer Support Intern"
+      ],
+      "required_skills": ["Gaming", "Online Gaming", "Game Development", "Community Management", "Customer Support"],
+      "company_culture": "Gaming-focused, community-driven, online-oriented",
+      "internship_focus": "Gaming, online gaming, community management"
+    },
+    "ELECTRONIC ARTS INDIA PRIVATE LIMITED": {
+      "description": "Video game company. Known for FIFA, Madden, and sports gaming.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Gaming", "Sports Gaming", "Game Development", "Digital Marketing"],
+      "preferred_roles": [
+        "Gaming Intern",
+        "Sports Gaming Intern",
+        "Game Development Intern",
+        "Digital Marketing Intern",
+        "Product Management Intern",
+        "Customer Support Intern"
+      ],
+      "required_skills": ["Gaming", "Sports Gaming", "Game Development", "Digital Marketing", "Customer Support"],
+      "company_culture": "Gaming-focused, sports-oriented, competitive",
+      "internship_focus": "Gaming, sports gaming, digital marketing"
+    },
+    "UBISOFT INDIA PRIVATE LIMITED": {
+      "description": "Video game company. Known for Assassin's Creed, Far Cry, and open-world gaming.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Gaming", "Open-world Gaming", "Game Development", "3D Technology"],
+      "preferred_roles": [
+        "Gaming Intern",
+        "Game Development Intern",
+        "3D Technology Intern",
+        "Game Design Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern"
+      ],
+      "required_skills": ["Gaming", "Game Development", "3D Technology", "Game Design", "Digital Marketing"],
+      "company_culture": "Gaming-focused, creative, open-world oriented",
+      "internship_focus": "Gaming, game development, 3D technology"
+    },
+    "ROCKSTAR INDIA PRIVATE LIMITED": {
+      "description": "Video game company. Known for Grand Theft Auto, Red Dead Redemption, and open-world gaming.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Gaming", "Open-world Gaming", "Game Development", "3D Technology"],
+      "preferred_roles": [
+        "Gaming Intern",
+        "Game Development Intern",
+        "3D Technology Intern",
+        "Game Design Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern"
+      ],
+      "required_skills": ["Gaming", "Game Development", "3D Technology", "Game Design", "Digital Marketing"],
+      "company_culture": "Gaming-focused, creative, open-world oriented",
+      "internship_focus": "Gaming, game development, 3D technology"
+    },
+    "ACTIVISION INDIA PRIVATE LIMITED": {
+      "description": "Video game company. Known for Call of Duty, World of Warcraft, and competitive gaming.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Gaming", "Competitive Gaming", "Game Development", "Esports"],
+      "preferred_roles": [
+        "Gaming Intern",
+        "Competitive Gaming Intern",
+        "Game Development Intern",
+        "Esports Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern"
+      ],
+      "required_skills": ["Gaming", "Competitive Gaming", "Game Development", "Esports", "Digital Marketing"],
+      "company_culture": "Gaming-focused, competitive, esports-oriented",
+      "internship_focus": "Gaming, competitive gaming, esports"
+    },
+    "BUNGIE INDIA PRIVATE LIMITED": {
+      "description": "Video game company. Known for Destiny, Halo, and online gaming.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Gaming", "Online Gaming", "Game Development", "Community Management"],
+      "preferred_roles": [
+        "Gaming Intern",
+        "Online Gaming Intern",
+        "Game Development Intern",
+        "Community Management Intern",
+        "Product Management Intern",
+        "Customer Support Intern"
+      ],
+      "required_skills": ["Gaming", "Online Gaming", "Game Development", "Community Management", "Customer Support"],
+      "company_culture": "Gaming-focused, community-driven, online-oriented",
+      "internship_focus": "Gaming, online gaming, community management"
+    },
+    "RIOT GAMES INDIA PRIVATE LIMITED": {
+      "description": "Video game company. Known for League of Legends, Valorant, and esports.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Gaming", "Esports", "Game Development", "Community Management"],
+      "preferred_roles": [
+        "Gaming Intern",
+        "Esports Intern",
+        "Game Development Intern",
+        "Community Management Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern"
+      ],
+      "required_skills": ["Gaming", "Esports", "Game Development", "Community Management", "Digital Marketing"],
+      "company_culture": "Gaming-focused, esports-oriented, community-driven",
+      "internship_focus": "Gaming, esports, community management"
+    },
+    "SUPERCELL INDIA PRIVATE LIMITED": {
+      "description": "Mobile game company. Known for Clash of Clans, Clash Royale, and mobile gaming.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Mobile Gaming", "Game Development", "Mobile Technology", "Community Management"],
+      "preferred_roles": [
+        "Mobile Gaming Intern",
+        "Game Development Intern",
+        "Mobile Development Intern",
+        "Community Management Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern"
+      ],
+      "required_skills": ["Mobile Gaming", "Game Development", "Mobile Development", "Community Management", "Digital Marketing"],
+      "company_culture": "Mobile-focused, gaming-oriented, community-driven",
+      "internship_focus": "Mobile gaming, game development, community management"
+    },
+    "MOJANG INDIA PRIVATE LIMITED": {
+      "description": "Game development company. Known for Minecraft, creative gaming, and educational content.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Gaming", "Creative Gaming", "Educational Gaming", "Game Development"],
+      "preferred_roles": [
+        "Gaming Intern",
+        "Creative Gaming Intern",
+        "Educational Gaming Intern",
+        "Game Development Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern"
+      ],
+      "required_skills": ["Gaming", "Creative Gaming", "Educational Gaming", "Game Development", "Digital Marketing"],
+      "company_culture": "Creative, educational, gaming-focused",
+      "internship_focus": "Gaming, creative gaming, educational content"
+    },
+    "ROBLOX INDIA PRIVATE LIMITED": {
+      "description": "User-generated content platform. Known for user-created games, virtual worlds, and creative expression.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["User-generated Content", "Virtual Worlds", "Creative Expression", "Game Development"],
+      "preferred_roles": [
+        "User-generated Content Intern",
+        "Virtual Worlds Intern",
+        "Creative Expression Intern",
+        "Game Development Intern",
+        "Community Management Intern",
+        "Product Management Intern"
+      ],
+      "required_skills": ["User-generated Content", "Virtual Worlds", "Creative Expression", "Game Development", "Community Management"],
+      "company_culture": "Creative, user-focused, community-driven",
+      "internship_focus": "User-generated content, virtual worlds, creative expression"
+    },
+    "FORTNITE INDIA PRIVATE LIMITED": {
+      "description": "Battle royale game. Known for competitive gaming, esports, and creative content.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Gaming", "Competitive Gaming", "Esports", "Creative Content"],
+      "preferred_roles": [
+        "Gaming Intern",
+        "Competitive Gaming Intern",
+        "Esports Intern",
+        "Creative Content Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern"
+      ],
+      "required_skills": ["Gaming", "Competitive Gaming", "Esports", "Creative Content", "Digital Marketing"],
+      "company_culture": "Gaming-focused, competitive, creative",
+      "internship_focus": "Gaming, competitive gaming, creative content"
+    },
+    "MINECRAFT INDIA PRIVATE LIMITED": {
+      "description": "Creative sandbox game. Known for creative building, educational content, and community creation.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Creative Gaming", "Educational Gaming", "Community Creation", "Game Development"],
+      "preferred_roles": [
+        "Creative Gaming Intern",
+        "Educational Gaming Intern",
+        "Community Creation Intern",
+        "Game Development Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern"
+      ],
+      "required_skills": ["Creative Gaming", "Educational Gaming", "Community Creation", "Game Development", "Digital Marketing"],
+      "company_culture": "Creative, educational, community-focused",
+      "internship_focus": "Creative gaming, educational content, community creation"
+    },
+    "LEAGUE OF LEGENDS INDIA PRIVATE LIMITED": {
+      "description": "Multiplayer online battle arena game. Known for competitive gaming, esports, and strategic gameplay.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Gaming", "Competitive Gaming", "Esports", "Strategic Gameplay"],
+      "preferred_roles": [
+        "Gaming Intern",
+        "Competitive Gaming Intern",
+        "Esports Intern",
+        "Strategic Gameplay Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern"
+      ],
+      "required_skills": ["Gaming", "Competitive Gaming", "Esports", "Strategic Gameplay", "Digital Marketing"],
+      "company_culture": "Gaming-focused, competitive, strategic",
+      "internship_focus": "Gaming, competitive gaming, strategic gameplay"
+    },
+    "WORLD OF WARCRAFT INDIA PRIVATE LIMITED": {
+      "description": "Massively multiplayer online role-playing game. Known for online gaming, community building, and fantasy content.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Gaming", "Online Gaming", "Community Building", "Fantasy Content"],
+      "preferred_roles": [
+        "Gaming Intern",
+        "Online Gaming Intern",
+        "Community Building Intern",
+        "Fantasy Content Intern",
+        "Product Management Intern",
+        "Customer Support Intern"
+      ],
+      "required_skills": ["Gaming", "Online Gaming", "Community Building", "Fantasy Content", "Customer Support"],
+      "company_culture": "Gaming-focused, community-driven, fantasy-oriented",
+      "internship_focus": "Gaming, online gaming, community building"
+    },
+    "CALL OF DUTY INDIA PRIVATE LIMITED": {
+      "description": "First-person shooter game. Known for competitive gaming, esports, and military-themed content.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Gaming", "Competitive Gaming", "Esports", "Military Content"],
+      "preferred_roles": [
+        "Gaming Intern",
+        "Competitive Gaming Intern",
+        "Esports Intern",
+        "Military Content Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern"
+      ],
+      "required_skills": ["Gaming", "Competitive Gaming", "Esports", "Military Content", "Digital Marketing"],
+      "company_culture": "Gaming-focused, competitive, military-oriented",
+      "internship_focus": "Gaming, competitive gaming, military content"
+    },
+    "GRAND THEFT AUTO INDIA PRIVATE LIMITED": {
+      "description": "Open-world action-adventure game. Known for open-world gaming, storytelling, and creative content.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Gaming", "Open-world Gaming", "Storytelling", "Creative Content"],
+      "preferred_roles": [
+        "Gaming Intern",
+        "Open-world Gaming Intern",
+        "Storytelling Intern",
+        "Creative Content Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern"
+      ],
+      "required_skills": ["Gaming", "Open-world Gaming", "Storytelling", "Creative Content", "Digital Marketing"],
+      "company_culture": "Gaming-focused, creative, open-world oriented",
+      "internship_focus": "Gaming, open-world gaming, creative content"
+    },
+    "FIFA INDIA PRIVATE LIMITED": {
+      "description": "Sports simulation game. Known for sports gaming, competitive gameplay, and football content.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Gaming", "Sports Gaming", "Competitive Gameplay", "Football Content"],
+      "preferred_roles": [
+        "Gaming Intern",
+        "Sports Gaming Intern",
+        "Competitive Gameplay Intern",
+        "Football Content Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern"
+      ],
+      "required_skills": ["Gaming", "Sports Gaming", "Competitive Gameplay", "Football Content", "Digital Marketing"],
+      "company_culture": "Gaming-focused, sports-oriented, competitive",
+      "internship_focus": "Gaming, sports gaming, football content"
+    },
+    "ASSASSIN'S CREED INDIA PRIVATE LIMITED": {
+      "description": "Action-adventure game. Known for historical content, storytelling, and open-world gaming.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Gaming", "Historical Content", "Storytelling", "Open-world Gaming"],
+      "preferred_roles": [
+        "Gaming Intern",
+        "Historical Content Intern",
+        "Storytelling Intern",
+        "Open-world Gaming Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern"
+      ],
+      "required_skills": ["Gaming", "Historical Content", "Storytelling", "Open-world Gaming", "Digital Marketing"],
+      "company_culture": "Gaming-focused, historical, storytelling-oriented",
+      "internship_focus": "Gaming, historical content, storytelling"
+    },
+    "FAR CRY INDIA PRIVATE LIMITED": {
+      "description": "First-person shooter game. Known for open-world gaming, survival gameplay, and creative content.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Gaming", "Open-world Gaming", "Survival Gameplay", "Creative Content"],
+      "preferred_roles": [
+        "Gaming Intern",
+        "Open-world Gaming Intern",
+        "Survival Gameplay Intern",
+        "Creative Content Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern"
+      ],
+      "required_skills": ["Gaming", "Open-world Gaming", "Survival Gameplay", "Creative Content", "Digital Marketing"],
+      "company_culture": "Gaming-focused, survival-oriented, creative",
+      "internship_focus": "Gaming, open-world gaming, survival gameplay"
+    },
+    "WATCH DOGS INDIA PRIVATE LIMITED": {
+      "description": "Action-adventure game. Known for hacking gameplay, open-world gaming, and technology content.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Gaming", "Hacking Gameplay", "Open-world Gaming", "Technology Content"],
+      "preferred_roles": [
+        "Gaming Intern",
+        "Hacking Gameplay Intern",
+        "Open-world Gaming Intern",
+        "Technology Content Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern"
+      ],
+      "required_skills": ["Gaming", "Hacking Gameplay", "Open-world Gaming", "Technology Content", "Digital Marketing"],
+      "company_culture": "Gaming-focused, technology-oriented, hacking-driven",
+      "internship_focus": "Gaming, hacking gameplay, technology content"
+    },
+    "JUST DANCE INDIA PRIVATE LIMITED": {
+      "description": "Dance rhythm game. Known for music gaming, fitness content, and creative expression.",
+      "sector": "Technology / Software / Digital Services",
+      "specializations": ["Gaming", "Music Gaming", "Fitness Content", "Creative Expression"],
+      "preferred_roles": [
+        "Gaming Intern",
+        "Music Gaming Intern",
+        "Fitness Content Intern",
+        "Creative Expression Intern",
+        "Product Management Intern",
+        "Digital Marketing Intern"
+      ],
+      "required_skills": ["Gaming", "Music Gaming", "Fitness Content", "Creative Expression", "Digital Marketing"],
+      "company_culture": "Gaming-focused, music-oriented, fitness-driven",
+      "internship_focus": "Gaming, music gaming, fitness content"
+    }
+  }
+}
