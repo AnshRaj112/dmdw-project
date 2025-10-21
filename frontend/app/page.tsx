@@ -20,7 +20,7 @@ export default function Home() {
     setError(null);
     
     try {
-      const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000';
+      const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'https://sih2025-1-om5y.onrender.com';
       let response: Response;
 
       if (selectedOption === 'interests') {

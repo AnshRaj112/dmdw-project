@@ -22,7 +22,7 @@ const resumeSchema = Joi.object({
 // Get recommendations endpoint
 router.post('/', async (req, res) => {
   try {
-    const mlServiceUrl = process.env.ML_SERVICE_URL || 'http://localhost:8000';
+    const mlServiceUrl = process.env.ML_SERVICE_URL || 'https://sih2025-fcbf.onrender.com';
     
     // Check if request contains resume data (skills + interests) or just interests
     if (req.body.skills && req.body.interests) {

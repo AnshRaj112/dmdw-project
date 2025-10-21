@@ -53,7 +53,7 @@ router.post('/', upload.single('resume'), async (req, res) => {
     }
 
     // Forward file to ML service for parsing
-    const mlServiceUrl = process.env.ML_SERVICE_URL || 'http://localhost:8000';
+    const mlServiceUrl = process.env.ML_SERVICE_URL || 'https://sih2025-fcbf.onrender.com';
     
     try {
       const formData = new FormData();

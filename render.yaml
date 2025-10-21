@@ -7,5 +7,15 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-      - key: PORT
-        value: 10000
+      - key: ML_SERVICE_URL
+        value: https://sih2025-fcbf.onrender.com
+      - key: FRONTEND_URL
+        value: https://sih2025-xi.vercel.app
+  - type: web
+    name: sih2025-ml-service
+    env: python
+    buildCommand: cd ml-services && pip install -r requirements.txt
+    startCommand: cd ml-services && python start_server.py
+    envVars:
+      - key: PYTHONPATH
+        value: /opt/render/project/src/ml-services

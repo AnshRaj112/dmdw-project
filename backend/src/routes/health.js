@@ -20,7 +20,7 @@ router.get('/', async (req, res) => {
 
     // Check ML service health
     try {
-      const mlServiceUrl = process.env.ML_SERVICE_URL || 'http://localhost:8000';
+      const mlServiceUrl = process.env.ML_SERVICE_URL || 'https://sih2025-fcbf.onrender.com';
       const mlResponse = await axios.get(`${mlServiceUrl}/health`, {
         timeout: 5000
       });
@@ -68,7 +68,7 @@ router.get('/detailed', async (req, res) => {
 
     // Check ML service with detailed info
     try {
-      const mlServiceUrl = process.env.ML_SERVICE_URL || 'http://localhost:8000';
+      const mlServiceUrl = process.env.ML_SERVICE_URL || 'https://sih2025-fcbf.onrender.com';
       const startTime = Date.now();
       const mlResponse = await axios.get(`${mlServiceUrl}/health`, {
         timeout: 10000
