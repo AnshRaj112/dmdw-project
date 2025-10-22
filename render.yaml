@@ -19,3 +19,5 @@ services:
     envVars:
       - key: PYTHONPATH
         value: /opt/render/project/src/ml-services
+      - key: RENDER
+        value: true

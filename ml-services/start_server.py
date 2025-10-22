@@ -5,7 +5,6 @@ Handles Python path setup for uvicorn
 """
 import os
 import sys
-import subprocess
 
 # Add current directory to Python path
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -24,9 +23,14 @@ if __name__ == "__main__":
     # Disable reload in production (Render environment)
     reload = os.environ.get("RENDER") is None
     
+    print(f"Starting ML Services on port {port}")
+    print(f"Host: 0.0.0.0")
+    print(f"Reload: {reload}")
+    
     uvicorn.run(
         "app.main:app",
         host="0.0.0.0",
         port=port,
-        reload=reload
+        reload=reload,
+        log_level="info"
     )
