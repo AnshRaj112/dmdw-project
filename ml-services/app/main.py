@@ -33,7 +33,7 @@ class Recommendation(BaseModel):
     skills: List[str] = Field(default_factory=list)
     requirements: List[str] = Field(default_factory=list)
     benefits: List[str] = Field(default_factory=list)
-    matchScore: int
+    matchScore: float  # Confidence score (0.0 to 1.0, e.g., 0.88, 0.82, 0.78)
     applyUrl: Optional[str] = None
 
 
@@ -65,38 +65,28 @@ app.add_middleware(
 
 
 def load_company_names() -> List[str]:
-    data_path = os.path.join(os.path.dirname(__file__), "..", "data", "companies.txt")
+    """
+    Load company names ONLY from company_database.json.
+    Returns empty list if database cannot be loaded (no hardcoded fallbacks).
+    """
+    import json
+    db_path = os.path.join(os.path.dirname(__file__), "..", "data", "company_database.json")
     try:
-        with open(os.path.abspath(data_path), "r", encoding="utf-8") as f:
-            raw_lines = [line.strip() for line in f.readlines()]
-            cleaned: List[str] = []
-            for line in raw_lines:
-                if not line:
-                    continue
-                # Skip placeholder or truncated notes
-                if line.startswith("...") or "remaining lines omitted" in line.lower():
-                    continue
-                # Expect optional numeric id followed by tab and name
-                if "\t" in line:
-                    parts = line.split("\t", 1)
-                    # If first part is an integer id, take the name part
-                    if parts[0].strip().isdigit():
-                        name = parts[1].strip()
-                    else:
-                        name = line.strip()
-                else:
-                    name = line.strip()
-                if name:
-                    cleaned.append(name)
-            return cleaned
+        with open(os.path.abspath(db_path), "r", encoding="utf-8") as db_file:
+            db_data = json.load(db_file)
+            companies = list(db_data.get("companies", {}).keys())
+            if not companies:
+                print("Warning: company_database.json contains no companies")
+            return companies
     except FileNotFoundError:
-        # Fallback minimal list
-        return [
-            "RELIANCE INDUSTRIES LIMITED",
-            "TATA CONSULTANCY SERVICES LIMITED",
-            "HDFC BANK LIMITED",
-            "INFOSYS LIMITED",
-        ]
+        print(f"Error: company_database.json not found at {db_path}")
+        return []
+    except json.JSONDecodeError as e:
+        print(f"Error: Invalid JSON in company_database.json: {e}")
+        return []
+    except Exception as e:
+        print(f"Error: Could not load company database: {e}")
+        return []
 
 
 COMPANY_NAMES = load_company_names()
@@ -682,6 +672,138 @@ def _infer_target_sectors(interests: List[str]) -> List[str]:
     return ordered
 
 
+def _calculate_confidence_score(company: str, interests: List[str], resume_data: Dict = None) -> float:
+    """
+    Calculate confidence score (0.0 to 1.0) based on:
+    1. Interest → Sector matching
+    2. Skills → Company required skills matching
+    3. Overall match quality
+    
+    Returns confidence as decimal (e.g., 0.88, 0.82, 0.78)
+    """
+    # Get company info from database
+    company_info = ml_engine.company_database.get('companies', {}).get(company, {})
+    if not company_info:
+        return 0.0  # No confidence if company not in database
+    
+    confidence_components = []
+    
+    # 1. Interest → Sector matching (40% weight)
+    company_sector = company_info.get('sector', '')
+    target_sectors = _infer_target_sectors(interests)
+    
+    interest_sector_confidence = 0.0
+    if target_sectors:
+        # Check if company sector matches any target sector
+        company_sector_lower = company_sector.lower()
+        
+        # Check specializations first (most specific match)
+        company_specializations = company_info.get('specializations', [])
+        specialization_matches = 0
+        for interest in interests:
+            interest_lower = interest.lower()
+            for spec in company_specializations:
+                spec_lower = spec.lower()
+                # Exact match in specialization
+                if interest_lower == spec_lower or (interest_lower in spec_lower and len(interest_lower) > 2):
+                    specialization_matches += 1
+                    break
+        
+        if company_specializations and interests:
+            specialization_ratio = specialization_matches / len(interests)
+            interest_sector_confidence = min(0.85 + (specialization_ratio * 0.15), 1.0)  # 0.85-1.0 range
+        
+        # Check sector match
+        for target_sector in target_sectors:
+            target_sector_lower = target_sector.lower()
+            
+            # Exact or very close match
+            if target_sector_lower in company_sector_lower or company_sector_lower in target_sector_lower:
+                interest_sector_confidence = max(interest_sector_confidence, 0.88)  # High confidence for exact match
+                break
+            # Partial match (check for key words)
+            elif any(word in company_sector_lower for word in target_sector_lower.split() if len(word) > 3):
+                interest_sector_confidence = max(interest_sector_confidence, 0.75)
+        
+        # If no sector match but specialization match exists, use that
+        if interest_sector_confidence == 0.0 and specialization_matches > 0:
+            interest_sector_confidence = 0.80
+    
+    confidence_components.append(('interest_sector', interest_sector_confidence, 0.40))
+    
+    # 2. Skills → Company required skills matching (50% weight)
+    resume_skills = resume_data.get('skills', []) if resume_data else []
+    company_required_skills = company_info.get('required_skills', [])
+    
+    skills_confidence = 0.0
+    if resume_skills and company_required_skills:
+        matched_skills = 0
+        exact_matches = 0
+        resume_skills_lower = [s.lower().strip() for s in resume_skills]
+        company_skills_lower = [s.lower().strip() for s in company_required_skills]
+        
+        # Exact matches (higher weight)
+        for skill in resume_skills_lower:
+            if skill in company_skills_lower:
+                matched_skills += 1.0
+                exact_matches += 1
+            else:
+                # Partial matches (check if skill contains or is contained in company skill)
+                for company_skill in company_skills_lower:
+                    if skill in company_skill or company_skill in skill:
+                        matched_skills += 0.6  # Partial match gets lower weight
+                        break
+        
+        # Calculate confidence based on match ratio
+        # Higher confidence for more matches
+        if company_required_skills:
+            match_ratio = matched_skills / len(company_required_skills)
+            # Scale to 0.75-0.95 range for good matches, 0.95+ for excellent
+            if match_ratio >= 0.8:
+                skills_confidence = 0.78 + (match_ratio - 0.8) * 0.85  # 0.78-0.95 range
+            elif match_ratio >= 0.5:
+                skills_confidence = 0.65 + (match_ratio - 0.5) * 0.43  # 0.65-0.78 range
+            else:
+                skills_confidence = match_ratio * 1.3  # 0.0-0.65 range
+            skills_confidence = min(skills_confidence, 1.0)
+        else:
+            skills_confidence = 0.0
+    elif not resume_skills and company_required_skills:
+        # No skills provided, lower confidence
+        skills_confidence = 0.25
+    elif resume_skills and not company_required_skills:
+        # Company doesn't specify skills, moderate confidence based on interest match
+        skills_confidence = 0.50
+    
+    confidence_components.append(('skills_match', skills_confidence, 0.50))
+    
+    # 3. Interest → Company specializations matching (10% weight)
+    company_specializations = company_info.get('specializations', [])
+    specialization_confidence = 0.0
+    if company_specializations:
+        matched_specializations = 0
+        for interest in interests:
+            interest_lower = interest.lower()
+            for spec in company_specializations:
+                spec_lower = spec.lower()
+                if interest_lower in spec_lower or spec_lower in interest_lower:
+                    matched_specializations += 1
+                    break
+        
+        specialization_confidence = min(matched_specializations / len(interests) if interests else 0, 1.0)
+    
+    confidence_components.append(('specialization_match', specialization_confidence, 0.10))
+    
+    # Calculate weighted average confidence
+    total_confidence = sum(conf * weight for _, conf, weight in confidence_components)
+    total_weight = sum(weight for _, _, weight in confidence_components)
+    
+    final_confidence = total_confidence / total_weight if total_weight > 0 else 0.0
+    
+    # Round to 2 decimal places (e.g., 0.88, 0.82)
+    return round(final_confidence, 2)
+
+
 def _score_company(company: str, interests: List[str], resume_data: Dict = None) -> int:
     """Enhanced company scoring using ML engine and company database"""
     try:
@@ -720,11 +842,18 @@ def _basic_company_score(company: str, interests: List[str]) -> int:
             # Partial match gets moderate score
             score += 12
         # Additional scoring for tech companies with tech interests
-        if any(tech_interest in t for tech_interest in ["ai-ml", "data science", "web development", "cloud", "devops"]) and any(tech_company in text for tech_company in ["microsoft", "google", "amazon", "meta", "adobe", "oracle", "salesforce"]):
-            score += 15
+        # Note: Only check for exact company name matches, not substrings
+        # This prevents false matches (e.g., "Google Ads" matching "Google")
+        tech_companies_exact = ["microsoft", "google", "amazon", "meta", "adobe", "oracle", "salesforce"]
+        if any(tech_interest in t for tech_interest in ["ai-ml", "data science", "web development", "cloud", "devops"]):
+            # Only match if the company name exactly equals or starts with the tech company name
+            if any(text == tc or text.startswith(tc + " ") for tc in tech_companies_exact):
+                score += 15
     
     # 3. Company size and reputation bonus
-    if any(premium_company in text for premium_company in ["microsoft", "google", "amazon", "meta", "apple", "netflix", "uber", "spotify"]):
+    # Note: Only check for exact company name matches, not substrings
+    premium_companies_exact = ["microsoft", "google", "amazon", "meta", "apple", "netflix", "uber", "spotify"]
+    if any(text == pc or text.startswith(pc + " ") for pc in premium_companies_exact):
         score += 10
     elif any(established_company in text for established_company in ["tcs", "infosys", "wipro", "hcl", "accenture", "cognizant"]):
         score += 8
@@ -750,7 +879,9 @@ def _basic_company_score(company: str, interests: List[str]) -> int:
     
     # 8. Gaming interest boosts gaming companies
     if any(d in " ".join(interests) for d in ["gaming", "game development", "unity", "unreal", "game design", "game art", "3d modeling", "animation"]):
-        if any(brand in text for brand in ["unity", "unreal", "epic", "nvidia", "amd", "intel", "microsoft", "sony", "nintendo", "steam"]):
+        # Only match exact company names, not substrings
+        gaming_brands = ["unity", "unreal", "epic", "nvidia", "amd", "intel", "microsoft", "sony", "nintendo", "steam"]
+        if any(text == gb or text.startswith(gb + " ") for gb in gaming_brands):
             score += 20
 
     return max(0, min(100, score))
@@ -849,47 +980,73 @@ def _select_role_for_sector(sector: str, interests: List[str]) -> str:
     return "Intern"
 
 
-def _make_recommendation(company: str, match_score: int, location_hint: Optional[str], interests: List[str]) -> Recommendation:
+def _make_recommendation(company: str, confidence_score: float, location_hint: Optional[str], interests: List[str], resume_data: Dict = None) -> Recommendation:
     import random
     
-    sector = _company_sector(company)
-    sector_details = SECTOR_TO_DETAILS.get(sector, {
-        "roles": ["Intern"],
-        "skills": ["Communication", "Problem Solving", "Teamwork"],
-        "requirements": ["Currently enrolled in a degree program", "Eager to learn"],
-        "benefits": ["Mentorship", "Flexible hours"]
-    })
+    # Get company info from database
+    company_info = ml_engine.company_database.get('companies', {}).get(company, {})
+    sector = company_info.get('sector', _company_sector(company))
     
     # Select role based on company-specific information and interests
     role = _select_role_for_company(company, sector, interests)
     job_type: Literal["internship", "full-time", "part-time"] = "internship"
     location = location_hint or "Remote"
     
-    # Enhanced skills, requirements, and benefits based on sector
-    skills = sector_details["skills"][:6]  # Limit to 6 skills
-    requirements = sector_details["requirements"][:5]  # Limit to 5 requirements
-    benefits = sector_details["benefits"][:6]  # Limit to 6 benefits
+    # Use company-specific data from database, fallback to sector defaults
+    if company_info:
+        skills = company_info.get('required_skills', [])[:6]
+        # Use preferred roles as requirements context
+        preferred_roles = company_info.get('preferred_roles', [])
+        requirements = [
+            f"Interest in {role.lower()}" for role in preferred_roles[:3]
+        ] if preferred_roles else ["Currently enrolled in a degree program", "Eager to learn"]
+        
+        # Generate benefits based on company culture and focus
+        culture = company_info.get('company_culture', '')
+        focus = company_info.get('internship_focus', '')
+        benefits = []
+        if culture:
+            benefits.append(f"Experience {culture.lower()}")
+        if focus:
+            benefits.append(f"Work on {focus.lower()}")
+        benefits.extend(["Mentorship", "Flexible hours", "Learning opportunities"])
+        benefits = benefits[:6]
+    else:
+        # Fallback to sector defaults
+        sector_details = SECTOR_TO_DETAILS.get(sector, {
+            "roles": ["Intern"],
+            "skills": ["Communication", "Problem Solving", "Teamwork"],
+            "requirements": ["Currently enrolled in a degree program", "Eager to learn"],
+            "benefits": ["Mentorship", "Flexible hours"]
+        })
+        skills = sector_details["skills"][:6]
+        requirements = sector_details["requirements"][:5]
+        benefits = sector_details["benefits"][:6]
     
     apply_url = None
     rec_id = f"{abs(hash(company)) % 10_000_000}"
     
-    # Enhanced description based on company and sector
-    if "Technology" in sector:
-        description = f"Join {company} as a {role} and work on cutting-edge technology projects. Gain hands-on experience with modern development tools and methodologies while contributing to real-world solutions."
-    elif "Finance" in sector:
-        description = f"Explore the world of finance and technology at {company} as a {role}. Work on innovative financial products and gain insights into digital banking and fintech solutions."
-    elif "E-commerce" in sector:
-        description = f"Be part of {company}'s digital transformation as a {role}. Learn about e-commerce operations, digital marketing, and customer experience optimization."
-    elif "Automotive" in sector:
-        description = f"Contribute to automotive innovation at {company} as a {role}. Work on manufacturing processes, quality control, and automotive technology development."
-    elif "Energy" in sector:
-        description = f"Join {company} in shaping the future of energy as a {role}. Work on sustainable energy solutions, environmental compliance, and energy analytics."
-    elif "Healthcare" in sector:
-        description = f"Make a difference in healthcare at {company} as a {role}. Contribute to medical research, regulatory compliance, and healthcare technology development."
-    elif "Consulting" in sector:
-        description = f"Develop strategic thinking at {company} as a {role}. Work on business analysis, client projects, and gain exposure to various industries."
+    # Enhanced description based on company database info
+    if company_info:
+        company_desc = company_info.get('description', '')
+        if company_desc:
+            description = f"{company_desc} Join as a {role} and gain hands-on experience while contributing to real-world projects."
+        else:
+            # Fallback to sector-based description
+            if "Technology" in sector:
+                description = f"Join {company} as a {role} and work on cutting-edge technology projects. Gain hands-on experience with modern development tools and methodologies while contributing to real-world solutions."
+            elif "Finance" in sector:
+                description = f"Explore the world of finance and technology at {company} as a {role}. Work on innovative financial products and gain insights into digital banking and fintech solutions."
+            else:
+                description = f"Opportunity at {company} as a {role}. Contribute to projects and learn from industry professionals."
     else:
-        description = f"Opportunity at {company} as a {role}. Contribute to projects and learn from industry professionals."
+        # Fallback to sector-based description
+        if "Technology" in sector:
+            description = f"Join {company} as a {role} and work on cutting-edge technology projects. Gain hands-on experience with modern development tools and methodologies while contributing to real-world solutions."
+        elif "Finance" in sector:
+            description = f"Explore the world of finance and technology at {company} as a {role}. Work on innovative financial products and gain insights into digital banking and fintech solutions."
+        else:
+            description = f"Opportunity at {company} as a {role}. Contribute to projects and learn from industry professionals."
 
     return Recommendation(
         id=rec_id,
@@ -902,30 +1059,28 @@ def _make_recommendation(company: str, match_score: int, location_hint: Optional
         skills=skills,
         requirements=requirements,
         benefits=benefits,
-        matchScore=match_score,
+        matchScore=confidence_score,
         applyUrl=apply_url,
     )
 
 
 @app.post("/recommend")
 def recommend(payload: Union[InterestsPayload, ResumePayload]):
-    # Determine interests list and optional location from payload
-    if payload.type == "interests":
-        interests = _normalize_terms(payload.interests)
-        location = None
-    elif payload.type == "resume":
-        interests = _normalize_terms(payload.interests)
-        location = payload.location
-    else:
-        raise HTTPException(status_code=400, detail="Invalid payload type")
+    try:
+        # Determine interests list and optional location from payload
+        if payload.type == "interests":
+            interests = _normalize_terms(payload.interests)
+            location = None
+        elif payload.type == "resume":
+            interests = _normalize_terms(payload.interests)
+            location = payload.location
+        else:
+            raise HTTPException(status_code=400, detail="Invalid payload type")
 
-    if not interests:
-        raise HTTPException(status_code=400, detail="No interests provided")
+        if not interests:
+            raise HTTPException(status_code=400, detail="No interests provided")
 
-    # Score all companies and pick top N
-    scored = []
-    for name in COMPANY_NAMES:
-        # Create resume data structure for enhanced scoring
+        # Create resume data structure for confidence calculation
         resume_data = {
             'skills': payload.skills if hasattr(payload, 'skills') else [],
             'interests': interests,
@@ -934,47 +1089,85 @@ def recommend(payload: Union[InterestsPayload, ResumePayload]):
             'text': ' '.join(interests + (payload.skills if hasattr(payload, 'skills') else [])),
             'location': payload.location if hasattr(payload, 'location') else None
         }
+
+        # Get all companies from company_database.json only
+        try:
+            companies_in_db = list(ml_engine.company_database.get('companies', {}).keys())
+        except Exception as e:
+            print(f"Error accessing company database: {e}")
+            raise HTTPException(status_code=500, detail=f"Error loading company database: {str(e)}")
         
-        score = _score_company(name, interests, resume_data)
-        scored.append((name, score))
+        if not companies_in_db:
+            raise HTTPException(status_code=500, detail="No companies found in database")
 
-    # Sort by score desc, then name
-    scored.sort(key=lambda x: (-x[1], x[0]))
+        # Calculate confidence scores for all companies
+        scored = []
+        for company_name in companies_in_db:
+            try:
+                confidence = _calculate_confidence_score(company_name, interests, resume_data)
+                if confidence > 0:  # Only include companies with some confidence
+                    scored.append((company_name, confidence))
+            except Exception as e:
+                print(f"Error calculating confidence for {company_name}: {e}")
+                continue  # Skip this company and continue with others
 
-    # Enhanced selection algorithm
-    high_score = [s for s in scored if s[1] >= 70]  # High confidence matches
-    medium_score = [s for s in scored if 40 <= s[1] < 70]  # Medium confidence matches
-    low_score = [s for s in scored if 20 <= s[1] < 40]  # Low confidence matches
-    
-    # Select diverse recommendations
-    selected = []
-    
-    # Prioritize high-score matches
-    if high_score:
-        selected.extend(high_score[:2])  # Take up to 2 high-score matches
-    
-    # Add medium-score matches if we need more
-    if len(selected) < 3 and medium_score:
-        remaining_slots = 3 - len(selected)
-        selected.extend(medium_score[:remaining_slots])
-    
-    # Add low-score matches if we still need more
-    if len(selected) < 3 and low_score:
-        remaining_slots = 3 - len(selected)
-        selected.extend(low_score[:remaining_slots])
-    
-    # Fallback to any companies if nothing scored well
-    if not selected:
-        selected = [(name, 50) for name in COMPANY_NAMES[:3]]
-    
-    # Ensure we have exactly 3 recommendations
-    if len(selected) < 3:
-        remaining_slots = 3 - len(selected)
-        fallback_companies = [name for name in COMPANY_NAMES if name not in [s[0] for s in selected]]
-        selected.extend([(name, 30) for name in fallback_companies[:remaining_slots]])
+        # Sort by confidence desc, then name
+        scored.sort(key=lambda x: (-x[1], x[0]))
 
-    recommendations = [_make_recommendation(name, score, location, interests) for name, score in selected]
+        # Select top recommendations based on confidence thresholds
+        high_confidence = [s for s in scored if s[1] >= 0.75]  # High confidence (0.75+)
+        medium_confidence = [s for s in scored if 0.50 <= s[1] < 0.75]  # Medium confidence (0.50-0.74)
+        low_confidence = [s for s in scored if 0.25 <= s[1] < 0.50]  # Low confidence (0.25-0.49)
+        
+        selected = []
+        
+        # Prioritize high-confidence matches
+        if high_confidence:
+            selected.extend(high_confidence[:2])  # Take up to 2 high-confidence matches
+        
+        # Add medium-confidence matches if we need more
+        if len(selected) < 3 and medium_confidence:
+            remaining_slots = 3 - len(selected)
+            selected.extend(medium_confidence[:remaining_slots])
+        
+        # Add low-confidence matches if we still need more
+        if len(selected) < 3 and low_confidence:
+            remaining_slots = 3 - len(selected)
+            selected.extend(low_confidence[:remaining_slots])
+        
+        # Fallback to top companies by confidence if nothing scored well
+        if not selected and scored:
+            selected = scored[:3]
+        
+        # Ensure we have exactly 3 recommendations (or fewer if not enough companies)
+        if len(selected) < 3 and len(scored) > len(selected):
+            remaining_slots = 3 - len(selected)
+            fallback_companies = [s for s in scored if s[0] not in [sel[0] for sel in selected]]
+            selected.extend(fallback_companies[:remaining_slots])
 
-    return {"recommendations": [r.dict() for r in recommendations]}
+        # Create recommendations with confidence scores
+        recommendations = []
+        for company_name, confidence in selected:
+            try:
+                rec = _make_recommendation(company_name, confidence, location, interests, resume_data)
+                recommendations.append(rec)
+            except Exception as e:
+                print(f"Error creating recommendation for {company_name}: {e}")
+                continue  # Skip this recommendation and continue with others
+
+        if not recommendations:
+            raise HTTPException(status_code=500, detail="Failed to generate any recommendations. Please try again.")
+
+        return {"recommendations": [r.dict() for r in recommendations]}
+    
+    except HTTPException:
+        # Re-raise HTTP exceptions as-is
+        raise
+    except Exception as e:
+        # Catch any other unexpected errors
+        print(f"Unexpected error in /recommend endpoint: {e}")
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
 
 

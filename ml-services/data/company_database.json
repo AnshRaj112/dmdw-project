@@ -1,3003 +1,1001 @@
 {
   "companies": {
     "TATA CONSULTANCY SERVICES LIMITED": {
-    "description": "India’s largest IT services and consulting company delivering end-to-end digital transformations across industries.",
-    "sector": "Technology / IT Services / Consulting",
-    "specializations": ["Web Development", "Cloud", "AI/ML", "Data Engineering"],
-    "preferred_roles": [
-    "Software Development Intern",
-    "Full-Stack Intern",
-    "Data Science Intern",
-    "DevOps Intern",
-    "Cybersecurity Intern",
-    "Business Analyst Intern"
-    ],
-    "required_skills": ["Java", "Python", "JavaScript", "SQL", "Git"],
-    "company_culture": "Client-centric, process-driven, upskilling-focused",
-    "internship_focus": "Enterprise web apps, analytics, cloud-native delivery"
+      "description": "India’s largest IT services company providing consulting, software development, and digital transformation solutions across industries.",
+      "sector": "Technology / IT Services / Consulting",
+      "specializations": [
+        "Web Development",
+        "Cloud Computing",
+        "AI/ML",
+        "Enterprise Solutions"
+      ],
+      "preferred_roles": [
+        "Software Development Intern",
+        "Full Stack Intern",
+        "Cloud Engineering Intern",
+        "DevOps Intern"
+      ],
+      "required_skills": ["Java", "React", "Spring Boot", "AWS", "Git", "SQL"],
+      "company_culture": "Structured, process-driven, and client-centric with a focus on upskilling.",
+      "internship_focus": "Enterprise-grade web solutions and cloud deployment practices."
     },
+
     "INFOSYS LIMITED": {
-    "description": "Global next-gen digital services provider from India with strong focus on engineering, cloud, and AI.",
-    "sector": "Technology / IT Services",
-    "specializations": ["Web & Mobile", "Cloud", "Data & AI", "Cybersecurity"],
-    "preferred_roles": [
-    "Software Engineer Intern",
-    "Cloud Engineer Intern",
-    "AI/ML Intern",
-    "UI/UX Intern",
-    "DevOps Intern"
-    ],
-    "required_skills": ["Java", "React", "Python", "SQL", "Azure/AWS", "Git"],
-    "company_culture": "Learning-first, structured, global delivery",
-    "internship_focus": "Digital transformation, microservices, analytics"
+      "description": "Leading global IT services firm headquartered in Bengaluru, known for digital transformation, AI, and automation services.",
+      "sector": "Technology / Software / Consulting",
+      "specializations": [
+        "Web Development",
+        "AI",
+        "Automation",
+        "Data Analytics"
+      ],
+      "preferred_roles": [
+        "Frontend Developer Intern",
+        "AI/ML Intern",
+        "Data Analyst Intern"
+      ],
+      "required_skills": ["Python", "Flask", "TensorFlow", "SQL", "JavaScript"],
+      "company_culture": "Knowledge-driven, innovation-oriented, emphasizing continuous learning.",
+      "internship_focus": "Digital automation, web app development, and applied AI."
     },
-    "WIPRO LIMITED": {
-    "description": "Indian IT major delivering consulting, engineering, and managed services at scale.",
-    "sector": "Technology / IT Services",
-    "specializations": ["Cloud", "Cybersecurity", "Data Engineering", "DevOps"],
-    "preferred_roles": [
-    "Full-Stack Intern",
-    "Cloud & Infra Intern",
-    "Security Analyst Intern",
-    "Data Analyst Intern"
-    ],
-    "required_skills": ["Python", "Java", "Linux", "AWS/Azure", "CI/CD", "SQL"],
-    "company_culture": "Process-oriented, inclusive, career mobility",
-    "internship_focus": "Cloud migrations, SecOps, data platforms"
-    },
-    "HCLTECH LIMITED": {
-    "description": "Engineering-led Indian tech firm with strengths in product engineering, platforms, and cloud.",
-    "sector": "Technology / IT Services",
-    "specializations": ["Software Engineering", "Cloud", "AI/ML", "Cybersecurity"],
-    "preferred_roles": [
-    "Software Development Intern",
-    "SRE/DevOps Intern",
-    "AI Engineer Intern",
-    "Security Operations Intern"
-    ],
-    "required_skills": ["C++/Java", "Python", "Kubernetes", "Azure/AWS", "Git"],
-    "company_culture": "Engineering-first, outcome-driven, global teams",
-    "internship_focus": "Platform engineering, AI enablement, reliability"
-    },
-    "TECH MAHINDRA LIMITED": {
-    "description": "Indian tech and consulting company with strong presence in telecom, enterprise applications, and digital engineering.",
-    "sector": "Technology / IT Services / Telecom",
-    "specializations": ["Web & Mobile", "5G/Telecom IT", "Cloud", "Analytics"],
-    "preferred_roles": [
-    "Full-Stack Intern",
-    "Mobile Developer Intern",
-    "Data Analyst Intern",
-    "Cloud DevOps Intern"
-    ],
-    "required_skills": ["JavaScript", "React/Angular", "Python", "SQL", "AWS/GCP"],
-    "company_culture": "Agile, collaborative, domain-focused",
-    "internship_focus": "App modernization, cloud, analytics use-cases"
-    },
-    "LTIMINDTREE LIMITED": {
-    "description": "Merged Indian digital engineering and IT services firm specializing in cloud, AI, and customer experience.",
-    "sector": "Technology / IT Services",
-    "specializations": ["Cloud & Data", "AI/ML", "UI/UX", "DevOps"],
-    "preferred_roles": [
-    "Software Engineer Intern",
-    "Data Science Intern",
-    "Product Analyst Intern",
-    "UX Research Intern"
-    ],
-    "required_skills": ["Python", "SQL", "React", "Figma", "AWS/Azure", "Git"],
-    "company_culture": "Customer-obsessed, design-led, continuous learning",
-    "internship_focus": "Digital platforms, CX engineering, data products"
-    },
+
     "ZOHO CORPORATION PRIVATE LIMITED": {
-    "description": "Indian SaaS powerhouse known for end-to-end business apps like CRM, Books, and Creator.",
-    "sector": "SaaS / Enterprise Software",
-    "specializations": ["Web Development", "SaaS Product", "DevOps", "UI/UX"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Full-Stack Intern",
-    "Product Management Intern",
-    "QA Engineer Intern"
-    ],
-    "required_skills": ["Java", "Python", "JavaScript", "SQL", "Git", "REST APIs"],
-    "company_culture": "Bootstrapped, craftsmanship, user-first",
-    "internship_focus": "SaaS feature dev, performance, data security"
+      "description": "Chennai-based SaaS powerhouse creating cloud-based business software including CRM, email, and productivity tools.",
+      "sector": "Software / SaaS / Cloud",
+      "specializations": [
+        "Web Development",
+        "Cloud Computing",
+        "DevOps",
+        "Product Design"
+      ],
+      "preferred_roles": [
+        "Web Developer Intern",
+        "Backend Developer Intern",
+        "UI/UX Developer Intern"
+      ],
+      "required_skills": ["HTML", "CSS", "React", "Node.js", "MySQL"],
+      "company_culture": "Independent, product-driven, and deeply technical with a flat hierarchy.",
+      "internship_focus": "SaaS product engineering and scalable web app architecture."
     },
-    "FRESHWORKS TECHNOLOGIES PRIVATE LIMITED": {
-    "description": "Chennai-born SaaS company building customer and employee engagement products.",
-    "sector": "SaaS / Customer Experience",
-    "specializations": ["Web & API", "Product Engineering", "Data & AI", "Design"],
-    "preferred_roles": [
-    "Full-Stack Intern",
-    "Backend Intern",
-    "Product Design Intern",
-    "Data Analyst Intern"
-    ],
-    "required_skills": ["Node.js", "React", "PostgreSQL", "Python", "Git"],
-    "company_culture": "Product-led, pragmatic, customer-centric",
-    "internship_focus": "Feature development, analytics, UX improvements"
+
+    "FRESHWORKS INDIA PRIVATE LIMITED": {
+      "description": "SaaS unicorn offering customer engagement software for businesses worldwide, focusing on CRM and support tools.",
+      "sector": "Software / CRM / SaaS",
+      "specializations": ["Web Development", "DevOps", "Cloud Computing"],
+      "preferred_roles": [
+        "Frontend Intern",
+        "Full Stack Intern",
+        "DevOps Intern"
+      ],
+      "required_skills": ["React", "Node.js", "Docker", "Kubernetes"],
+      "company_culture": "Energetic, open, and startup-spirited with a customer-first mindset.",
+      "internship_focus": "Customer experience software and cloud-native development."
     },
-    "FLIPKART INTERNET PRIVATE LIMITED": {
-    "description": "India’s leading e-commerce marketplace with large-scale logistics and data platforms.",
-    "sector": "E-commerce / Logistics Tech",
-    "specializations": ["Web & Mobile", "Data Science", "SRE/DevOps", "Product"],
-    "preferred_roles": [
-    "Software Development Intern",
-    "Data Science Intern",
-    "SRE Intern",
-    "Product Analyst Intern"
-    ],
-    "required_skills": ["Java", "Kotlin", "Python", "Spark", "AWS", "Kubernetes"],
-    "company_culture": "Scale-obsessed, metrics-driven, fast iterative",
-    "internship_focus": "Search/reco systems, performance, supply-chain tech"
+
+    "RELIANCE JIO PLATFORMS LIMITED": {
+      "description": "Digital arm of Reliance Industries, pioneering telecom, cloud, and AI-driven consumer tech products.",
+      "sector": "Technology / Telecom / AI",
+      "specializations": [
+        "AI",
+        "Cloud Computing",
+        "Mobile Development",
+        "Data Science"
+      ],
+      "preferred_roles": [
+        "AI Engineer Intern",
+        "Mobile Developer Intern",
+        "Cloud Intern"
+      ],
+      "required_skills": ["Python", "Kotlin", "TensorFlow", "AWS", "SQL"],
+      "company_culture": "Bold, fast-moving, and focused on innovation at national scale.",
+      "internship_focus": "AI-driven mobile and data platforms for millions of users."
     },
-    "ZOMATO LIMITED": {
-    "description": "Food delivery and dining platform with logistics, discovery, and advertising products.",
-    "sector": "Consumer Tech / FoodTech",
-    "specializations": ["Mobile", "Data & Analytics", "Operations Tech", "UI/UX"],
-    "preferred_roles": [
-    "Android/iOS Intern",
-    "Data Analyst Intern",
-    "Product Intern",
-    "UI/UX Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "React", "SQL", "Python", "Figma", "Git"],
-    "company_culture": "Ownership, frugality, bias for action",
-    "internship_focus": "Consumer app features, ops optimization, analytics"
+
+    "PAYTM (ONE97 COMMUNICATIONS LIMITED)": {
+      "description": "India’s leading fintech super-app offering digital payments, banking, and commerce solutions.",
+      "sector": "Fintech / Mobile / Payments",
+      "specializations": [
+        "Mobile Development",
+        "Web Development",
+        "AI",
+        "Blockchain"
+      ],
+      "preferred_roles": [
+        "Android Developer Intern",
+        "iOS Developer Intern",
+        "Backend Developer Intern"
+      ],
+      "required_skills": ["Flutter", "Kotlin", "Swift", "Node.js", "Firebase"],
+      "company_culture": "Fast-paced and data-driven with a strong focus on scalability.",
+      "internship_focus": "Building scalable, secure fintech mobile applications."
     },
-    "BUNDL TECHNOLOGIES PRIVATE LIMITED (SWIGGY)": {
-    "description": "On-demand delivery platform spanning food, quick commerce, and logistics.",
-    "sector": "Consumer Tech / Logistics",
-    "specializations": ["Mobile", "Data Science", "Routing/Maps", "SRE/DevOps"],
-    "preferred_roles": [
-    "Mobile Developer Intern",
-    "Data Science Intern",
-    "Backend Intern",
-    "SRE Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "Go/Java", "Python", "SQL", "Kubernetes"],
-    "company_culture": "Experimentation, data-first, high velocity",
-    "internship_focus": "Dispatch optimization, personalization, reliability"
+
+    "WIPRO LIMITED": {
+      "description": "Global IT, consulting, and business process services company specializing in digital transformation and cybersecurity.",
+      "sector": "Technology / Consulting / Cybersecurity",
+      "specializations": ["Cybersecurity", "Cloud Computing", "DevOps"],
+      "preferred_roles": [
+        "Security Analyst Intern",
+        "Cloud Engineer Intern",
+        "DevOps Intern"
+      ],
+      "required_skills": ["Linux", "AWS", "Docker", "SIEM", "Python"],
+      "company_culture": "Inclusive, disciplined, and technically rigorous with a focus on global delivery.",
+      "internship_focus": "Security operations, cloud governance, and automation pipelines."
     },
-    "ONE97 COMMUNICATIONS LIMITED (PAYTM)": {
-    "description": "Indian fintech platform across payments, lending, and commerce.",
-    "sector": "Fintech / Payments",
-    "specializations": ["Payments", "Risk Analytics", "Mobile", "Cloud"],
-    "preferred_roles": [
-    "Android/iOS Intern",
-    "Data Analyst Intern",
-    "Backend Intern",
-    "Product Analyst Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "Java/Go", "SQL", "Kafka", "AWS", "Git"],
-    "company_culture": "Merchant-first, data-driven, ship-fast",
-    "internship_focus": "Payments scale, risk systems, merchant tools"
+
+    "TECH MAHINDRA LIMITED": {
+      "description": "Part of Mahindra Group, delivering digital transformation and IT solutions globally with focus on telecom and AI.",
+      "sector": "Technology / IT Services",
+      "specializations": [
+        "AI",
+        "Blockchain",
+        "Web Development",
+        "Cloud Computing"
+      ],
+      "preferred_roles": [
+        "Blockchain Intern",
+        "AI Engineer Intern",
+        "Web Developer Intern"
+      ],
+      "required_skills": ["Solidity", "Python", "TensorFlow", "AWS"],
+      "company_culture": "Collaborative, flexible, and entrepreneurial with a tech-forward vision.",
+      "internship_focus": "Applied AI and decentralized application development."
     },
-    "PHONEPE PRIVATE LIMITED": {
-    "description": "UPI-first Indian fintech with a super-app ecosystem for payments and commerce.",
-    "sector": "Fintech / Payments",
-    "specializations": ["Mobile", "UPI/Payments", "Data Platform", "SRE"],
-    "preferred_roles": [
-    "Android Intern",
-    "Backend Intern",
-    "Data Engineering Intern",
-    "SRE Intern"
-    ],
-    "required_skills": ["Kotlin", "Java/Go", "Hive/Spark", "Kafka", "Kubernetes"],
-    "company_culture": "Reliability-focused, performance-heavy, pragmatic",
-    "internship_focus": "UPI scale, financial graph, platform reliability"
+
+    "HCL TECHNOLOGIES LIMITED": {
+      "description": "Major IT services firm offering cloud, cybersecurity, and infrastructure management services worldwide.",
+      "sector": "Technology / Cloud / Cybersecurity",
+      "specializations": ["Cloud Computing", "Cybersecurity", "DevOps"],
+      "preferred_roles": [
+        "Cloud Engineer Intern",
+        "Cybersecurity Analyst Intern",
+        "DevOps Intern"
+      ],
+      "required_skills": ["Azure", "AWS", "Python", "Kubernetes", "Linux"],
+      "company_culture": "Employee-first and innovation-oriented, focusing on long-term development.",
+      "internship_focus": "Hybrid cloud environments, automation, and digital security."
     },
+
+    "POLYGON LABS INDIA PRIVATE LIMITED": {
+      "description": "India’s leading blockchain scaling solution provider enabling Web3 applications and decentralized finance.",
+      "sector": "Blockchain / Web3 / Crypto",
+      "specializations": ["Blockchain", "Smart Contracts", "Web3 Development"],
+      "preferred_roles": [
+        "Blockchain Developer Intern",
+        "Smart Contract Intern",
+        "Crypto Analyst Intern"
+      ],
+      "required_skills": ["Solidity", "Rust", "Ethereum", "JavaScript"],
+      "company_culture": "Innovative, decentralized, and open-source oriented.",
+      "internship_focus": "Layer-2 blockchain scaling, DeFi protocols, and decentralized apps."
+    },
+
     "RAZORPAY SOFTWARE PRIVATE LIMITED": {
-    "description": "Full-stack Indian payments and banking platform for businesses.",
-    "sector": "Fintech / Payments / Banking-as-a-Service",
-    "specializations": ["Payments", "Risk/AML", "DevOps", "Data & AI"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Full-Stack Intern",
-    "Data Science Intern",
-    "DevOps Intern"
-    ],
-    "required_skills": ["Java/Go", "Python", "PostgreSQL", "Kafka", "AWS", "Git"],
-    "company_culture": "Builder culture, customer-obsessed, compliance-aware",
-    "internship_focus": "Payment APIs, risk models, fintech tooling"
+      "description": "Fintech unicorn providing payment gateway and banking APIs for online businesses in India.",
+      "sector": "Fintech / Payments / Software",
+      "specializations": ["Web Development", "DevOps", "Cloud Computing"],
+      "preferred_roles": [
+        "Backend Developer Intern",
+        "SRE Intern",
+        "API Developer Intern"
+      ],
+      "required_skills": ["Node.js", "Django", "AWS", "Docker", "SQL"],
+      "company_culture": "Pragmatic, growth-focused, and community-driven.",
+      "internship_focus": "Fintech APIs, cloud reliability, and scalable microservices."
     },
-    "CRED (DREAMPLUG TECHNOLOGIES PRIVATE LIMITED)": {
-    "description": "Members-only credit and fintech platform focusing on premium consumer experiences.",
-    "sector": "Fintech / Consumer Apps",
-    "specializations": ["Mobile", "Product Design", "Data Analytics", "Branding"],
-    "preferred_roles": [
-    "iOS/Android Intern",
-    "Product Design Intern",
-    "Data Analyst Intern",
-    "Growth Intern"
-    ],
-    "required_skills": ["Swift/Kotlin", "React Native", "SQL", "Figma", "Python"],
-    "company_culture": "Design-forward, high-bar, experimentation-heavy",
-    "internship_focus": "Premium UX, engagement loops, growth analytics"
+
+    "CRED": {
+      "description": "Fintech platform rewarding users for paying credit card bills, known for sleek design and top-tier engineering.",
+      "sector": "Fintech / Mobile / Software",
+      "specializations": ["Mobile Development", "AI", "Web Development"],
+      "preferred_roles": [
+        "Frontend Intern",
+        "Mobile App Developer Intern",
+        "Data Intern"
+      ],
+      "required_skills": ["React Native", "TypeScript", "Python", "Kotlin"],
+      "company_culture": "Design-obsessed, high-performance, and quality-driven.",
+      "internship_focus": "App experience design and AI-driven personalization."
     },
+
+    "BYJU’S (THINK AND LEARN PRIVATE LIMITED)": {
+      "description": "India’s largest edtech company creating learning platforms powered by AI and gamified experiences.",
+      "sector": "EdTech / AI / Learning",
+      "specializations": ["AI", "Data Science", "Web Development"],
+      "preferred_roles": [
+        "Data Science Intern",
+        "AI Intern",
+        "Frontend Intern"
+      ],
+      "required_skills": ["Python", "Pandas", "TensorFlow", "React"],
+      "company_culture": "Fast-paced, learner-focused, and performance-driven.",
+      "internship_focus": "AI-driven adaptive learning and content analytics."
+    },
+
+    "INMOBI TECHNOLOGY SERVICES": {
+      "description": "Global ad-tech unicorn from Bengaluru, specializing in mobile advertising, AI personalization, and data science.",
+      "sector": "AdTech / Mobile / AI",
+      "specializations": ["Data Science", "AI", "Mobile Development"],
+      "preferred_roles": [
+        "Data Analyst Intern",
+        "AI Intern",
+        "Mobile Engineer Intern"
+      ],
+      "required_skills": ["SQL", "Python", "TensorFlow", "Kotlin"],
+      "company_culture": "Performance-driven, experimental, and open to innovation.",
+      "internship_focus": "AI-based ad optimization and user personalization."
+    },
+
+    "CLOUDSEK INFORMATION SECURITY PRIVATE LIMITED": {
+      "description": "Cybersecurity startup offering AI-powered digital risk monitoring and threat intelligence platforms.",
+      "sector": "Cybersecurity / AI / SaaS",
+      "specializations": ["Cybersecurity", "AI", "Data Analytics"],
+      "preferred_roles": [
+        "Threat Analyst Intern",
+        "AI Research Intern",
+        "Backend Intern"
+      ],
+      "required_skills": [
+        "Python",
+        "Flask",
+        "ML Models",
+        "Linux",
+        "Threat Intel"
+      ],
+      "company_culture": "Mission-driven, research-oriented, and collaborative.",
+      "internship_focus": "AI for threat prediction and cyber risk modeling."
+    },
+
+    "ZOMATO LIMITED": {
+      "description": "India’s leading food delivery and restaurant discovery platform integrating digital marketing, logistics, and customer analytics.",
+      "sector": "FoodTech / Digital Marketing / E-commerce",
+      "specializations": [
+        "Digital Marketing",
+        "Sales",
+        "Analytics",
+        "Operations"
+      ],
+      "preferred_roles": [
+        "Digital Marketing Intern",
+        "Sales Intern",
+        "Operations Intern"
+      ],
+      "required_skills": [
+        "SEO",
+        "Google Ads",
+        "Excel",
+        "Communication",
+        "CRM Tools"
+      ],
+      "company_culture": "Data-driven, customer-obsessed, and fast-paced.",
+      "internship_focus": "Market growth strategy, SEO, and campaign management."
+    },
+
+    "SWIGGY PRIVATE LIMITED": {
+      "description": "India’s top food-tech startup revolutionizing on-demand logistics and customer acquisition through digital media.",
+      "sector": "FoodTech / Logistics / Marketing",
+      "specializations": ["Digital Marketing", "Sales", "Operations"],
+      "preferred_roles": [
+        "Marketing Intern",
+        "Business Development Intern",
+        "Operations Intern"
+      ],
+      "required_skills": [
+        "Excel",
+        "Google Analytics",
+        "Communication",
+        "Negotiation"
+      ],
+      "company_culture": "Energetic, problem-solving, and experimentation-oriented.",
+      "internship_focus": "Campaign marketing, partner onboarding, and supply chain optimization."
+    },
+
     "ZERODHA BROKING LIMITED": {
-    "description": "India’s largest retail brokerage known for tech-first investing platforms like Kite.",
-    "sector": "Fintech / Capital Markets",
-    "specializations": ["Web Platforms", "Trading Systems", "Data Engineering"],
-    "preferred_roles": [
-    "Full-Stack Intern",
-    "Backend Intern",
-    "Data Engineer Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["Python", "Go", "React", "PostgreSQL", "Redis", "Git"],
-    "company_culture": "Lean, profitable, user-first",
-    "internship_focus": "Latency-sensitive systems, investor tools, analytics"
+      "description": "India’s largest retail stock brokerage pioneering fintech solutions and financial literacy initiatives.",
+      "sector": "Finance / FinTech / Trading",
+      "specializations": ["Finance", "Analytics", "Product Management"],
+      "preferred_roles": [
+        "Finance Intern",
+        "Market Analyst Intern",
+        "Business Analyst Intern"
+      ],
+      "required_skills": [
+        "Excel",
+        "SQL",
+        "Financial Modeling",
+        "Python",
+        "Tableau"
+      ],
+      "company_culture": "Transparent, innovation-led, and financially mindful.",
+      "internship_focus": "Market analysis, investment tools, and retail trading insights."
     },
-    "GROWW (NEXTBILLION TECHNOLOGY PRIVATE LIMITED)": {
-    "description": "Investment platform for stocks, MF, and F&O focused on simplicity and scale.",
-    "sector": "Fintech / Investing",
-    "specializations": ["Mobile", "Backend", "Risk Analytics", "UI/UX"],
-    "preferred_roles": [
-    "Android/iOS Intern",
-    "Backend Intern",
-    "Data Analyst Intern",
-    "UX Research Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "Java/Go", "Python", "SQL", "Figma"],
-    "company_culture": "Simplicity, frugality, ownership",
-    "internship_focus": "Onboarding funnels, reliability, data insights"
-    },
-    "UPSTOX (RKSV SECURITIES INDIA PRIVATE LIMITED)": {
-    "description": "Tech-driven discount broker offering low-latency trading platforms.",
-    "sector": "Fintech / Capital Markets",
-    "specializations": ["Mobile & Web", "Realtime Systems", "Data"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "Backend Intern",
-    "SRE Intern",
-    "Data Analyst Intern"
-    ],
-    "required_skills": ["React", "TypeScript", "Go/Java", "Kafka", "SQL", "Linux"],
-    "company_culture": "Performance-focused, pragmatic, scrappy",
-    "internship_focus": "Trading UX, infra reliability, data pipelines"
-    },
-    "POLYGON TECHNOLOGY (MATIC)": {
-    "description": "India-founded Layer-2 blockchain ecosystem enabling scalable Ethereum applications.",
-    "sector": "Blockchain / Web3",
-    "specializations": ["Blockchain Protocol", "dApps", "Security", "Tooling"],
-    "preferred_roles": [
-    "Blockchain Developer Intern",
-    "Smart Contract Intern",
-    "Security Research Intern",
-    "DevRel Intern"
-    ],
-    "required_skills": ["Solidity", "Rust", "EVM", "Web3.js/ethers.js", "Git"],
-    "company_culture": "Open-source, research-driven, community-first",
-    "internship_focus": "Protocol/tooling development, audits, ecosystem growth"
-    },
-    "COINDCX": {
-    "description": "Indian crypto exchange focusing on compliance, security, and education.",
-    "sector": "Blockchain / Fintech",
-    "specializations": ["Exchange Tech", "Security", "Data", "Mobile"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Security Analyst Intern",
-    "Data Analyst Intern",
-    "Android/iOS Intern"
-    ],
-    "required_skills": ["Go/Java", "Python", "SQL", "Kubernetes", "Kafka"],
-    "company_culture": "Security-first, regulatory-aware, fast-moving",
-    "internship_focus": "Exchange features, fraud/risk systems, insights"
-    },
-    "COINSWITCH": {
-    "description": "Indian crypto investment platform simplifying digital asset investing.",
-    "sector": "Fintech / Crypto",
-    "specializations": ["Mobile", "Data", "Security", "Product"],
-    "preferred_roles": [
-    "Android/iOS Intern",
-    "Data Analyst Intern",
-    "Backend Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "Python", "SQL", "React", "Git"],
-    "company_culture": "Compliance-first, user-centric, iterative",
-    "internship_focus": "User safety, feature velocity, analytics"
-    },
-    "WAZIRX": {
-    "description": "Indian-origin crypto exchange focusing on liquidity, security, and education.",
-    "sector": "Blockchain / Fintech",
-    "specializations": ["Backend", "Security", "Data", "Customer Ops"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Security Intern",
-    "Data Analyst Intern",
-    "Compliance Intern"
-    ],
-    "required_skills": ["Node.js/Go", "PostgreSQL", "Python", "Linux", "Git"],
-    "company_culture": "Developer-friendly, transparent, education-focused",
-    "internship_focus": "Risk monitoring, exchange reliability, ops tooling"
-    },
-    "BROWSERSTACK SOFTWARE PRIVATE LIMITED": {
-    "description": "Mumbai-based SaaS platform for cross-browser and mobile app testing at scale.",
-    "sector": "SaaS / DevTools",
-    "specializations": ["Web Testing", "Mobile Testing", "SRE", "Tooling"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Full-Stack Intern",
-    "SRE Intern",
-    "QA Automation Intern"
-    ],
-    "required_skills": ["Java/Go", "Python", "Selenium", "Kubernetes", "AWS"],
-    "company_culture": "Engineering excellence, reliability, customer focus",
-    "internship_focus": "Automation tooling, reliability, developer UX"
-    },
-    "POSTMAN PRIVATE LIMITED (INDIA)": {
-    "description": "API platform founded in India enabling API design, testing, and collaboration.",
-    "sector": "SaaS / DevTools",
-    "specializations": ["APIs", "Developer Experience", "Data", "Security"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Developer Advocate Intern",
-    "Product Intern",
-    "Security Intern"
-    ],
-    "required_skills": ["Node.js", "Go", "GraphQL/REST", "SQL", "Git"],
-    "company_culture": "Developer-first, open standards, docs excellence",
-    "internship_focus": "API workflows, SDKs, analytics, platform security"
-    },
-    "LAMBADATEST INC (INDIA OPERATIONS)": {
-    "description": "India-built cloud testing platform for web and mobile apps.",
-    "sector": "SaaS / DevTools / Testing",
-    "specializations": ["Cross-browser Testing", "CI/CD", "SRE", "Integrations"],
-    "preferred_roles": [
-    "Full-Stack Intern",
-    "QA Automation Intern",
-    "DevOps Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["JavaScript", "Selenium", "Python", "Docker", "GitHub Actions"],
-    "company_culture": "Developer empathy, integration-first, fast shipping",
-    "internship_focus": "CI integrations, test infra, dashboard UX"
-    },
-    "RELIANCE JIO INFOCOMM LIMITED": {
-    "description": "India’s digital services and telecom platform powering connectivity and apps.",
-    "sector": "Telecom / Digital Services",
-    "specializations": ["5G/Edge", "Cloud", "Mobile Apps", "Security"],
-    "preferred_roles": [
-    "Android/iOS Intern",
-    "Backend Intern",
-    "Cloud Intern",
-    "Security Analyst Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "Java", "Python", "Kubernetes", "Azure"],
-    "company_culture": "Scale-driven, infrastructure-first, execution-focused",
-    "internship_focus": "Consumer apps, network analytics, cloud-native"
-    },
-    "BHARTI AIRTEL LIMITED (AIRTEL DIGITAL)": {
-    "description": "Indian telecom leader with digital products, payments, and cloud initiatives.",
-    "sector": "Telecom / Digital",
-    "specializations": ["Web & Mobile", "Cloud", "Data Platforms", "Security"],
-    "preferred_roles": [
-    "Full-Stack Intern",
-    "Data Engineering Intern",
-    "Cloud/DevOps Intern",
-    "Security Intern"
-    ],
-    "required_skills": ["React", "Node.js", "Python", "Kafka", "AWS/Azure"],
-    "company_culture": "Customer-first, performance-focused, agile",
-    "internship_focus": "OTT products, data lakes, reliability engineering"
-    },
-    "TATA ELXSI LIMITED": {
-    "description": "Design and technology services arm focusing on automotive, media, and healthcare.",
-    "sector": "Design & Engineering Services",
-    "specializations": ["Embedded", "AI/ML", "UI/UX", "AR/VR"],
-    "preferred_roles": [
-    "Software Intern",
-    "Computer Vision Intern",
-    "UX Design Intern",
-    "QA Intern"
-    ],
-    "required_skills": ["C/C++", "Python", "OpenCV", "Figma", "Linux", "Git"],
-    "company_culture": "R&D-led, domain deep, design thinking",
-    "internship_focus": "HMI, vision systems, OTT, medtech UX"
-    },
-    "TATA 1MG TECHNOLOGIES PRIVATE LIMITED": {
-    "description": "Indian digital health platform for e-pharmacy, diagnostics, and telemedicine.",
-    "sector": "HealthTech / E-commerce",
-    "specializations": ["Web & Mobile", "Data Analytics", "Growth", "Ops Tech"],
-    "preferred_roles": [
-    "Android/iOS Intern",
-    "Backend Intern",
-    "Data Analyst Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "Java/Spring", "SQL", "Python"],
-    "company_culture": "Healthcare impact, compliance, user trust",
-    "internship_focus": "Consumer UX, logistics, personalization"
-    },
-    "PHARMEASY (API HOLDINGS)": {
-    "description": "E-pharmacy and diagnostics platform with deep supply-chain operations.",
-    "sector": "HealthTech / Logistics",
-    "specializations": ["Mobile", "Backend", "Analytics", "Operations"],
-    "preferred_roles": [
-    "Mobile Developer Intern",
-    "Backend Intern",
-    "Data Analyst Intern",
-    "SRE Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "Node.js/Java", "SQL", "Kafka", "AWS"],
-    "company_culture": "Ops-heavy, data-informed, compliance-first",
-    "internship_focus": "Inventory, routing, growth analytics"
-    },
-    "PRACTO TECHNOLOGIES PRIVATE LIMITED": {
-    "description": "Indian health platform for doctor discovery, telemedicine, and EMR.",
-    "sector": "HealthTech",
-    "specializations": ["Web & Mobile", "Data", "Security", "UI/UX"],
-    "preferred_roles": [
-    "Full-Stack Intern",
-    "Data Analyst Intern",
-    "Security Intern",
-    "Product Design Intern"
-    ],
-    "required_skills": ["React", "Node.js", "SQL", "Python", "Figma", "OWASP"],
-    "company_culture": "Patient-first, privacy-centric, iterative",
-    "internship_focus": "Telemedicine flows, EMR UX, privacy tooling"
-    },
-    "OLA (ANI TECHNOLOGIES PRIVATE LIMITED)": {
-    "description": "Indian ride-hailing and mobility platform; expanding into EVs.",
-    "sector": "Mobility / Consumer Tech",
-    "specializations": ["Mobile", "Maps/Routing", "Data", "SRE"],
-    "preferred_roles": [
-    "Android Intern",
-    "iOS Intern",
-    "Backend Intern",
-    "Data Engineering Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "Java/Go", "SQL", "Kafka", "Kubernetes"],
-    "company_culture": "High-velocity, ops-focused, scale at speed",
-    "internship_focus": "Dispatch, pricing, reliability, EV tech"
-    },
-    "OLA ELECTRIC": {
-    "description": "Indian EV manufacturer building scooters and electric mobility ecosystem.",
-    "sector": "EV / Manufacturing / Software",
-    "specializations": ["Embedded", "Mobile", "Data", "Cloud"],
-    "preferred_roles": [
-    "Embedded Software Intern",
-    "Mobile Intern",
-    "Cloud Intern",
-    "Data Analyst Intern"
-    ],
-    "required_skills": ["C/C++", "Kotlin/Swift", "Python", "Azure/AWS", "Git"],
-    "company_culture": "Hardware-software integration, rapid iteration",
-    "internship_focus": "Telematics, mobile UX, analytics, OTA"
-    },
-    "URBAN COMPANY": {
-    "description": "Marketplace for home services with consumer and pro-facing apps.",
-    "sector": "Consumer Tech / Services",
-    "specializations": ["Mobile", "Ops Tech", "Data", "Design"],
-    "preferred_roles": [
-    "Android/iOS Intern",
-    "Product Intern",
-    "Data Analyst Intern",
-    "UI/UX Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "React Native", "SQL", "Figma", "Python"],
-    "company_culture": "Quality-first, ops excellence, trust-centric",
-    "internship_focus": "Booking flows, onboarding, quality ops"
-    },
-    "NYKAA (FSN E-COMMERCE VENTURES)": {
-    "description": "Beauty and lifestyle e-commerce with strong content and private labels.",
-    "sector": "E-commerce / Retail",
-    "specializations": ["Web & Mobile", "Data", "Growth", "Design"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "Android/iOS Intern",
-    "Data Analyst Intern",
-    "Visual Design Intern"
-    ],
-    "required_skills": ["React/Next.js", "Kotlin/Swift", "SQL", "Figma", "Python"],
-    "company_culture": "Merchandising-driven, consumer delight, fast cycles",
-    "internship_focus": "Catalog UX, personalization, funnel optimization"
-    },
-    "MEESHO": {
-    "description": "Social commerce platform enabling small businesses to sell online.",
-    "sector": "E-commerce / Social",
-    "specializations": ["Mobile", "Growth", "Data", "Ops Tech"],
-    "preferred_roles": [
-    "Android Intern",
-    "Backend Intern",
-    "Data Engineer Intern",
-    "Product Analyst Intern"
-    ],
-    "required_skills": ["Kotlin", "Java/Go", "SQL", "Kafka", "AWS"],
-    "company_culture": "Seller-first, metrics-heavy, scrappy",
-    "internship_focus": "Seller tools, logistics, trust & safety"
-    },
-    "Udaan": {
-    "description": "B2B commerce platform connecting manufacturers, traders, and retailers.",
-    "sector": "B2B E-commerce / Supply Chain",
-    "specializations": ["Web & Mobile", "Supply Chain Tech", "Data", "SRE"],
-    "preferred_roles": [
-    "Full-Stack Intern",
-    "Backend Intern",
-    "Data Analyst Intern",
-    "SRE Intern"
-    ],
-    "required_skills": ["Java/Go", "React", "SQL", "Kafka", "Kubernetes"],
-    "company_culture": "B2B-first, ops-heavy, frugal innovation",
-    "internship_focus": "Inventory, routing, credit risk, reliability"
-    },
-    "BIGBASKET": {
-    "description": "Online grocery platform with deep fulfillment and last-mile tech.",
-    "sector": "E-commerce / Logistics",
-    "specializations": ["Mobile", "Ops Tech", "Data", "Product"],
-    "preferred_roles": [
-    "Android/iOS Intern",
-    "Backend Intern",
-    "Data Analyst Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "Node.js/Java", "SQL", "Python"],
-    "company_culture": "Ops excellence, customer trust, efficiency",
-    "internship_focus": "Fulfillment tech, demand forecasting, UX"
-    },
-    "DELHIVERY LIMITED": {
-    "description": "Tech-enabled logistics and supply chain company operating at national scale.",
-    "sector": "Logistics / Supply Chain",
-    "specializations": ["Routing", "Data Platforms", "SRE", "Web & Mobile"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Data Engineering Intern",
-    "SRE Intern",
-    "Frontend Intern"
-    ],
-    "required_skills": ["Java/Go", "Python", "Kafka", "Kubernetes", "SQL"],
-    "company_culture": "Network-first, optimization-heavy, reliability",
-    "internship_focus": "Route optimization, tracking, infra resilience"
-    },
-    "XPRESSBEES": {
-    "description": "Logistics company specializing in e-commerce deliveries and 3PL.",
-    "sector": "Logistics / 3PL",
-    "specializations": ["Ops Tech", "Data", "Mobile", "SRE"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Android Intern",
-    "Data Analyst Intern",
-    "DevOps Intern"
-    ],
-    "required_skills": ["Java/Go", "Kotlin", "SQL", "Kafka", "Docker"],
-    "company_culture": "Operational rigor, lean, KPI-driven",
-    "internship_focus": "Network visibility, SLA tracking, dashboards"
-    },
-    "EDELWEISS FINANCIAL SERVICES": {
-    "description": "Indian diversified financial services group spanning wealth, credit, and asset management.",
-    "sector": "Finance / BFSI",
-    "specializations": ["Analytics", "Risk", "Products", "Operations"],
-    "preferred_roles": [
-    "Finance Analyst Intern",
-    "Risk Analyst Intern",
-    "Data Analyst Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["Excel", "SQL", "Python", "Financial Modeling"],
-    "company_culture": "Performance-driven, governance-focused",
-    "internship_focus": "Risk models, product analytics, ops excellence"
-    },
-    "BAJAJ FINANCE LIMITED": {
-    "description": "Leading NBFC in India with consumer lending and payments products.",
-    "sector": "Finance / Lending",
-    "specializations": ["Risk Analytics", "Data Engineering", "Products"],
-    "preferred_roles": [
-    "Data Analyst Intern",
-    "Risk Analyst Intern",
-    "Product Intern",
-    "BI Intern"
-    ],
-    "required_skills": ["SQL", "Python", "Power BI", "Excel", "Stats"],
-    "company_culture": "Metrics-heavy, compliance-first, speed",
-    "internship_focus": "Credit risk, customer lifecycle, analytics"
-    },
-    "TATA CAPITAL LIMITED": {
-    "description": "Financial services arm of Tata Group offering loans, wealth, and treasury.",
-    "sector": "Finance / BFSI",
-    "specializations": ["Corporate Finance", "Retail Lending", "Analytics"],
-    "preferred_roles": [
-    "Finance Intern",
-    "Risk Analyst Intern",
-    "Data Analyst Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["Excel", "SQL", "Python", "Financial Analysis"],
-    "company_culture": "Trust-led, ethical, process-strong",
-    "internship_focus": "Portfolio analytics, ops improvement, products"
-    },
-    "ICICI BANK LIMITED": {
-    "description": "Major Indian bank with strong digital banking and data initiatives.",
-    "sector": "Banking / BFSI",
-    "specializations": ["Digital Banking", "Risk", "Analytics", "Security"],
-    "preferred_roles": [
-    "Data Analyst Intern",
-    "Product Intern",
-    "Security Analyst Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["SQL", "Python", "Excel", "Power BI", "RegTech basics"],
-    "company_culture": "Performance-focused, compliance-strong, innovative",
-    "internship_focus": "Digital journeys, fraud analytics, ops risk"
-    },
+
     "HDFC BANK LIMITED": {
-    "description": "India’s largest private bank with deep digital product stack.",
-    "sector": "Banking / BFSI",
-    "specializations": ["Payments", "Data", "Security", "Products"],
-    "preferred_roles": [
-    "Data Analyst Intern",
-    "Product Analyst Intern",
-    "Security Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["SQL", "Python", "Excel", "Power BI", "APIs"],
-    "company_culture": "Customer trust, governance, delivery focus",
-    "internship_focus": "Payments journeys, analytics, digital ops"
+      "description": "India’s premier private sector bank offering financial services, retail banking, and credit operations nationwide.",
+      "sector": "Finance / Banking / Financial Services",
+      "specializations": ["Finance", "Operations", "Sales"],
+      "preferred_roles": [
+        "Finance Intern",
+        "Operations Intern",
+        "Sales Intern"
+      ],
+      "required_skills": ["Excel", "CRM", "Financial Reporting", "Analytics"],
+      "company_culture": "Professional, structured, and customer-first.",
+      "internship_focus": "Banking operations, client acquisition, and financial reporting."
     },
-    "AXIS BANK LIMITED": {
-    "description": "Private bank in India with strong partnerships and digital channels.",
-    "sector": "Banking / BFSI",
-    "specializations": ["Digital Products", "Risk", "Analytics", "Marketing"],
-    "preferred_roles": [
-    "Product Intern",
-    "Data Analyst Intern",
-    "Growth Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["Excel", "SQL", "Python", "JIRA", "PowerPoint"],
-    "company_culture": "Collaborative, KPI-driven, customer-first",
-    "internship_focus": "Journeys, dashboards, product analytics"
-    },
+
     "KOTAK MAHINDRA BANK LIMITED": {
-    "description": "Indian private bank with wealth, retail, and digital offerings.",
-    "sector": "Banking / BFSI",
-    "specializations": ["WealthTech", "Risk", "Analytics", "Mobile"],
-    "preferred_roles": [
-    "Data Analyst Intern",
-    "Product Intern",
-    "Android/iOS Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["SQL", "Python", "Kotlin/Swift", "Excel"],
-    "company_culture": "Governance-first, innovation-led, prudent",
-    "internship_focus": "Wealth analytics, mobile UX, ops efficiency"
+      "description": "Top-tier Indian bank specializing in wealth management, digital banking, and financial advisory.",
+      "sector": "Finance / Banking / Investment",
+      "specializations": ["Finance", "Business Strategy", "Sales"],
+      "preferred_roles": [
+        "Financial Analyst Intern",
+        "Business Strategy Intern",
+        "Relationship Manager Intern"
+      ],
+      "required_skills": [
+        "Excel",
+        "Finance",
+        "Analytical Thinking",
+        "Communication"
+      ],
+      "company_culture": "Client-centric and high-performance-driven.",
+      "internship_focus": "Portfolio management, digital finance, and strategic planning."
     },
-    "INDUSIND BANK LIMITED": {
-    "description": "Indian bank with retail and corporate banking focus and digital initiatives.",
-    "sector": "Banking / BFSI",
-    "specializations": ["Payments", "Risk", "Analytics", "Operations"],
-    "preferred_roles": [
-    "Risk Intern",
-    "Data Analyst Intern",
-    "Product Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["Excel", "SQL", "Python", "Power BI"],
-    "company_culture": "Operational rigor, customer-centricity",
-    "internship_focus": "Risk controls, dashboards, product optimization"
+
+    "NYKAA E-RETAIL PRIVATE LIMITED": {
+      "description": "India’s top beauty and wellness e-commerce platform leveraging influencer-driven digital marketing and branding.",
+      "sector": "E-commerce / Beauty / Digital Marketing",
+      "specializations": ["Digital Marketing", "Branding", "UI/UX Design"],
+      "preferred_roles": [
+        "Social Media Intern",
+        "Marketing Intern",
+        "Brand Design Intern"
+      ],
+      "required_skills": [
+        "Canva",
+        "Social Media Analytics",
+        "Content Creation",
+        "SEO"
+      ],
+      "company_culture": "Creative, inclusive, and trend-driven.",
+      "internship_focus": "Digital branding, influencer partnerships, and customer engagement."
     },
-    "YES BANK LIMITED": {
-    "description": "Indian private bank with SME and retail focus, rebuilding digital stack.",
-    "sector": "Banking / BFSI",
-    "specializations": ["Digital Banking", "Risk", "Analytics", "APIs"],
-    "preferred_roles": [
-    "Data Analyst Intern",
-    "Product Intern",
-    "API Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["SQL", "Python", "Excel", "API basics"],
-    "company_culture": "Rebuilding, resilient, partnership-led",
-    "internship_focus": "API products, analytics, customer journeys"
+
+    "RELIANCE RETAIL LIMITED": {
+      "description": "Retail arm of Reliance Industries, India’s largest retail network covering fashion, groceries, and digital commerce.",
+      "sector": "Retail / Business / E-commerce",
+      "specializations": ["Operations", "Business Strategy", "Sales"],
+      "preferred_roles": [
+        "Operations Intern",
+        "Retail Strategy Intern",
+        "Sales Intern"
+      ],
+      "required_skills": ["Excel", "Inventory Management", "CRM", "Analytics"],
+      "company_culture": "Result-oriented and execution-driven with focus on operational excellence.",
+      "internship_focus": "Retail operations, inventory optimization, and sales forecasting."
     },
-    "IDFC FIRST BANK": {
-    "description": "New-age Indian bank focused on transparency and digital experiences.",
-    "sector": "Banking / BFSI",
-    "specializations": ["Mobile Banking", "Data", "Risk", "Products"],
-    "preferred_roles": [
-    "Android/iOS Intern",
-    "Data Analyst Intern",
-    "Product Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "SQL", "Python", "Excel"],
-    "company_culture": "Customer-first, transparent, agile",
-    "internship_focus": "App UX, analytics, credit ops"
+
+    "BIGBASKET (INNOVATIVE RETAIL CONCEPTS PRIVATE LIMITED)": {
+      "description": "India’s largest online grocery platform offering robust supply chain management and data-driven logistics.",
+      "sector": "E-commerce / Retail / Operations",
+      "specializations": ["Operations", "Logistics", "Analytics"],
+      "preferred_roles": [
+        "Operations Intern",
+        "Business Analyst Intern",
+        "Market Research Intern"
+      ],
+      "required_skills": ["Excel", "SQL", "Python", "Logistics Management"],
+      "company_culture": "Analytical, process-focused, and team-oriented.",
+      "internship_focus": "Inventory planning and last-mile delivery optimization."
     },
-    "TATA DIGITAL (TATA NEU)": {
-    "description": "Super-app initiative integrating commerce, finance, and loyalty.",
-    "sector": "Consumer Tech / Fintech / Retail",
-    "specializations": ["Mobile", "Web", "Data", "Design"],
-    "preferred_roles": [
-    "Android/iOS Intern",
-    "Frontend Intern",
-    "Data Analyst Intern",
-    "Product Design Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "React/Next.js", "SQL", "Figma"],
-    "company_culture": "Group synergies, user-centric, rapid iteration",
-    "internship_focus": "Loyalty, checkout, personalization"
+
+    "DELOITTE INDIA PRIVATE LIMITED": {
+      "description": "One of India’s Big Four professional services firms offering audit, consulting, risk, and advisory services.",
+      "sector": "Consulting / Business / Audit",
+      "specializations": ["Consulting", "Strategy", "Analytics"],
+      "preferred_roles": [
+        "Business Analyst Intern",
+        "Strategy Intern",
+        "Consulting Intern"
+      ],
+      "required_skills": ["Excel", "PowerPoint", "Analytics", "Communication"],
+      "company_culture": "Professional, structured, and growth-oriented.",
+      "internship_focus": "Client advisory, market analysis, and strategy development."
     },
-    "RELIANCE RETAIL DIGITAL": {
-    "description": "Digital arm powering JioMart and retail technology for India’s largest retailer.",
-    "sector": "Retail Tech / E-commerce",
-    "specializations": ["Web & Mobile", "Supply Chain Tech", "Data", "SRE"],
-    "preferred_roles": [
-    "Full-Stack Intern",
-    "Backend Intern",
-    "Data Engineer Intern",
-    "SRE Intern"
-    ],
-    "required_skills": ["Java/Go", "React", "SQL", "Kafka", "Kubernetes"],
-    "company_culture": "Scale-first, execution, partner integration",
-    "internship_focus": "Catalog, logistics, platform reliability"
+
+    "KPMG INDIA PRIVATE LIMITED": {
+      "description": "Global consulting and professional services network providing audit, tax, and advisory in India.",
+      "sector": "Consulting / Finance / Business Strategy",
+      "specializations": ["Consulting", "Finance", "Strategy"],
+      "preferred_roles": [
+        "Consulting Intern",
+        "Financial Analyst Intern",
+        "Risk Intern"
+      ],
+      "required_skills": ["Excel", "Power BI", "Finance", "Business Analytics"],
+      "company_culture": "Client-focused, collaborative, and ethics-driven.",
+      "internship_focus": "Corporate governance, audit consulting, and market risk assessment."
     },
-    "INMOBI (INDIA)": {
-    "description": "India-founded adtech and marketing cloud company.",
-    "sector": "AdTech / Marketing Cloud",
-    "specializations": ["Realtime Systems", "Data Platforms", "ML", "SDKs"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Data Science Intern",
-    "SDK Engineer Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["Java/Go", "Spark", "Kafka", "Android/iOS SDKs", "SQL"],
-    "company_culture": "Performance-obsessed, global scale, experimentation",
-    "internship_focus": "Ad serving, attribution, audience modeling"
+
+    "ERNST & YOUNG LLP (EY INDIA)": {
+      "description": "Professional services firm offering consulting, audit, and strategic advisory to Indian enterprises.",
+      "sector": "Consulting / Audit / Strategy",
+      "specializations": ["Consulting", "Business Strategy", "Analytics"],
+      "preferred_roles": [
+        "Business Analyst Intern",
+        "Consulting Intern",
+        "Market Analyst Intern"
+      ],
+      "required_skills": ["Excel", "PowerPoint", "Research", "Communication"],
+      "company_culture": "Professional, ethics-first, and data-informed.",
+      "internship_focus": "Strategic growth analysis and process optimization."
     },
-    "GLANCE (INMOBI GROUP)": {
-    "description": "Lockscreen content platform with AI-powered recommendations.",
-    "sector": "Media / Consumer Tech",
-    "specializations": ["Mobile", "Personalization", "Computer Vision", "Design"],
-    "preferred_roles": [
-    "Android Intern",
-    "Data Science Intern",
-    "Computer Vision Intern",
-    "UI/UX Intern"
-    ],
-    "required_skills": ["Kotlin", "Python", "PyTorch", "SQL", "Figma"],
-    "company_culture": "Content + AI, rapid A/B, creative",
-    "internship_focus": "Feeds, CV models, creator tools"
+
+    "ACCENTURE SOLUTIONS PRIVATE LIMITED (INDIA)": {
+      "description": "Leading IT and consulting firm offering digital, cloud, and business transformation services to global clients.",
+      "sector": "Consulting / Technology / Business",
+      "specializations": ["Business Strategy", "Consulting", "Operations"],
+      "preferred_roles": [
+        "Business Strategy Intern",
+        "Digital Consulting Intern",
+        "Operations Intern"
+      ],
+      "required_skills": ["Excel", "SQL", "Data Analytics", "Power BI"],
+      "company_culture": "Innovation-led, client-focused, and impact-driven.",
+      "internship_focus": "Digital business transformation and operational strategy."
     },
-    "TIMES INTERNET": {
-    "description": "Digital products arm of Times Group spanning news, music, sports, and classifieds.",
-    "sector": "Media / Internet",
-    "specializations": ["Web & Mobile", "SEO/Content", "Data", "Design"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "Backend Intern",
-    "Content Writing Intern",
-    "Data Analyst Intern"
-    ],
-    "required_skills": ["React/Next.js", "Node.js", "SEO", "SQL", "Figma"],
-    "company_culture": "Content-led, experimentation, cross-brand",
-    "internship_focus": "Performance web, content ops, analytics"
+
+    "ADITYA BIRLA GROUP": {
+      "description": "Conglomerate with diverse interests across manufacturing, retail, finance, and consulting sectors.",
+      "sector": "Conglomerate / Manufacturing / Retail",
+      "specializations": ["Operations", "Finance", "Business Strategy"],
+      "preferred_roles": [
+        "Operations Intern",
+        "Finance Intern",
+        "Corporate Strategy Intern"
+      ],
+      "required_skills": ["Excel", "Financial Modeling", "Communication"],
+      "company_culture": "Legacy-driven, professional, and leadership-oriented.",
+      "internship_focus": "Business planning and financial process optimization."
     },
-    "DAILYHUNT (VERSE INNOVATION)": {
-    "description": "Indian language news and content discovery platform.",
-    "sector": "Media / Consumer Tech",
-    "specializations": ["Mobile", "NLP/ML", "Search", "Growth"],
-    "preferred_roles": [
-    "Android/iOS Intern",
-    "NLP Intern",
-    "Search Intern",
-    "Growth Analyst Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "Python", "NLP", "Elasticsearch", "SQL"],
-    "company_culture": "Bharat-first, language focus, scale",
-    "internship_focus": "Language models, feed ranking, creator tools"
+
+    "HUMAN CAPITAL MANAGEMENT SERVICES PRIVATE LIMITED (HCM)": {
+      "description": "Leading HR consulting and staffing firm providing recruitment and workforce solutions for enterprises.",
+      "sector": "Human Resources / Consulting / Staffing",
+      "specializations": [
+        "Human Resources",
+        "Recruitment",
+        "Talent Management"
+      ],
+      "preferred_roles": [
+        "HR Intern",
+        "Recruitment Intern",
+        "HR Analytics Intern"
+      ],
+      "required_skills": [
+        "Excel",
+        "LinkedIn Recruiter",
+        "Communication",
+        "HRIS Tools"
+      ],
+      "company_culture": "People-first, analytical, and result-oriented.",
+      "internship_focus": "Talent acquisition, onboarding, and employee engagement."
     },
-    "SHARECHAT (MOJ)": {
-    "description": "Indian social network and short-video app for Bharat users.",
-    "sector": "Social / Media",
-    "specializations": ["Mobile", "ML/Reco", "Computer Vision", "SRE"],
-    "preferred_roles": [
-    "Android Intern",
-    "Data Science Intern",
-    "CV Intern",
-    "SRE Intern"
-    ],
-    "required_skills": ["Kotlin", "Python", "PyTorch", "Kafka", "Kubernetes"],
-    "company_culture": "Creator-first, ML heavy, fast experiments",
-    "internship_focus": "Reco systems, moderation, live features"
+
+    "TEAMLEASE SERVICES LIMITED": {
+      "description": "India’s largest human resources and staffing company catering to recruitment, payroll, and skilling solutions.",
+      "sector": "Human Resources / Staffing / Consulting",
+      "specializations": ["HR", "Operations", "Payroll Management"],
+      "preferred_roles": [
+        "HR Intern",
+        "Operations Intern",
+        "Recruitment Intern"
+      ],
+      "required_skills": ["Excel", "Communication", "Recruitment Tools"],
+      "company_culture": "Inclusive, fast-paced, and client-oriented.",
+      "internship_focus": "Talent sourcing and workforce analytics."
     },
-    "JUSPAY TECHNOLOGIES PRIVATE LIMITED": {
-    "description": "Payments orchestration and checkout experience platform.",
-    "sector": "Fintech / Payments",
-    "specializations": ["High-availability Systems", "Mobile SDK", "Security"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Android SDK Intern",
-    "Security Intern",
-    "Data Analyst Intern"
-    ],
-    "required_skills": ["Java/Scala", "Kotlin", "PostgreSQL", "Kafka", "Linux"],
-    "company_culture": "Reliability-first, deep tech, craft",
-    "internship_focus": "Checkout UX, risk, scale"
+
+    "NESTLE INDIA LIMITED": {
+      "description": "Global FMCG brand’s Indian arm known for operational excellence and supply chain leadership.",
+      "sector": "FMCG / Manufacturing / Operations",
+      "specializations": ["Operations", "Supply Chain", "Sales"],
+      "preferred_roles": [
+        "Operations Intern",
+        "Sales Intern",
+        "Business Analyst Intern"
+      ],
+      "required_skills": ["Excel", "Logistics", "Negotiation", "Analytics"],
+      "company_culture": "Quality-driven and structured with strong leadership pipelines.",
+      "internship_focus": "Supply chain management and retail strategy execution."
     },
-    "SETU (PINE LABS GROUP)": {
-    "description": "India-focused fintech APIs for payments, lending, and data.",
-    "sector": "Fintech / APIs",
-    "specializations": ["APIs", "Security", "Data", "Bank Integrations"],
-    "preferred_roles": [
-    "Backend Intern",
-    "DevRel Intern",
-    "Security Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["Go/Node.js", "PostgreSQL", "OAuth/OIDC", "Git"],
-    "company_culture": "Developer-first, regulatory-aware, pragmatic",
-    "internship_focus": "Bank integrations, API tooling, docs"
+    "TITAN COMPANY LIMITED": {
+      "description": "One of India’s leading lifestyle companies under Tata Group, known for premium product design and branding in watches, jewelry, and eyewear.",
+      "sector": "Lifestyle / Product Design / Branding",
+      "specializations": ["Product Design", "Branding", "UI/UX Design"],
+      "preferred_roles": [
+        "Product Design Intern",
+        "Brand Design Intern",
+        "UI/UX Intern"
+      ],
+      "required_skills": ["Figma", "Adobe XD", "Sketch", "Illustrator"],
+      "company_culture": "Design-conscious, legacy-driven, and innovation-oriented.",
+      "internship_focus": "Product design and customer experience innovation."
     },
-    "PINE LABS": {
-    "description": "Merchant commerce platform providing POS, payments, and BNPL.",
-    "sector": "Fintech / Merchant Tech",
-    "specializations": ["Payments", "Embedded Finance", "Mobile", "Cloud"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Android Intern",
-    "Data Analyst Intern",
-    "SRE Intern"
-    ],
-    "required_skills": ["Java/Go", "Kotlin", "SQL", "Kafka", "AWS"],
-    "company_culture": "Merchant-first, reliable, scale",
-    "internship_focus": "POS features, settlements, reliability"
+
+    "ZEE ENTERTAINMENT ENTERPRISES LIMITED": {
+      "description": "India’s largest media conglomerate engaged in television, film, and digital content with strong focus on creative production.",
+      "sector": "Media / Entertainment / Design",
+      "specializations": ["Graphic Design", "Video Editing", "Branding"],
+      "preferred_roles": [
+        "Graphic Design Intern",
+        "Video Editor Intern",
+        "Brand Strategy Intern"
+      ],
+      "required_skills": [
+        "Adobe Premiere Pro",
+        "After Effects",
+        "Photoshop",
+        "Illustrator"
+      ],
+      "company_culture": "Creative, media-savvy, and entertainment-driven.",
+      "internship_focus": "Digital video production, design, and visual storytelling."
     },
-    "NPCI (NATIONAL PAYMENTS CORPORATION OF INDIA)": {
-    "description": "Umbrella organization for retail payments including UPI, RuPay, and IMPS.",
-    "sector": "Fintech / Payments Infrastructure",
-    "specializations": ["Payments Infra", "Security", "Data", "Mobile"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Security Analyst Intern",
-    "Data Analyst Intern",
-    "Android/iOS Intern"
-    ],
-    "required_skills": ["Java", "Python", "SQL", "Linux", "Security basics"],
-    "company_culture": "Public-good, secure, standards-driven",
-    "internship_focus": "UPI rails, fraud analytics, performance"
+
+    "DUNZO DIGITAL PRIVATE LIMITED": {
+      "description": "Bengaluru-based hyperlocal delivery startup known for quirky branding, clever content, and strong digital presence.",
+      "sector": "E-commerce / Logistics / Branding",
+      "specializations": ["Branding", "Content Writing", "Social Media"],
+      "preferred_roles": [
+        "Social Media Intern",
+        "Copywriting Intern",
+        "Brand Marketing Intern"
+      ],
+      "required_skills": [
+        "Canva",
+        "Content Strategy",
+        "Social Media Analytics"
+      ],
+      "company_culture": "Playful, creative, and brand-driven.",
+      "internship_focus": "Content creation and social media engagement strategy."
     },
-    "LEAD SQUARED (LEADSQUARED)": {
-    "description": "Indian SaaS CRM and marketing automation platform for sales execution.",
-    "sector": "SaaS / SalesTech",
-    "specializations": ["Web", "APIs", "Integrations", "Analytics"],
-    "preferred_roles": [
-    "Full-Stack Intern",
-    "Backend Intern",
-    "Data Analyst Intern",
-    "Solution Engineer Intern"
-    ],
-    "required_skills": ["C#/.NET", "React", "SQL", "REST", "Git"],
-    "company_culture": "Sales-first, practical, shipping culture",
-    "internship_focus": "CRM workflows, automation, dashboards"
+
+    "URBANCLAP (URBAN COMPANY)": {
+      "description": "Leading Indian home services platform blending user experience, branding, and trust-based service delivery.",
+      "sector": "Services / Design / Technology",
+      "specializations": ["UI/UX Design", "Branding", "Product Design"],
+      "preferred_roles": [
+        "UI/UX Intern",
+        "Product Design Intern",
+        "Marketing Design Intern"
+      ],
+      "required_skills": ["Figma", "Adobe XD", "User Research", "Prototyping"],
+      "company_culture": "Customer-first, innovation-centric, and experience-focused.",
+      "internship_focus": "User journey design and intuitive service interfaces."
     },
-    "VYMO": {
-    "description": "Sales engagement platform for financial institutions.",
-    "sector": "SaaS / SalesTech",
-    "specializations": ["Mobile", "AI/ML", "Integrations", "Analytics"],
-    "preferred_roles": [
-    "Android/iOS Intern",
-    "Data Science Intern",
-    "Backend Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "Python", "SQL", "APIs", "Git"],
-    "company_culture": "Outcome-driven, field-sales insights, mobility",
-    "internship_focus": "Activity intelligence, recommendations, UX"
+
+    "PIXEL6 WEB STUDIO PRIVATE LIMITED": {
+      "description": "Creative agency from Bengaluru specializing in UI/UX, branding, and web design for global clients.",
+      "sector": "Design / Web / Branding",
+      "specializations": ["UI/UX Design", "Branding", "Web Design"],
+      "preferred_roles": [
+        "UI Designer Intern",
+        "UX Research Intern",
+        "Branding Intern"
+      ],
+      "required_skills": [
+        "Figma",
+        "Adobe Illustrator",
+        "Wireframing",
+        "Brand Strategy"
+      ],
+      "company_culture": "Design-forward, collaborative, and detail-obsessed.",
+      "internship_focus": "Brand identity, user interface design, and usability testing."
     },
-    "LEAD SCHOOL (LEAD)": {
-    "description": "School edtech platform improving learning outcomes in affordable schools.",
-    "sector": "EdTech",
-    "specializations": ["Mobile", "Content", "Analytics", "Ops Tech"],
-    "preferred_roles": [
-    "Android/iOS Intern",
-    "Content Writing Intern",
-    "Data Analyst Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "SQL", "Python", "Curriculum basics"],
-    "company_culture": "Impact-first, pedagogy-driven, execution",
-    "internship_focus": "Learning flows, content, dashboards"
+
+    "THE GLITCH (A VML COMPANY)": {
+      "description": "Full-service digital creative agency based in Mumbai specializing in social media, advertising, and design strategy.",
+      "sector": "Advertising / Digital Marketing / Creative",
+      "specializations": ["Content Writing", "Branding", "Social Media"],
+      "preferred_roles": [
+        "Content Intern",
+        "Copywriting Intern",
+        "Social Media Strategy Intern"
+      ],
+      "required_skills": [
+        "Creative Writing",
+        "Storytelling",
+        "Canva",
+        "Communication"
+      ],
+      "company_culture": "Bold, youthful, and idea-driven.",
+      "internship_focus": "Digital campaigns, creative copywriting, and social storytelling."
     },
-    "BYJU’S": {
-    "description": "Indian edtech platform offering K-12 and test-prep learning.",
-    "sector": "EdTech",
-    "specializations": ["Content", "Mobile", "Analytics", "Sales Ops"],
-    "preferred_roles": [
-    "Content Writing Intern",
-    "Video Editing Intern",
-    "Android/iOS Intern",
-    "Data Analyst Intern"
-    ],
-    "required_skills": ["Writing", "Premiere/After Effects", "Kotlin/Swift", "SQL"],
-    "company_culture": "Content-heavy, performance-driven",
-    "internship_focus": "Content production, app UX, funnel analytics"
+
+    "SCHBANG DIGITAL SOLUTIONS PRIVATE LIMITED": {
+      "description": "Leading Indian digital agency working on design, video, and brand strategy for major Indian startups and brands.",
+      "sector": "Digital Marketing / Creative / Branding",
+      "specializations": ["Graphic Design", "Branding", "Social Media"],
+      "preferred_roles": [
+        "Graphic Design Intern",
+        "Social Media Intern",
+        "Brand Strategy Intern"
+      ],
+      "required_skills": ["Adobe Illustrator", "Photoshop", "Canva", "Figma"],
+      "company_culture": "Energetic, creative, and culture-focused.",
+      "internship_focus": "Digital visual content and campaign creation."
     },
-    "UNACADEMY": {
-    "description": "Live learning platform with educator marketplace.",
-    "sector": "EdTech",
-    "specializations": ["Video", "Mobile", "Data", "Growth"],
-    "preferred_roles": [
-    "Video Editing Intern",
-    "Android/iOS Intern",
-    "Data Analyst Intern",
-    "Growth Intern"
-    ],
-    "required_skills": ["Premiere/After Effects", "Kotlin/Swift", "SQL", "Python"],
-    "company_culture": "Creator-led, live-first, growth loops",
-    "internship_focus": "Live infra, content ops, analytics"
+
+    "FILTERCOPY (POCKET ACES PICTURES PRIVATE LIMITED)": {
+      "description": "Mumbai-based digital entertainment company producing viral video content, comedy, and storytelling for youth audiences.",
+      "sector": "Entertainment / Media / Content",
+      "specializations": ["Video Editing", "Content Writing", "Social Media"],
+      "preferred_roles": [
+        "Video Editor Intern",
+        "Content Writer Intern",
+        "Production Intern"
+      ],
+      "required_skills": [
+        "Premiere Pro",
+        "After Effects",
+        "Script Writing",
+        "Social Media"
+      ],
+      "company_culture": "Fun, young, and digital-native.",
+      "internship_focus": "Video storytelling, editing, and script ideation."
     },
-    "VEDANTU INNOVATIONS": {
-    "description": "Online tutoring platform focused on live classes.",
-    "sector": "EdTech",
-    "specializations": ["Video", "Mobile", "Content", "Analytics"],
-    "preferred_roles": [
-    "Video Editing Intern",
-    "Android/iOS Intern",
-    "Content Intern",
-    "Data Analyst Intern"
-    ],
-    "required_skills": ["Premiere", "Kotlin/Swift", "Writing", "SQL"],
-    "company_culture": "Student-first, live delivery, iteration",
-    "internship_focus": "Live tooling, pedagogy UX, metrics"
-    },
-    "PHYSICS WALLAH (PW)": {
-    "description": "Value-focused Indian edtech with content and exam prep.",
-    "sector": "EdTech",
-    "specializations": ["Content", "Video", "Mobile", "Analytics"],
-    "preferred_roles": [
-    "Content Writing Intern",
-    "Video Editing Intern",
-    "Android/iOS Intern",
-    "Data Analyst Intern"
-    ],
-    "required_skills": ["Writing", "Premiere", "Kotlin/Swift", "SQL"],
-    "company_culture": "Outcome-focused, frugal, student trust",
-    "internship_focus": "Content ops, app UX, growth analytics"
-    },
-    "ERUDITUS EXECUTIVE EDUCATION (ERUDITI INDIA PRIVATE LIMITED)": {
-    "description": "Exec education provider partnering with top universities.",
-    "sector": "EdTech / Executive Education",
-    "specializations": ["Content", "Marketing", "Analytics", "Ops"],
-    "preferred_roles": [
-    "Content Intern",
-    "Marketing Intern",
-    "Data Analyst Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["Writing", "Excel", "SQL", "CRM"],
-    "company_culture": "Academic rigor, outcome-led, global cohorts",
-    "internship_focus": "Program ops, funnel analytics, content"
-    },
-    "UPGRAD": {
-    "description": "Indian higher-ed and skilling platform with university collaborations.",
-    "sector": "EdTech",
-    "specializations": ["Content", "Marketing", "Data", "Products"],
-    "preferred_roles": [
-    "Content Intern",
-    "Growth Intern",
-    "Data Analyst Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["Writing", "SQL", "Excel", "Figma"],
-    "company_culture": "Career outcomes, scale, partnerships",
-    "internship_focus": "Program funnels, placement analytics, UX"
-    },
-    "SIMPLILEARN": {
-    "description": "Skilling platform offering online bootcamps in tech and business.",
-    "sector": "EdTech / Skilling",
-    "specializations": ["Content", "Marketing", "Data", "Web"],
-    "preferred_roles": [
-    "Content Intern",
-    "SEO Intern",
-    "Data Analyst Intern",
-    "Frontend Intern"
-    ],
-    "required_skills": ["Writing", "SQL", "Excel", "HTML/CSS/JS"],
-    "company_culture": "Certification-focused, pragmatic, ROI-centric",
-    "internship_focus": "SEO, content ops, learner analytics"
-    },
-    "REDFEER CONSULTING (REDEER/REDEER?)" : {
-    "description": "Strategy and growth advisory born in India serving digital-first clients.",
-    "sector": "Consulting / Strategy",
-    "specializations": ["Market Research", "GTM", "Analytics", "Ops"],
-    "preferred_roles": [
-    "Business Analyst Intern",
-    "Market Research Intern",
-    "Data Analyst Intern",
-    "Project Management Intern"
-    ],
-    "required_skills": ["Excel", "PowerPoint", "SQL", "Secondary Research"],
-    "company_culture": "Hypothesis-driven, analytical, client-first",
-    "internship_focus": "Market sizing, competitor analysis, dashboards"
-    },
-    "MCKINSEY KNOWLEDGE CENTER INDIA (MCKC)": {
-    "description": "India-based research and analytics arm supporting consulting teams (India entity).",
-    "sector": "Consulting / Research",
-    "specializations": ["Research", "Analytics", "Visualization", "Ops"],
-    "preferred_roles": [
-    "Research Intern",
-    "Data Analyst Intern",
-    "Business Analyst Intern",
-    "Knowledge Intern"
-    ],
-    "required_skills": ["Excel", "SQL", "PowerPoint", "Python/R"],
-    "company_culture": "Rigorous, knowledge-driven, collaborative",
-    "internship_focus": "Industry research, dashboards, insights"
-    },
-    "MU SIGMA BUSINESS SOLUTIONS": {
-    "description": "India-headquartered decision sciences firm for analytics at scale.",
-    "sector": "Analytics / Consulting",
-    "specializations": ["Data Engineering", "ML", "Visualization", "Ops"],
-    "preferred_roles": [
-    "Data Analyst Intern",
-    "Data Engineer Intern",
-    "ML Intern",
-    "Business Analyst Intern"
-    ],
-    "required_skills": ["SQL", "Python", "Excel", "Power BI/Tableau"],
-    "company_culture": "Problem-first, apprenticeship model, scale",
-    "internship_focus": "Analytics pipelines, experimentation, BI"
-    },
-    "FRACTAL ANALYTICS (FRACTAL AI)": {
-    "description": "AI and analytics company from India serving global enterprises.",
-    "sector": "Analytics / AI",
-    "specializations": ["ML/AI", "Data Engineering", "Computer Vision", "NLP"],
-    "preferred_roles": [
-    "ML Engineer Intern",
-    "Data Scientist Intern",
-    "Data Engineer Intern",
-    "MLOps Intern"
-    ],
-    "required_skills": ["Python", "SQL", "PyTorch/TensorFlow", "Spark", "Git"],
-    "company_culture": "Research + delivery, experimentation, craft",
-    "internship_focus": "Applied AI, MLOps, model governance"
-    },
-    "TIGER ANALYTICS": {
-    "description": "Indian analytics consulting firm focusing on data-driven decisioning.",
-    "sector": "Analytics / Consulting",
-    "specializations": ["ML/AI", "Data Engineering", "BI", "Optimization"],
-    "preferred_roles": [
-    "Data Scientist Intern",
-    "Data Engineer Intern",
-    "BI Analyst Intern",
-    "MLOps Intern"
-    ],
-    "required_skills": ["Python", "SQL", "Spark", "Power BI/Tableau", "Git"],
-    "company_culture": "Outcome-driven, pragmatic analytics",
-    "internship_focus": "Forecasting, personalization, supply-chain"
-    },
-    "LATENTVIEW ANALYTICS": {
-    "description": "Chennai-born data analytics services company.",
-    "sector": "Analytics / Consulting",
-    "specializations": ["Data Engineering", "ML", "BI", "Cloud"],
-    "preferred_roles": [
-    "Data Engineer Intern",
-    "Data Analyst Intern",
-    "ML Intern",
-    "BI Intern"
-    ],
-    "required_skills": ["SQL", "Python", "Spark", "Power BI/Tableau"],
-    "company_culture": "Delivery excellence, domain depth",
-    "internship_focus": "Data lakes, reporting, applied ML"
-    },
-    "THEMATHCOMPANY": {
-    "description": "AI/analytics firm from India building decision products for enterprises.",
-    "sector": "Analytics / AI",
-    "specializations": ["ML/AI", "Productized Analytics", "Data Engineering"],
-    "preferred_roles": [
-    "Data Scientist Intern",
-    "ML Engineer Intern",
-    "Data Engineer Intern",
-    "Analyst Intern"
-    ],
-    "required_skills": ["Python", "SQL", "ML", "Spark", "Git"],
-    "company_culture": "Product-thinking, measurable impact",
-    "internship_focus": "Decision products, prototyping, MLops"
-    },
-    "QUICK HEAL TECHNOLOGIES": {
-    "description": "Indian cybersecurity firm known for antivirus and enterprise security solutions.",
-    "sector": "Cybersecurity",
-    "specializations": ["Endpoint Security", "Threat Research", "Malware Analysis"],
-    "preferred_roles": [
-    "Security Analyst Intern",
-    "Malware Research Intern",
-    "QA Intern",
-    "Backend Intern"
-    ],
-    "required_skills": ["C/C++", "Python", "Reverse Engineering", "Linux"],
-    "company_culture": "Security-first, research-led, quality driven",
-    "internship_focus": "Threat intel, detection engineering, QA"
-    },
-    "K7 COMPUTING": {
-    "description": "Chennai-based cybersecurity company focusing on endpoint and mobile security.",
-    "sector": "Cybersecurity",
-    "specializations": ["Endpoint", "Mobile Security", "Threat Labs"],
-    "preferred_roles": [
-    "Security Intern",
-    "Malware Analyst Intern",
-    "QA Automation Intern",
-    "Backend Intern"
-    ],
-    "required_skills": ["C/C++", "Python", "Android internals", "Linux"],
-    "company_culture": "R&D culture, precision, quality",
-    "internship_focus": "Detection signatures, automation, tooling"
-    },
-    "SAFE SECURITY (LUCIDEUS)": {
-    "description": "Indian cyber risk quantification company (CRQ) used by enterprises.",
-    "sector": "Cybersecurity / Risk",
-    "specializations": ["Cyber Risk", "Analytics", "Integrations", "Security Research"],
-    "preferred_roles": [
-    "Security Analyst Intern",
-    "Data Analyst Intern",
-    "Backend Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["Python", "APIs", "SQL", "Cloud Security basics"],
-    "company_culture": "Metrics-driven, research-led, enterprise focus",
-    "internship_focus": "CRQ models, integrations, dashboards"
-    },
-    "TAC SECURITY": {
-    "description": "Indian cybersecurity company specializing in VAPT and enterprise security.",
-    "sector": "Cybersecurity / Services",
-    "specializations": ["Penetration Testing", "AppSec", "GRC"],
-    "preferred_roles": [
-    "Security Analyst Intern",
-    "AppSec Intern",
-    "GRC Intern",
-    "SOC Intern"
-    ],
-    "required_skills": ["OWASP", "Burp Suite", "Linux", "Python", "Nmap"],
-    "company_culture": "Hands-on, certification-friendly, client-first",
-    "internship_focus": "Web/mobile pentests, compliance, SOC"
-    },
-    "KRATIKAL TECH PRIVATE LIMITED": {
-    "description": "Indian cybersecurity startup offering VAPT, training, and security products.",
-    "sector": "Cybersecurity",
-    "specializations": ["AppSec", "Email Security", "Threat Intel"],
-    "preferred_roles": [
-    "Security Analyst Intern",
-    "Threat Intel Intern",
-    "SOC Intern",
-    "Content Writing Intern"
-    ],
-    "required_skills": ["OWASP", "SIEM", "Linux", "Python", "Writing"],
-    "company_culture": "Training-focused, community-driven",
-    "internship_focus": "Phishing defense, awareness, VAPT"
-    },
-    "INDUSFACE": {
-    "description": "Indian application security company providing WAAP and bot protection.",
-    "sector": "Cybersecurity / AppSec",
-    "specializations": ["WAAP", "Bot Management", "DDoS", "WAF"],
-    "preferred_roles": [
-    "Security Analyst Intern",
-    "SRE Intern",
-    "Backend Intern",
-    "Support Intern"
-    ],
-    "required_skills": ["Linux", "Networking", "OWASP", "Python", "SQL"],
-    "company_culture": "Reliability and protection-first",
-    "internship_focus": "Traffic analysis, detections, reliability"
-    },
-    "IARM INFORMATION SECURITY": {
-    "description": "Indian cyber security services firm focusing on audits and managed security.",
-    "sector": "Cybersecurity / Services",
-    "specializations": ["SOC", "GRC", "VAPT", "Cloud Security"],
-    "preferred_roles": [
-    "SOC Intern",
-    "Security Analyst Intern",
-    "GRC Intern",
-    "DevSecOps Intern"
-    ],
-    "required_skills": ["SIEM", "Linux", "ISO27001", "OWASP", "Scripting"],
-    "company_culture": "Client-centric, governance-driven",
-    "internship_focus": "SOC operations, audits, DevSecOps"
-    },
-    "WIJUNGLE": {
-    "description": "Unified network security gateway company from India.",
-    "sector": "Cybersecurity / Networking",
-    "specializations": ["UTM", "Firewall", "SD-WAN", "Secure Access"],
-    "preferred_roles": [
-    "Network Security Intern",
-    "QA Intern",
-    "Backend Intern",
-    "Support Intern"
-    ],
-    "required_skills": ["Networking", "Linux", "C/C++", "Python"],
-    "company_culture": "Product-led, performance-focused",
-    "internship_focus": "Network security features, QA, customer success"
-    },
-    "CLOUDSEK": {
-    "description": "Indian digital risk protection platform offering XVigil and BeVigil.",
-    "sector": "Cybersecurity / Threat Intel",
-    "specializations": ["Threat Intelligence", "Brand Monitoring", "OSINT"],
-    "preferred_roles": [
-    "Threat Analyst Intern",
-    "Security Research Intern",
-    "Data Analyst Intern",
-    "Mobile Security Intern"
-    ],
-    "required_skills": ["OSINT", "Python", "SQL", "Android/iOS security"],
-    "company_culture": "Research-first, productized intel",
-    "internship_focus": "Dark web intel, leak detection, appsec scans"
-    },
-    "NETCORE CLOUD": {
-    "description": "Indian marketing automation and customer engagement SaaS.",
-    "sector": "MarTech / SaaS",
-    "specializations": ["Email/SMS", "Journey Orchestration", "AI/Reco"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Data Analyst Intern",
-    "Deliverability Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["Java", "SQL", "Python", "APIs", "Kafka"],
-    "company_culture": "Customer engagement-focused, data-driven",
-    "internship_focus": "Campaign tooling, analytics, personalization"
-    },
-    "SCHBANG": {
-    "description": "Indian full-service digital agency across creative, media, and tech.",
-    "sector": "Digital Marketing / Creative",
-    "specializations": ["Branding", "Social Media", "Performance Marketing", "Video"],
-    "preferred_roles": [
-    "Content Writing Intern",
-    "Graphic Design Intern",
-    "Performance Marketing Intern",
-    "Video Editing Intern"
-    ],
-    "required_skills": ["Writing", "Photoshop/Illustrator", "Excel/GA4", "Premiere"],
-    "company_culture": "Creative, high-energy, campaign-driven",
-    "internship_focus": "Social calendars, creatives, ad ops"
-    },
-    "KINNECT (FCB GROUP INDIA)": {
-    "description": "Indian digital agency specializing in integrated creative + performance.",
-    "sector": "Digital Marketing / Creative",
-    "specializations": ["Social", "Performance", "Influencer", "Design"],
-    "preferred_roles": [
-    "Social Media Intern",
-    "Content Intern",
-    "Design Intern",
-    "Performance Intern"
-    ],
-    "required_skills": ["Writing", "Canva/Adobe", "Excel", "GA4/Ads"],
-    "company_culture": "Integrated, collaborative, ROI-focused",
-    "internship_focus": "Content ops, media buying, reporting"
-    },
-    "SOCIAL PANGA": {
-    "description": "Indian creative and digital marketing agency.",
-    "sector": "Digital Marketing / Creative",
-    "specializations": ["Brand Strategy", "Social", "Design", "Video"],
-    "preferred_roles": [
-    "Content Intern",
-    "Graphic Design Intern",
-    "Social Media Intern",
-    "Video Editing Intern"
-    ],
-    "required_skills": ["Writing", "Photoshop/Illustrator", "Premiere", "Excel"],
-    "company_culture": "Playful, campaign-focused, fast-paced",
-    "internship_focus": "Content calendars, visual design, edits"
-    },
+
     "WHITE RIVERS MEDIA": {
-    "description": "Indian digital creative agency driving brand storytelling and performance.",
-    "sector": "Digital Marketing / Creative",
-    "specializations": ["Content", "Design", "Performance", "Influencer"],
-    "preferred_roles": [
-    "Content Writing Intern",
-    "Graphic Design Intern",
-    "Performance Intern",
-    "Account Intern"
-    ],
-    "required_skills": ["Writing", "Adobe Suite", "Excel", "GA4/Ads"],
-    "company_culture": "Story-first, collaborative, iterative",
-    "internship_focus": "Brand campaigns, ads, reporting"
-    },
-    "DENTSU CREATIVE (FORMERLY WEBCHUTNEY) – INDIA": {
-    "description": "Award-winning Indian creative agency under Dentsu network.",
-    "sector": "Advertising / Digital",
-    "specializations": ["Creative Tech", "Social", "Design", "Content"],
-    "preferred_roles": [
-    "Copywriting Intern",
-    "Art/Design Intern",
-    "Strategy Intern",
-    "Motion Graphics Intern"
-    ],
-    "required_skills": ["Writing", "Design tools", "Research", "Presentation"],
-    "company_culture": "Bold ideas, craft, award pedigree",
-    "internship_focus": "Brand storytelling, social-first campaigns"
-    },
-    "INTERACTIVE AVENUES": {
-    "description": "Indian digital media agency managing performance and brand media.",
-    "sector": "Digital Marketing / Media",
-    "specializations": ["Performance Media", "SEO/SEM", "Analytics", "Creative"],
-    "preferred_roles": [
-    "Performance Marketing Intern",
-    "SEO Intern",
-    "Data Analyst Intern",
-    "Creative Intern"
-    ],
-    "required_skills": ["Excel", "GA4", "Google Ads", "Writing", "PowerPoint"],
-    "company_culture": "Data-led, optimization-first",
-    "internship_focus": "Media buying, attribution, reporting"
-    },
-    "SCALENUT": {
-    "description": "Indian AI content marketing platform for SEO and writing.",
-    "sector": "MarTech / SaaS / AI",
-    "specializations": ["Generative AI", "SEO", "Content", "Integrations"],
-    "preferred_roles": [
-    "NLP/ML Intern",
-    "Frontend Intern",
-    "Content Intern",
-    "Growth Intern"
-    ],
-    "required_skills": ["Python", "NLP", "React", "SEO", "SQL"],
-    "company_culture": "AI-first, growth-centric, product velocity",
-    "internship_focus": "GenAI features, SEO tooling, content ops"
-    },
-    "PEPPER CONTENT": {
-    "description": "Indian content marketplace and content ops platform.",
-    "sector": "Content / SaaS",
-    "specializations": ["Content Writing", "Branding", "SEO", "Design"],
-    "preferred_roles": [
-    "Content Writing Intern",
-    "SEO Intern",
-    "Graphic Design Intern",
-    "Project Management Intern"
-    ],
-    "required_skills": ["Writing", "SEO", "Excel", "Adobe/Canva"],
-    "company_culture": "Creator-first, ops excellence",
-    "internship_focus": "Content pipelines, briefs, delivery"
-    },
-    "WITTYPEN": {
-    "description": "Indian content creation platform for blogs, social, and SEO.",
-    "sector": "Content / Marketing",
-    "specializations": ["Content", "SEO", "Editing", "Social"],
-    "preferred_roles": [
-    "Content Intern",
-    "Copyediting Intern",
-    "SEO Intern",
-    "Social Media Intern"
-    ],
-    "required_skills": ["Writing", "Editing", "SEO", "Excel"],
-    "company_culture": "Editorial discipline, delivery-focused",
-    "internship_focus": "Content ops, optimization, briefs"
-    },
-    "LANDOR & FITCH INDIA (DY WORKS PARTNERSHIPS)": {
-    "description": "Branding and design consultancy with strong India practice.",
-    "sector": "Branding / Design",
-    "specializations": ["Brand Strategy", "Identity", "Packaging", "UI/UX"],
-    "preferred_roles": [
-    "Brand Strategy Intern",
-    "Graphic Design Intern",
-    "UI/UX Intern",
-    "Motion Design Intern"
-    ],
-    "required_skills": ["Research", "Illustrator/Photoshop", "Figma", "Presentation"],
-    "company_culture": "Design rigor, strategy-led, craft",
-    "internship_focus": "Identity systems, brand guidelines, UI"
-    },
-    "DY WORKS": {
-    "description": "Indian brand strategy and design consultancy.",
-    "sector": "Branding / Design",
-    "specializations": ["Brand Strategy", "Packaging", "Research", "Design"],
-    "preferred_roles": [
-    "Brand Intern",
-    "Graphic Design Intern",
-    "Research Intern",
-    "Content Intern"
-    ],
-    "required_skills": ["Research", "Adobe Suite", "Writing", "Figma"],
-    "company_culture": "Insight-driven, consumer-first",
-    "internship_focus": "Brand systems, pack design, audits"
-    },
-    "YUJ DESIGNS": {
-    "description": "Pune-based UX consultancy delivering enterprise UX at scale.",
-    "sector": "UI/UX / Design",
-    "specializations": ["UX Research", "Interaction Design", "Design Systems"],
-    "preferred_roles": [
-    "UX Research Intern",
-    "Product Design Intern",
-    "UX Writer Intern",
-    "Visual Design Intern"
-    ],
-    "required_skills": ["Figma", "User Research", "Prototyping", "Writing"],
-    "company_culture": "Research-led, enterprise depth, craft",
-    "internship_focus": "Workflows, enterprise UX, accessibility"
-    },
-    "NETBRAMHA STUDIOS": {
-    "description": "Bengaluru-based strategic design studio.",
-    "sector": "UI/UX / Design",
-    "specializations": ["Product Strategy", "UX", "Visual Design", "Branding"],
-    "preferred_roles": [
-    "Product Design Intern",
-    "UX Research Intern",
-    "Visual Design Intern",
-    "Content Design Intern"
-    ],
-    "required_skills": ["Figma", "User Journeys", "Prototyping", "Writing"],
-    "company_culture": "Strategy + design, collaborative",
-    "internship_focus": "Design sprints, systems, prototypes"
-    },
-    "F1STUDIOZ": {
-    "description": "Product design studio focusing on SaaS and fintech UX.",
-    "sector": "UI/UX / Design",
-    "specializations": ["UX", "Design Systems", "Research", "UI"],
-    "preferred_roles": [
-    "Product Design Intern",
-    "UX Research Intern",
-    "UI Designer Intern",
-    "UX Writer Intern"
-    ],
-    "required_skills": ["Figma", "Prototyping", "Research", "Writing"],
-    "company_culture": "SaaS-first, systems thinking",
-    "internship_focus": "Dashboards, flows, usability"
-    },
-    "SPARKLIN": {
-    "description": "Delhi-based brand and digital experience studio.",
-    "sector": "Branding / UI/UX",
-    "specializations": ["Brand Strategy", "UX", "Visual Design", "Content"],
-    "preferred_roles": [
-    "Brand Intern",
-    "Product Design Intern",
-    "Graphic Design Intern",
-    "Content Writing Intern"
-    ],
-    "required_skills": ["Figma", "Adobe Suite", "Research", "Writing"],
-    "company_culture": "Narrative + design, boutique craft",
-    "internship_focus": "Brand systems, website UX, content"
-    },
-    "ELEPHANT DESIGN": {
-    "description": "One of India’s oldest design consultancies with strong packaging and UX practice.",
-    "sector": "Branding / Design",
-    "specializations": ["Packaging", "Brand", "UX", "Retail"],
-    "preferred_roles": [
-    "Industrial/Product Design Intern",
-    "Graphic Design Intern",
-    "UX Intern",
-    "Research Intern"
-    ],
-    "required_skills": ["Adobe Suite", "Figma", "Sketching", "Research"],
-    "company_culture": "Craft heritage, user-centered",
-    "internship_focus": "Packaging, retail UX, research"
-    },
-    "WOW LABZ": {
-    "description": "Bengaluru-based product studio building mobile, web, and games.",
-    "sector": "Product Studio / Tech",
-    "specializations": ["Mobile", "Web", "Blockchain", "UI/UX"],
-    "preferred_roles": [
-    "Android/iOS Intern",
-    "Full-Stack Intern",
-    "Blockchain Intern",
-    "Product Design Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "React/Node", "Solidity", "Figma"],
-    "company_culture": "Maker culture, cross-functional",
-    "internship_focus": "App builds, dApps, design systems"
-    },
-    "TALLY SOLUTIONS PRIVATE LIMITED": {
-    "description": "Indian accounting software company powering SMEs across India.",
-    "sector": "Software / Fintech",
-    "specializations": ["Desktop/Web Apps", "Accounting", "Integrations"],
-    "preferred_roles": [
-    "C++ Developer Intern",
-    "Full-Stack Intern",
-    "QA Intern",
-    "Technical Writer Intern"
-    ],
-    "required_skills": ["C++", "JavaScript", "SQL", "Testing"],
-    "company_culture": "SME-first, reliability, long-term craft",
-    "internship_focus": "Product features, stability, docs"
-    },
-    "CHARGEBEE": {
-    "description": "Subscription billing platform founded by Indians with India operations.",
-    "sector": "SaaS / Fintech",
-    "specializations": ["Billing", "Integrations", "APIs", "Analytics"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Solutions Intern",
-    "Data Analyst Intern",
-    "QA Intern"
-    ],
-    "required_skills": ["Java", "REST", "SQL", "Python", "Postman"],
-    "company_culture": "Customer empathy, reliability, scale",
-    "internship_focus": "Integrations, dashboards, QA"
-    },
-    "JOSH TALKS": {
-    "description": "Indian content and upskilling platform focused on regional languages.",
-    "sector": "Media / EdTech",
-    "specializations": ["Video", "Content", "Growth", "Social"],
-    "preferred_roles": [
-    "Video Editing Intern",
-    "Content Writing Intern",
-    "Social Media Intern",
-    "Data Intern"
-    ],
-    "required_skills": ["Premiere", "Writing", "Excel", "Analytics"],
-    "company_culture": "Impact-led, Bharat-first",
-    "internship_focus": "Video storytelling, social growth, analytics"
-    },
-    "POCKET ACES (FILTERCOPY / DICE MEDIA)": {
-    "description": "Indian digital entertainment studio producing series and short videos.",
-    "sector": "Media / Entertainment",
-    "specializations": ["Video", "Content Writing", "Social", "Design"],
-    "preferred_roles": [
-    "Video Editing Intern",
-    "Content Intern",
-    "Graphic Design Intern",
-    "Social Media Intern"
-    ],
-    "required_skills": ["Premiere/After Effects", "Writing", "Illustrator", "Excel"],
-    "company_culture": "Creative, fast-paced, internet-native",
-    "internship_focus": "Edits, scripts, social packaging"
-    },
-    "THE VIRAL FEVER (TVF)": {
-    "description": "Indian online entertainment company producing original web series.",
-    "sector": "Media / Entertainment",
-    "specializations": ["Video Production", "Editing", "Writing", "Marketing"],
-    "preferred_roles": [
-    "Video Editing Intern",
-    "Assistant Director Intern",
-    "Content Writing Intern",
-    "Social Intern"
-    ],
-    "required_skills": ["Premiere", "Writing", "Organization", "Excel"],
-    "company_culture": "Story-first, scrappy, collaborative",
-    "internship_focus": "Post-production, scripts, packaging"
-    },
-    "SUPARI STUDIOS": {
-    "description": "Mumbai-based content studio crafting brand films and animation.",
-    "sector": "Media / Production",
-    "specializations": ["Video", "Animation", "Design", "Post"],
-    "preferred_roles": [
-    "Video Editing Intern",
-    "Motion Graphics Intern",
-    "Graphic Design Intern",
-    "Production Intern"
-    ],
-    "required_skills": ["Premiere/After Effects", "Illustrator", "Organization"],
-    "company_culture": "Craft, timelines, high-quality output",
-    "internship_focus": "Edits, motion, brand storytelling"
-    },
-    "POST OFFICE STUDIOS": {
-    "description": "Indian motion design and animation studio.",
-    "sector": "Design / Motion",
-    "specializations": ["Motion Graphics", "3D", "Animation", "Design"],
-    "preferred_roles": [
-    "Motion Graphics Intern",
-    "3D Intern",
-    "Graphic Design Intern",
-    "Video Editing Intern"
-    ],
-    "required_skills": ["After Effects", "Cinema4D/Blender", "Illustrator"],
-    "company_culture": "Aesthetic craft, detail-obsessed",
-    "internship_focus": "Motion packages, promos, explainer videos"
-    },
-    "URBAN LADDER": {
-    "description": "Indian D2C furniture brand with design and e-commerce operations.",
-    "sector": "Retail / D2C",
-    "specializations": ["UI/UX", "E-commerce", "Content", "Ops"],
-    "preferred_roles": [
-    "Product Design Intern",
-    "Frontend Intern",
-    "Content Writing Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["Figma", "React", "Writing", "Excel"],
-    "company_culture": "Design + ops, customer-first",
-    "internship_focus": "Site UX, catalog, content ops"
-    },
-    "LIVSPACE": {
-    "description": "Indian home interiors platform integrating design, supply, and execution.",
-    "sector": "PropTech / Design",
-    "specializations": ["Product Design", "Operations", "Web", "Data"],
-    "preferred_roles": [
-    "UI/UX Intern",
-    "Frontend Intern",
-    "Project Management Intern",
-    "Data Analyst Intern"
-    ],
-    "required_skills": ["Figma", "React", "Excel", "SQL"],
-    "company_culture": "Execution rigor, design sensibility",
-    "internship_focus": "Design flows, PMO dashboards, UX"
-    },
-    "PEPPERFRY": {
-    "description": "Furniture marketplace with logistics and design studios.",
-    "sector": "E-commerce / Retail",
-    "specializations": ["Web", "Design", "Ops", "Marketing"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "UI/UX Intern",
-    "Content Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["HTML/CSS/JS", "Figma", "Writing", "Excel"],
-    "company_culture": "Customer-centric, ops-heavy",
-    "internship_focus": "Site UX, creatives, catalog"
-    },
-    "PRAAXIS GLOBAL ALLIANCE (PGA LABS)": {
-    "description": "India-born consulting and research firm delivering due diligence and market studies.",
-    "sector": "Consulting / Research",
-    "specializations": ["Market Research", "Analytics", "Strategy", "Ops"],
-    "preferred_roles": [
-    "Research Intern",
-    "Business Analyst Intern",
-    "Data Analyst Intern",
-    "Project Intern"
-    ],
-    "required_skills": ["Secondary Research", "Excel", "SQL", "PowerPoint"],
-    "company_culture": "Detail-oriented, hypothesis-led",
-    "internship_focus": "Market sizing, competitor benchmarks, surveys"
-    },
-    "REDSEER STRATEGY CONSULTANTS": {
-    "description": "Indian consulting firm known for internet economy research.",
-    "sector": "Consulting / Research",
-    "specializations": ["Market Sizing", "Consumer Internet", "Analytics"],
-    "preferred_roles": [
-    "Analyst Intern",
-    "Research Intern",
-    "Data Analyst Intern",
-    "Project Intern"
-    ],
-    "required_skills": ["Excel", "PowerPoint", "SQL", "Writing"],
-    "company_culture": "Fast-paced, data-backed, presentation heavy",
-    "internship_focus": "Sector reports, datasets, slides"
-    },
-    "INFO EDGE (NAUKRI, 99ACRES, JEEVANSATHI)": {
-    "description": "Indian internet company operating job, real estate, and matrimony platforms.",
-    "sector": "Internet / Consumer",
-    "specializations": ["Web", "Data", "Product", "Marketing"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "Backend Intern",
-    "Data Analyst Intern",
-    "Content Intern"
-    ],
-    "required_skills": ["React", "Node.js", "SQL", "Writing", "Excel"],
-    "company_culture": "Portfolio approach, unit economics, user-first",
-    "internship_focus": "Search, listings, content ops"
-    },
-    "NAUKRI.COM (NAUKRI INTERNET SERVICES)": {
-    "description": "India’s leading job portal connecting candidates and recruiters.",
-    "sector": "Internet / HRTech",
-    "specializations": ["Web", "Search/Reco", "Data", "Sales Ops"],
-    "preferred_roles": [
-    "Full-Stack Intern",
-    "Data Analyst Intern",
-    "Product Intern",
-    "Sales Intern"
-    ],
-    "required_skills": ["React", "Node.js", "SQL", "Excel", "Communication"],
-    "company_culture": "Metrics-driven, product-market fit at scale",
-    "internship_focus": "Search UX, recruiter tools, dashboards"
-    },
-    "DARWINBOX DIGITAL SOLUTIONS": {
-    "description": "Indian HRMS platform for mid-market and enterprise.",
-    "sector": "HRTech / SaaS",
-    "specializations": ["Web", "Mobile", "Integrations", "Analytics"],
-    "preferred_roles": [
-    "Full-Stack Intern",
-    "Android/iOS Intern",
-    "Data Analyst Intern",
-    "Implementation Intern"
-    ],
-    "required_skills": ["Java/Node", "React", "SQL", "APIs", "Excel"],
-    "company_culture": "Enterprise-grade, HR domain depth",
-    "internship_focus": "HR workflows, analytics, integrations"
-    },
-    "KEKA HR": {
-    "description": "Indian HR and payroll platform serving SMEs.",
-    "sector": "HRTech / SaaS",
-    "specializations": ["Payroll", "Web", "Integrations", "Analytics"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Frontend Intern",
-    "QA Intern",
-    "Data Analyst Intern"
-    ],
-    "required_skills": [".NET/Node", "React", "SQL", "Testing"],
-    "company_culture": "SME-first, practical, supportive",
-    "internship_focus": "Payroll features, reports, QA"
-    },
-    "GREYTHR": {
-    "description": "Payroll and HR software company from India.",
-    "sector": "HRTech / SaaS",
-    "specializations": ["Payroll", "Attendance", "Integrations", "Mobile"],
-    "preferred_roles": [
-    "Full-Stack Intern",
-    "Android Intern",
-    "QA Intern",
-    "Support Intern"
-    ],
-    "required_skills": ["JavaScript", "SQL", "Kotlin", "Testing", "Excel"],
-    "company_culture": "Customer support-led, reliability",
-    "internship_focus": "Payroll accuracy, mobile app, QA"
-    },
-    "JODO (EDFIN TECH)": {
-    "description": "Indian fintech for education fee payments and financing.",
-    "sector": "Fintech / EdFin",
-    "specializations": ["Web", "Mobile", "Risk", "Operations"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "Android Intern",
-    "Risk Analyst Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["React", "Kotlin", "SQL", "Excel", "Python"],
-    "company_culture": "School-partnership, on-ground ops",
-    "internship_focus": "Fee journeys, underwriting dashboards"
-    },
-    "POLICYBAZAAR (PB FINTECH)": {
-    "description": "Insurance aggregator simplifying policy discovery and purchase.",
-    "sector": "InsurTech",
-    "specializations": ["Web", "Mobile", "Analytics", "Operations"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "Android/iOS Intern",
-    "Data Analyst Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["React", "Kotlin/Swift", "SQL", "Excel"],
-    "company_culture": "Consumer trust, compliance, scale",
-    "internship_focus": "Quote engine UX, comparison, BI"
-    },
-    "ACKO GENERAL INSURANCE": {
-    "description": "Digital-first insurer with direct-to-consumer model.",
-    "sector": "InsurTech",
-    "specializations": ["Mobile", "Web", "Risk Analytics", "Claims Tech"],
-    "preferred_roles": [
-    "Android/iOS Intern",
-    "Backend Intern",
-    "Data Analyst Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "Java/Go", "SQL", "Python"],
-    "company_culture": "Simplicity, speed, compliance",
-    "internship_focus": "Claims UX, risk models, portals"
-    },
-    "DIGIT INSURANCE": {
-    "description": "Indian digital insurer leveraging tech for pricing and claims.",
-    "sector": "InsurTech",
-    "specializations": ["Pricing Analytics", "Web", "Mobile", "Ops"],
-    "preferred_roles": [
-    "Data Analyst Intern",
-    "Frontend Intern",
-    "Android/iOS Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["SQL", "Python", "React", "Kotlin/Swift", "Excel"],
-    "company_culture": "Transparency, tech-led, efficient",
-    "internship_focus": "Pricing models, app UX, claims tech"
-    },
-    "DEHLIVERY (OPS ANALYTICS LABS)": {
-    "description": "Advanced analytics unit within Delhivery focusing on optimization.",
-    "sector": "Logistics / Analytics",
-    "specializations": ["Optimization", "Routing", "ML", "SRE"],
-    "preferred_roles": [
-    "ML Intern",
-    "Data Engineer Intern",
-    "Backend Intern",
-    "SRE Intern"
-    ],
-    "required_skills": ["Python", "OR-Tools", "Spark", "Kafka", "Kubernetes"],
-    "company_culture": "Optimization-first, experimentation",
-    "internship_focus": "Routing, demand forecasting, latency"
-    },
-    "FRONTROW": {
-    "description": "Creator-led learning platform in India.",
-    "sector": "EdTech / Creator",
-    "specializations": ["Content", "Mobile", "Growth", "Design"],
-    "preferred_roles": [
-    "Content Intern",
-    "Android/iOS Intern",
-    "Growth Intern",
-    "UI/UX Intern"
-    ],
-    "required_skills": ["Writing", "Kotlin/Swift", "Excel", "Figma"],
-    "company_culture": "Creator-first, fast experiments",
-    "internship_focus": "Course UX, funnels, community"
-    },
-    "CREDGENICS": {
-    "description": "Indian debt resolution and collections SaaS for BFSI.",
-    "sector": "Fintech / SaaS",
-    "specializations": ["Web", "Data", "Integrations", "Legal Ops"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Frontend Intern",
-    "Data Analyst Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["Java/Node", "React", "SQL", "Excel", "APIs"],
-    "company_culture": "Outcome-driven, compliance-aware",
-    "internship_focus": "Collections workflows, dashboards, APIs"
-    },
-    "SPOTDRAFT": {
-    "description": "Indian contract lifecycle management (CLM) platform.",
-    "sector": "LegalTech / SaaS",
-    "specializations": ["Web", "NLP", "Integrations", "Security"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Frontend Intern",
-    "NLP Intern",
-    "Implementation Intern"
-    ],
-    "required_skills": ["Node/Java", "React", "Python/NLP", "SQL", "APIs"],
-    "company_culture": "Legal + engineering, detail-first",
-    "internship_focus": "Contract parsing, workflows, integrations"
-    },
-    "LEGEALITY": {
-    "description": "Indian digital documentation platform for eSign, eStamp, and workflows.",
-    "sector": "LegalTech / SaaS",
-    "specializations": ["Web", "APIs", "Security", "Integrations"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Frontend Intern",
-    "Security Intern",
-    "Solutions Intern"
-    ],
-    "required_skills": ["Java/Node", "React", "OAuth", "SQL"],
-    "company_culture": "Compliance-first, reliability, scale",
-    "internship_focus": "Doc workflows, KMS, partner integrations"
-    },
-    "VAKILSEARCH": {
-    "description": "Indian online legal services for company registration, IP, and compliance.",
-    "sector": "LegalTech / Services",
-    "specializations": ["Ops", "Web", "Content", "Support"],
-    "preferred_roles": [
-    "Operations Intern",
-    "Frontend Intern",
-    "Content Writing Intern",
-    "Customer Support Intern"
-    ],
-    "required_skills": ["Excel", "HTML/CSS/JS", "Writing", "CRM"],
-    "company_culture": "Service-first, process-driven",
-    "internship_focus": "Compliance ops, portals, content"
-    },
-    "LAWRATO": {
-    "description": "Lawyer discovery and consultation marketplace in India.",
-    "sector": "LegalTech / Marketplace",
-    "specializations": ["Web", "Content", "Support", "Ops"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "Content Intern",
-    "Support Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["HTML/CSS/JS", "Writing", "Excel", "Communication"],
-    "company_culture": "Consumer trust, guidance, empathy",
-    "internship_focus": "Discovery UX, content ops, CRM"
-    },
-    "MANUPATRA INFORMATION SOLUTIONS": {
-    "description": "Indian legal research platform and publisher.",
-    "sector": "LegalTech / Research",
-    "specializations": ["Search", "NLP", "Web", "Content"],
-    "preferred_roles": [
-    "NLP Intern",
-    "Frontend Intern",
-    "Content Intern",
-    "QA Intern"
-    ],
-    "required_skills": ["Python", "NLP", "React", "Writing", "Testing"],
-    "company_culture": "Research-first, accuracy, depth",
-    "internship_focus": "Legal search, summaries, UI"
-    },
-    "SCC ONLINE": {
-    "description": "Indian legal database for case law and statutes.",
-    "sector": "LegalTech / Research",
-    "specializations": ["Search", "Web", "Content", "Analytics"],
-    "preferred_roles": [
-    "Full-Stack Intern",
-    "Content Intern",
-    "Data Analyst Intern",
-    "QA Intern"
-    ],
-    "required_skills": ["Node/Java", "React", "SQL", "Writing", "Testing"],
-    "company_culture": "Scholarly, precise, trusted",
-    "internship_focus": "Search UX, headnotes, BI"
-    },
-    "HINDUJA GLOBAL SOLUTIONS (HGS)": {
-    "description": "Indian BPO and customer experience company.",
-    "sector": "BPO / Customer Support",
-    "specializations": ["CX Ops", "Support", "Analytics", "Automation"],
-    "preferred_roles": [
-    "Customer Support Intern",
-    "Quality Analyst Intern",
-    "WFM Intern",
-    "Automation Intern"
-    ],
-    "required_skills": ["Communication", "Excel", "SQL", "RPA basics"],
-    "company_culture": "Process-first, KPI-driven",
-    "internship_focus": "Voice/chat support, QA, reporting"
-    },
-    "FIRSTSOURCE SOLUTIONS": {
-    "description": "Indian BPM company offering customer support and back-office services.",
-    "sector": "BPO / BPM",
-    "specializations": ["Support", "Healthcare Ops", "Banking Ops", "Analytics"],
-    "preferred_roles": [
-    "Customer Support Intern",
-    "Data Analyst Intern",
-    "Process Intern",
-    "Quality Intern"
-    ],
-    "required_skills": ["Communication", "Excel", "SQL", "Documentation"],
-    "company_culture": "Operational excellence, client outcomes",
-    "internship_focus": "Process optimization, reporting, CX"
-    },
-    "WNS GLOBAL SERVICES": {
-    "description": "India-born BPM company with analytics and CX solutions.",
-    "sector": "BPM / Analytics",
-    "specializations": ["Analytics", "CX", "Finance Ops", "Procurement"],
-    "preferred_roles": [
-    "Data Analyst Intern",
-    "Business Analyst Intern",
-    "Customer Support Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["Excel", "SQL", "Power BI", "Communication"],
-    "company_culture": "Outcome-led, lean, global delivery",
-    "internship_focus": "Dashboards, process mining, CX"
-    },
-    "ZOHO PEOPLE (ZOHO HR SUITE)": {
-    "description": "HR suite by Zoho for SMEs and enterprises.",
-    "sector": "HRTech / SaaS",
-    "specializations": ["HRIS", "Payroll", "Integrations", "Analytics"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Frontend Intern",
-    "QA Intern",
-    "Implementation Intern"
-    ],
-    "required_skills": ["Java", "React", "SQL", "Testing", "APIs"],
-    "company_culture": "Product craftsmanship, reliability",
-    "internship_focus": "HR modules, reports, integrations"
-    },
-    "VYAPAR": {
-    "description": "Indian GST billing and accounting app for small businesses.",
-    "sector": "Fintech / SaaS",
-    "specializations": ["Android", "Web", "Data", "Support"],
-    "preferred_roles": [
-    "Android Intern",
-    "Frontend Intern",
-    "Data Analyst Intern",
-    "Support Intern"
-    ],
-    "required_skills": ["Kotlin", "React", "SQL", "Excel"],
-    "company_culture": "SME-first, practical, relentless",
-    "internship_focus": "Billing UX, reports, support tooling"
-    },
-    "KREDITBEE": {
-    "description": "Indian consumer lending platform with risk analytics.",
-    "sector": "Fintech / Lending",
-    "specializations": ["Risk", "Mobile", "Web", "Data"],
-    "preferred_roles": [
-    "Risk Analyst Intern",
-    "Android Intern",
-    "Backend Intern",
-    "Data Analyst Intern"
-    ],
-    "required_skills": ["Excel", "SQL", "Kotlin", "Java/Node", "Python"],
-    "company_culture": "Risk-aware, speed, growth",
-    "internship_focus": "Underwriting models, app funnels"
-    },
-    "LENDINGKART": {
-    "description": "SME lending platform with digital underwriting.",
-    "sector": "Fintech / Lending",
-    "specializations": ["Risk", "Data", "Web", "Operations"],
-    "preferred_roles": [
-    "Data Analyst Intern",
-    "Backend Intern",
-    "Frontend Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["Python", "SQL", "React", "Java", "Excel"],
-    "company_culture": "SME-first, analytics-heavy",
-    "internship_focus": "Risk models, dashboards, ops tooling"
-    },
-    "CRED AVENUE (Yubi)": {
-    "description": "Debt marketplace connecting enterprises with lenders.",
-    "sector": "Fintech / Capital Markets",
-    "specializations": ["Web", "Data", "Integrations", "Risk"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Frontend Intern",
-    "Data Analyst Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["Java/Node", "React", "SQL", "Python", "APIs"],
-    "company_culture": "Enterprise-first, compliance-focused",
-    "internship_focus": "Deal flows, analytics, integrations"
-    },
-    "RENEW POWER (RENEW ENERGY)": {
-    "description": "Leading Indian renewable energy company using data for operations.",
-    "sector": "Energy / Renewables",
-    "specializations": ["Data", "IoT", "Cloud", "Ops"],
-    "preferred_roles": [
-    "Data Analyst Intern",
-    "IoT Intern",
-    "Cloud Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["Python", "SQL", "Azure/AWS", "Excel"],
-    "company_culture": "Sustainability, engineering, reliability",
-    "internship_focus": "Asset analytics, dashboards, forecasting"
-    },
-    "DELTAEXCHANGE (INDIA OPERATIONS)": {
-    "description": "Crypto derivatives exchange with India engineering teams.",
-    "sector": "Blockchain / Fintech",
-    "specializations": ["Backend", "Security", "Data", "Mobile"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Security Intern",
-    "Data Analyst Intern",
-    "Android Intern"
-    ],
-    "required_skills": ["Go/Java", "Python", "SQL", "Linux", "Kubernetes"],
-    "company_culture": "Latency + security-focused",
-    "internship_focus": "Matching engine, risk, analytics"
-    },
-    "TANLA PLATFORMS LIMITED": {
-    "description": "Indian CPaaS provider for messaging, voice, and verification.",
-    "sector": "CPaaS / Telecom",
-    "specializations": ["Messaging", "Security", "Web", "Data"],
-    "preferred_roles": [
-    "Backend Intern",
-    "DevOps Intern",
-    "Security Intern",
-    "Data Analyst Intern"
-    ],
-    "required_skills": ["Java", "Linux", "Kafka", "SQL", "AWS"],
-    "company_culture": "Carrier-grade, reliability, compliance",
-    "internship_focus": "Messaging infra, anti-spam, analytics"
-    },
-    "ROUTEMOBILE": {
-    "description": "Indian CPaaS company enabling enterprise messaging and voice.",
-    "sector": "CPaaS / Telecom",
-    "specializations": ["APIs", "SRE", "Security", "Data"],
-    "preferred_roles": [
-    "Backend Intern",
-    "SRE Intern",
-    "Security Intern",
-    "Data Analyst Intern"
-    ],
-    "required_skills": ["Java/Go", "Linux", "Kubernetes", "SQL", "Python"],
-    "company_culture": "Infra-first, SLA obsessed",
-    "internship_focus": "API performance, reliability, dashboards"
-    },
-    "AGILISIUM CONSULTING INDIA": {
-    "description": "India-based data and cloud consulting partner.",
-    "sector": "Cloud / Data / Consulting",
-    "specializations": ["Data Engineering", "Cloud", "Analytics", "BI"],
-    "preferred_roles": [
-    "Data Engineer Intern",
-    "Cloud Intern",
-    "BI Intern",
-    "Business Analyst Intern"
-    ],
-    "required_skills": ["SQL", "Python", "AWS/GCP", "Spark", "Tableau/Power BI"],
-    "company_culture": "Certification-friendly, delivery-focused",
-    "internship_focus": "Data lakes, ETL, dashboards"
-    },
-    "CLOUDFY (INDIA)": {
-    "description": "Indian cloud-native product engineering studio.",
-    "sector": "Cloud / DevOps",
-    "specializations": ["Kubernetes", "SRE", "Platform Engineering", "CI/CD"],
-    "preferred_roles": [
-    "DevOps Intern",
-    "SRE Intern",
-    "Backend Intern",
-    "Security Intern"
-    ],
-    "required_skills": ["Linux", "Docker", "Kubernetes", "Terraform", "AWS/GCP"],
-    "company_culture": "Infra-as-code, reliability, automation",
-    "internship_focus": "Clusters, observability, pipelines"
-    },
-    "KOVAI.CO": {
-    "description": "Indian product company building serverless and integration tools.",
-    "sector": "SaaS / DevTools",
-    "specializations": ["Serverless", "Integrations", "Monitoring", "UI/UX"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Frontend Intern",
-    "QA Intern",
-    "Product Intern"
-    ],
-    "required_skills": [".NET/Azure", "React", "SQL", "Testing"],
-    "company_culture": "Product craftsmanship, Azure-native",
-    "internship_focus": "Serverless workflows, dashboards"
-    },
-    "HACKEREARTH (INDIA)": {
-    "description": "Developer assessments and hackathon platform with India ops.",
-    "sector": "HRTech / DevTools",
-    "specializations": ["Web", "Data", "Security", "Product"],
-    "preferred_roles": [
-    "Full-Stack Intern",
-    "Data Analyst Intern",
-    "Security Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["Python/Node", "React", "SQL", "OWASP"],
-    "company_culture": "Developer community, product thinking",
-    "internship_focus": "Assessments, analytics, platform"
-    },
-    "CODECHEF (UNACADEMY GROUP)": {
-    "description": "Competitive programming community and platform from India.",
-    "sector": "EdTech / Dev Community",
-    "specializations": ["Web", "Judges/Infra", "Content", "Community"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Frontend Intern",
-    "Content Intern",
-    "Community Intern"
-    ],
-    "required_skills": ["Python/Go", "React", "SQL", "Writing"],
-    "company_culture": "Community-first, engineering rigor",
-    "internship_focus": "Problemsets, contests, infra"
-    },
-    "GATE ACADEMY (PW ACQUIRED UNITS)": {
-    "description": "Indian test prep platform for engineering exams.",
-    "sector": "EdTech",
-    "specializations": ["Content", "Video", "Web", "Analytics"],
-    "preferred_roles": [
-    "Content Intern",
-    "Video Editing Intern",
-    "Frontend Intern",
-    "Data Analyst Intern"
-    ],
-    "required_skills": ["Writing", "Premiere", "HTML/CSS/JS", "SQL"],
-    "company_culture": "Exam rigor, student outcomes",
-    "internship_focus": "Lectures, edits, site UX, reporting"
-    },
-    "MAKE MY TRIP (MMT)": {
-    "description": "Indian online travel company offering flights, hotels, and holidays.",
-    "sector": "Travel / Consumer Tech",
-    "specializations": ["Web & Mobile", "Search", "Data", "SRE"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "Android/iOS Intern",
-    "Data Analyst Intern",
-    "SRE Intern"
-    ],
-    "required_skills": ["React/Next.js", "Kotlin/Swift", "SQL", "Kubernetes"],
-    "company_culture": "Travel-tech, performance, UX",
-    "internship_focus": "Search, pricing, reliability"
-    },
-    "CLEARTRIP (FLIPKART GROUP)": {
-    "description": "Travel booking platform with clean UX and integrations.",
-    "sector": "Travel / Consumer Tech",
-    "specializations": ["Web", "Integrations", "Data", "Design"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "Backend Intern",
-    "Data Analyst Intern",
-    "UI/UX Intern"
-    ],
-    "required_skills": ["React", "Node.js", "SQL", "Figma"],
-    "company_culture": "Design-first, integration-heavy",
-    "internship_focus": "Inventory, checkout, UX polish"
-    },
-    "REDBUS (IBIBO GROUP INDIA)": {
-    "description": "Bus ticketing platform with inventory and routing intelligence.",
-    "sector": "Travel / Consumer Tech",
-    "specializations": ["Mobile", "Web", "Data", "Ops"],
-    "preferred_roles": [
-    "Android/iOS Intern",
-    "Backend Intern",
-    "Data Analyst Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "Node/Java", "SQL", "Excel"],
-    "company_culture": "Ops + tech, reliability, scale",
-    "internship_focus": "Ticketing UX, partner tools, analytics"
-    },
-    "TATA CLiQ": {
-    "description": "Tata Group’s e-commerce platform for fashion and electronics.",
-    "sector": "E-commerce / Retail",
-    "specializations": ["Web", "Mobile", "Data", "Design"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "Android/iOS Intern",
-    "Data Analyst Intern",
-    "UI/UX Intern"
-    ],
-    "required_skills": ["React/Next.js", "Kotlin/Swift", "SQL", "Figma"],
-    "company_culture": "Brand curation, quality, experience",
-    "internship_focus": "Catalog, search, performance"
-    },
-    "CULT.FIT (CUREFIT)": {
-    "description": "Indian health and fitness platform with gyms and digital classes.",
-    "sector": "HealthTech / Fitness",
-    "specializations": ["Mobile", "Content", "Data", "Ops"],
-    "preferred_roles": [
-    "Android/iOS Intern",
-    "Content Intern",
-    "Data Analyst Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "Writing", "SQL", "Excel"],
-    "company_culture": "Lifestyle + tech, outcomes",
-    "internship_focus": "Workout UX, content ops, analytics"
-    },
-    "HEALTHIFYME": {
-    "description": "Indian digital health app for nutrition and fitness coaching.",
-    "sector": "HealthTech / Consumer",
-    "specializations": ["Mobile", "AI/Coaching", "Data", "Design"],
-    "preferred_roles": [
-    "Android/iOS Intern",
-    "ML Intern",
-    "Data Analyst Intern",
-    "UI/UX Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "Python", "SQL", "Figma"],
-    "company_culture": "Coaching + AI, empathetic UX",
-    "internship_focus": "Coaching AI, tracking, engagement"
-    },
-    "TITAN COMPANY LIMITED (TATA)": {
-    "description": "Indian lifestyle and jewelry company with retail tech initiatives.",
-    "sector": "Retail / D2C / IoT",
-    "specializations": ["E-commerce", "Data", "Design", "Ops"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "Data Analyst Intern",
-    "UI/UX Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["React", "SQL", "Figma", "Excel"],
-    "company_culture": "Trust, craftsmanship, customer delight",
-    "internship_focus": "Omni-channel UX, BI, catalogs"
-    },
-    "GODREJ AGROVET / GODREJ CONSUMER (DIGITAL)": {
-    "description": "Indian conglomerate entities with digital and analytics teams.",
-    "sector": "FMCG / Agri / Digital",
-    "specializations": ["Web", "Data", "Ops", "Design"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "Data Analyst Intern",
-    "Operations Intern",
-    "UI/UX Intern"
-    ],
-    "required_skills": ["React", "SQL", "Excel", "Figma"],
-    "company_culture": "Legacy + digital, ethical",
-    "internship_focus": "D2C, analytics, process digitization"
-    },
-    "ADITYA BIRLA FASHION & RETAIL (ABFRL DIGITAL)": {
-    "description": "Indian fashion retail leader with strong digital commerce.",
-    "sector": "Retail / FashionTech",
-    "specializations": ["E-commerce", "Mobile", "Data", "Design"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "Android/iOS Intern",
-    "Data Analyst Intern",
-    "UI/UX Intern"
-    ],
-    "required_skills": ["React", "Kotlin/Swift", "SQL", "Figma"],
-    "company_culture": "Brand-led, style + tech",
-    "internship_focus": "Catalog UX, personalization, apps"
-    },
-    "MPL (MOBILE PREMIER LEAGUE)": {
-    "description": "Gaming and esports platform from India.",
-    "sector": "Gaming / Consumer Tech",
-    "specializations": ["Mobile", "Realtime", "Security", "Data"],
-    "preferred_roles": [
-    "Android Intern",
-    "iOS Intern",
-    "Backend Intern",
-    "Security Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "Go/Java", "SQL", "OWASP"],
-    "company_culture": "Competitive, high-scale, integrity",
-    "internship_focus": "Realtime events, anti-cheat, analytics"
-    },
-    "DREAM11 (DREAM SPORTS)": {
-    "description": "Fantasy sports platform with large-scale live systems.",
-    "sector": "Gaming / SportsTech",
-    "specializations": ["Realtime", "Mobile", "Data", "SRE"],
-    "preferred_roles": [
-    "Android/iOS Intern",
-    "Backend Intern",
-    "Data Engineer Intern",
-    "SRE Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "Go/Java", "Kafka", "Kubernetes", "SQL"],
-    "company_culture": "Live at scale, fairness, security",
-    "internship_focus": "Scoring, live infra, personalization"
-    },
-    "TATA COMMUNICATIONS": {
-    "description": "Global digital infrastructure provider with India roots and teams.",
-    "sector": "Cloud / Networks / Security",
-    "specializations": ["Cloud", "Edge", "Security", "Data"],
-    "preferred_roles": [
-    "Cloud Intern",
-    "Security Intern",
-    "Data Analyst Intern",
-    "SRE Intern"
-    ],
-    "required_skills": ["Linux", "Networking", "AWS/Azure", "Python", "SQL"],
-    "company_culture": "Carrier-grade, reliability, scale",
-    "internship_focus": "Cloud networking, SOC, analytics"
-    },
-    "LARSEN & TOUBRO (L&T) – SMART WORLD & COMMUNICATION": {
-    "description": "Indian engineering giant’s digital unit for smart cities and security.",
-    "sector": "Engineering / Smart Cities",
-    "specializations": ["IoT", "Video Analytics", "Security", "Cloud"],
-    "preferred_roles": [
-    "IoT Intern",
-    "Computer Vision Intern",
-    "Cloud Intern",
-    "Project Management Intern"
-    ],
-    "required_skills": ["Python", "OpenCV", "Azure", "Excel", "PM tools"],
-    "company_culture": "Engineering rigor, safety, delivery",
-    "internship_focus": "CCTV analytics, city platforms, PMO"
-    },
-    "L&T TECHNOLOGY SERVICES": {
-    "description": "Engineering services company focusing on embedded, automotive, and industrial.",
-    "sector": "Engineering / R&D",
-    "specializations": ["Embedded", "AI/ML", "IoT", "AR/VR"],
-    "preferred_roles": [
-    "Embedded Intern",
-    "ML Intern",
-    "IoT Intern",
-    "QA Intern"
-    ],
-    "required_skills": ["C/C++", "Python", "RTOS", "Linux", "Git"],
-    "company_culture": "Build + test, domain engineering",
-    "internship_focus": "Automotive, industry 4.0, vision"
-    },
-    "ASHOKA UNIVERSITY (RESEARCH CENTERS)": {
-    "description": "Private Indian university with strong research programs.",
-    "sector": "Education / Research",
-    "specializations": ["Research", "Data", "Policy", "Analytics"],
-    "preferred_roles": [
-    "Research Intern",
-    "Data Analyst Intern",
-    "Content Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["Python/R", "SQL", "Writing", "Excel"],
-    "company_culture": "Academic rigor, interdisciplinary",
-    "internship_focus": "Data-driven research, literature, policy"
-    },
-    "IIT MADRAS RESEARCH PARK (STARTUPS CLUSTER)": {
-    "description": "Deep-tech startup ecosystem anchored by IITM.",
-    "sector": "Research / Deep Tech",
-    "specializations": ["AI/ML", "Robotics", "EV", "SaaS"],
-    "preferred_roles": [
-    "ML Intern",
-    "Robotics Intern",
-    "Embedded Intern",
-    "Full-Stack Intern"
-    ],
-    "required_skills": ["Python", "C++", "ROS", "React/Node", "Git"],
-    "company_culture": "Research-to-market, prototypes",
-    "internship_focus": "PoCs, pilots, productization"
-    },
-    "IIIT HYDERABAD (CVIT, ML LABS)": {
-    "description": "Premier research groups in CV, NLP, and ML applied research.",
-    "sector": "Education / Research",
-    "specializations": ["Computer Vision", "NLP", "ML", "Data"],
-    "preferred_roles": [
-    "Research Intern",
-    "ML Intern",
-    "Data Intern",
-    "Software Intern"
-    ],
-    "required_skills": ["Python", "PyTorch/TensorFlow", "SQL", "Paper reading"],
-    "company_culture": "Publication + product, rigorous",
-    "internship_focus": "Applied AI, datasets, benchmarks"
-    },
-    "TARLABS (TAR EDUCATION PRIVATE LIMITED)": {
-    "description": "Indian edtech lab providing hands-on training and research collaborations.",
-    "sector": "Education / Labs",
-    "specializations": ["AI/ML", "Data", "Web", "Cloud"],
-    "preferred_roles": [
-    "ML Intern",
-    "Data Engineer Intern",
-    "Full-Stack Intern",
-    "Cloud Intern"
-    ],
-    "required_skills": ["Python", "SQL", "React", "AWS/Azure", "Git"],
-    "company_culture": "Project-based, mentorship, outcomes",
-    "internship_focus": "Capstones, deployments, reports"
-    },
-    "ANALYTICS VIDHYA (INDIA)": {
-    "description": "Data science community and training platform.",
-    "sector": "Education / Analytics",
-    "specializations": ["ML/AI", "Competitions", "Content", "Community"],
-    "preferred_roles": [
-    "Data Science Intern",
-    "Content Intern",
-    "Frontend Intern",
-    "Community Intern"
-    ],
-    "required_skills": ["Python", "SQL", "Writing", "React"],
-    "company_culture": "Community + learning, open",
-    "internship_focus": "Tutorials, comps, DS projects"
-    },
-    "KRDS INDIA": {
-    "description": "Digital and social media agency with India presence.",
-    "sector": "Digital Marketing",
-    "specializations": ["Social", "Content", "Ads", "Design"],
-    "preferred_roles": [
-    "Social Media Intern",
-    "Content Intern",
-    "Design Intern",
-    "Performance Intern"
-    ],
-    "required_skills": ["Writing", "Canva/Adobe", "Excel", "GA4/Ads"],
-    "company_culture": "Campaigns, creativity, metrics",
-    "internship_focus": "Calendars, creatives, reports"
-    },
-    "WHITEHAT JR (BYJU’S)": {
-    "description": "Edtech company focused on coding for kids with India operations.",
-    "sector": "EdTech",
-    "specializations": ["Content", "Teaching", "Web", "Operations"],
-    "preferred_roles": [
-    "Content Intern",
-    "Teaching Intern",
-    "Frontend Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["Writing", "JS/HTML/CSS", "Communication", "Excel"],
-    "company_culture": "Delivery-first, ops at scale",
-    "internship_focus": "Curriculum, classes, tools"
-    },
-    "TEACHMINT": {
-    "description": "School SaaS platform for classroom and admin digitization.",
-    "sector": "EdTech / SaaS",
-    "specializations": ["Web", "Mobile", "Video", "Data"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "Android Intern",
-    "Video Intern",
-    "Data Analyst Intern"
-    ],
-    "required_skills": ["React", "Kotlin", "WebRTC", "SQL"],
-    "company_culture": "Teacher-first, practical",
-    "internship_focus": "Classroom UX, LMS, analytics"
-    },
-    "CLASSPLUS": {
-    "description": "Coaching institute SaaS platform enabling creators and teachers.",
-    "sector": "EdTech / SaaS",
-    "specializations": ["Web", "Mobile", "Payments", "Data"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Frontend Intern",
-    "Android Intern",
-    "Data Analyst Intern"
-    ],
-    "required_skills": ["Node.js", "React", "Kotlin", "SQL"],
-    "company_culture": "Creator-first, outcomes",
-    "internship_focus": "Storefronts, payments, dashboards"
-    },
-    "URBANPIPER": {
-    "description": "Restaurant management and integrations platform.",
-    "sector": "FoodTech / SaaS",
-    "specializations": ["APIs", "Web", "Data", "Ops"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Full-Stack Intern",
-    "Data Analyst Intern",
-    "Implementation Intern"
-    ],
-    "required_skills": ["Node/Python", "React", "SQL", "APIs"],
-    "company_culture": "Restaurant-first, integration-heavy",
-    "internship_focus": "Aggregator integrations, dashboards"
-    },
-    "REBEL FOODS (FAASOS, OVEN STORY)": {
-    "description": "Cloud kitchen company with multiple digital-first brands.",
-    "sector": "FoodTech / D2C",
-    "specializations": ["Ops Tech", "Mobile", "Data", "Design"],
-    "preferred_roles": [
-    "Android Intern",
-    "Backend Intern",
-    "Data Analyst Intern",
-    "UI/UX Intern"
-    ],
-    "required_skills": ["Kotlin", "Java/Node", "SQL", "Figma"],
-    "company_culture": "Ops + data, experimentation",
-    "internship_focus": "Kitchen ops tech, delivery, UX"
-    },
-    "LICIOUS": {
-    "description": "D2C meat brand with cold-chain and quality operations.",
-    "sector": "D2C / Food",
-    "specializations": ["Ops Tech", "E-commerce", "Data", "Design"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "Data Analyst Intern",
-    "UI/UX Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["React", "SQL", "Figma", "Excel"],
-    "company_culture": "Quality-first, ops heavy, trust",
-    "internship_focus": "Catalog UX, forecasting, ops dashboards"
-    },
-    "DUNZO": {
-    "description": "Indian quick-commerce and logistics platform.",
-    "sector": "Logistics / Consumer",
-    "specializations": ["Mobile", "Routing", "Ops", "Data"],
-    "preferred_roles": [
-    "Android Intern",
-    "Backend Intern",
-    "Data Analyst Intern",
-    "SRE Intern"
-    ],
-    "required_skills": ["Kotlin", "Go/Java", "SQL", "Kafka", "Kubernetes"],
-    "company_culture": "Ops + tech, experimentation",
-    "internship_focus": "Routing, last-mile, reliability"
-    },
-    "PORTER": {
-    "description": "Intra-city logistics platform for trucks and bikes.",
-    "sector": "Logistics / Mobility",
-    "specializations": ["Mobile", "Ops Tech", "Data", "Maps"],
-    "preferred_roles": [
-    "Android Intern",
-    "Backend Intern",
-    "Data Analyst Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["Kotlin", "Java/Node", "SQL", "GIS basics"],
-    "company_culture": "Ops-first, frugal, execution",
-    "internship_focus": "Driver apps, pricing, analytics"
-    },
-    "E-COM EXPRESS": {
-    "description": "Indian logistics company with e-commerce specialization.",
-    "sector": "Logistics / 3PL",
-    "specializations": ["Ops", "Data", "Web", "SRE"],
-    "preferred_roles": [
-    "Backend Intern",
-    "Data Analyst Intern",
-    "Frontend Intern",
-    "SRE Intern"
-    ],
-    "required_skills": ["Java/Node", "SQL", "React", "Linux"],
-    "company_culture": "SLA-driven, reliability, scale",
-    "internship_focus": "Tracking, dashboards, reliability"
-    },
-    "ZERDA (ANALYTICS STARTUP INDIA)": {
-    "description": "India analytics startup focused on marketing and growth science.",
-    "sector": "Analytics / MarTech",
-    "specializations": ["Attribution", "Experimentation", "BI", "Data Eng"],
-    "preferred_roles": [
-    "Data Analyst Intern",
-    "Data Engineer Intern",
-    "ML Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["SQL", "Python", "DBT/Spark", "Stats"],
-    "company_culture": "Experiment heavy, lean, outcomes",
-    "internship_focus": "Attribution, growth models, dashboards"
-    },
-    "CARS24": {
-    "description": "Used car e-commerce platform with inspection and financing.",
-    "sector": "AutoTech / E-commerce",
-    "specializations": ["Mobile", "Web", "Data", "Ops"],
-    "preferred_roles": [
-    "Android/iOS Intern",
-    "Frontend Intern",
-    "Data Analyst Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "React", "SQL", "Excel"],
-    "company_culture": "Ops + trust, scale",
-    "internship_focus": "Inspection UX, pricing, funnels"
-    },
-    "SPINNY": {
-    "description": "Used car marketplace emphasizing trust and quality.",
-    "sector": "AutoTech / D2C",
-    "specializations": ["Web", "Mobile", "Data", "Design"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "Android Intern",
-    "Data Analyst Intern",
-    "UI/UX Intern"
-    ],
-    "required_skills": ["React/Next.js", "Kotlin", "SQL", "Figma"],
-    "company_culture": "Customer trust, transparent, measured",
-    "internship_focus": "Catalog, test-drive flows, analytics"
-    },
-    "AETHER ENERGY (AETHER OR ATHER? ATHER ENERGY)": {
-    "description": "EV scooter manufacturer known for connected features.",
-    "sector": "EV / Hardware-Software",
-    "specializations": ["Embedded", "Mobile", "Cloud", "Data"],
-    "preferred_roles": [
-    "Embedded Intern",
-    "Android Intern",
-    "Cloud Intern",
-    "Data Analyst Intern"
-    ],
-    "required_skills": ["C/C++", "Kotlin", "Python", "AWS/Azure", "Git"],
-    "company_culture": "Engineering-first, rider experience",
-    "internship_focus": "Telematics, OTA, dashboards"
-    },
-    "ACKO DRIVE": {
-    "description": "Digital auto retail initiative from Acko ecosystem.",
-    "sector": "AutoTech / Retail",
-    "specializations": ["Web", "Mobile", "Data", "Ops"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "Android Intern",
-    "Data Analyst Intern",
-    "Operations Intern"
-    ],
-    "required_skills": ["React", "Kotlin", "SQL", "Excel"],
-    "company_culture": "Digital-first, efficient",
-    "internship_focus": "Checkout, listings, analytics"
-    },
-    "CREDILLUSION (SALES TOOLS INDIA)": {
-    "description": "India startup building sales intelligence tools.",
-    "sector": "SaaS / SalesTech",
-    "specializations": ["Web", "Data", "Integrations", "Growth"],
-    "preferred_roles": [
-    "Full-Stack Intern",
-    "Data Analyst Intern",
-    "Growth Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["React/Node", "SQL", "Python", "CRM APIs"],
-    "company_culture": "Scrappy, data-led, GTM obsessed",
-    "internship_focus": "Lead scoring, integrations, dashboards"
-    },
-    "VYAPARIK (SMB SUITE INDIA)": {
-    "description": "Indian SMB suite for invoicing, inventory, and CRM.",
-    "sector": "SaaS / SMB",
-    "specializations": ["Web", "Mobile", "Data", "Support"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "Android Intern",
-    "Data Analyst Intern",
-    "Support Intern"
-    ],
-    "required_skills": ["React", "Kotlin", "SQL", "Excel"],
-    "company_culture": "SMB empathy, reliability",
-    "internship_focus": "Inventory, billing, CRM"
-    },
-    "GATI (ALLCARGO GROUP)": {
-    "description": "Supply chain and logistics services with tech enablement.",
-    "sector": "Logistics / Supply Chain",
-    "specializations": ["Ops", "Data", "Web", "SRE"],
-    "preferred_roles": [
-    "Operations Intern",
-    "Data Analyst Intern",
-    "Backend Intern",
-    "SRE Intern"
-    ],
-    "required_skills": ["Excel", "SQL", "Java/Node", "Linux"],
-    "company_culture": "SLA-driven, network operations",
-    "internship_focus": "Route plans, dashboards, reliability"
-    },
-    "UPGRAD JEET": {
-    "description": "Test prep brand within upGrad ecosystem.",
-    "sector": "EdTech",
-    "specializations": ["Content", "Video", "Web", "Marketing"],
-    "preferred_roles": [
-    "Content Intern",
-    "Video Editing Intern",
-    "Frontend Intern",
-    "Marketing Intern"
-    ],
-    "required_skills": ["Writing", "Premiere", "HTML/CSS/JS", "SEO"],
-    "company_culture": "Exam outcomes, execution",
-    "internship_focus": "Content ops, sites, marketing"
-    },
-    "MONEYCONTROL (NETWORK18 DIGITAL)": {
-    "description": "India’s leading financial news and markets portal.",
-    "sector": "Media / Finance",
-    "specializations": ["Web", "Data", "Content", "Mobile"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "Data Analyst Intern",
-    "Content Intern",
-    "Android/iOS Intern"
-    ],
-    "required_skills": ["React/Next.js", "SQL", "Writing", "Kotlin/Swift"],
-    "company_culture": "Markets-first, real-time",
-    "internship_focus": "Market data UX, dashboards, content"
-    },
-    "THE KEN": {
-    "description": "Indian subscription-based business journalism platform.",
-    "sector": "Media / Content",
-    "specializations": ["Longform Writing", "Research", "Data", "Product"],
-    "preferred_roles": [
-    "Writer Intern",
-    "Research Intern",
-    "Data Journalist Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["Writing", "Research", "Excel/SQL", "Product thinking"],
-    "company_culture": "Depth, clarity, reader-first",
-    "internship_focus": "Stories, datasets, paywall UX"
-    },
-    "THE QUINT": {
-    "description": "Indian digital news platform with multimedia storytelling.",
-    "sector": "Media",
-    "specializations": ["Video", "Writing", "Social", "Design"],
-    "preferred_roles": [
-    "Video Editing Intern",
-    "Content Intern",
-    "Social Media Intern",
-    "Graphic Design Intern"
-    ],
-    "required_skills": ["Premiere", "Writing", "Canva/Adobe", "Excel"],
-    "company_culture": "Digital-first, creative",
-    "internship_focus": "News packaging, short video, visuals"
-    },
-    "ADFACTOR PUBLIC RELATIONS": {
-    "description": "India’s leading PR consultancy.",
-    "sector": "PR / Communications",
-    "specializations": ["Media Relations", "Crisis", "Content", "Digital"],
-    "preferred_roles": [
-    "PR Intern",
-    "Content Intern",
-    "Social Intern",
-    "Research Intern"
-    ],
-    "required_skills": ["Writing", "Research", "Excel", "Communication"],
-    "company_culture": "Relationship-driven, strategic",
-    "internship_focus": "Press notes, monitoring, reports"
-    },
-    "VALUE RESEARCH INDIA": {
-    "description": "Indian independent investment research firm.",
-    "sector": "Finance / Research",
-    "specializations": ["Mutual Funds", "Equities", "Data", "Content"],
-    "preferred_roles": [
-    "Research Intern",
-    "Data Analyst Intern",
-    "Content Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["Excel", "SQL", "Python", "Writing"],
-    "company_culture": "Analytical, investor-first, precise",
-    "internship_focus": "MF analytics, visualizations, articles"
-    },
-    "SMALLCASE TECHNOLOGIES": {
-    "description": "Indian fintech enabling theme-based investing.",
-    "sector": "Fintech / Investing",
-    "specializations": ["Web", "Mobile", "Data", "Design"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "Android/iOS Intern",
-    "Data Analyst Intern",
-    "UI/UX Intern"
-    ],
-    "required_skills": ["React", "Kotlin/Swift", "SQL", "Figma"],
-    "company_culture": "Investor education, UX, partnerships",
-    "internship_focus": "Investing UX, analytics, broker APIs"
-    },
-    "ZETA (DIRECTI GROUP, INDIA OPS)": {
-    "description": "Banking tech and card processing platform.",
-    "sector": "Fintech / Banking Tech",
-    "specializations": ["Cards", "Core Banking", "APIs", "Security"],
-    "preferred_roles": [
-    "Backend Intern",
-    "SRE Intern",
-    "Security Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["Java/Go", "Kubernetes", "Linux", "SQL", "OWASP"],
-    "company_culture": "Platform-first, reliability",
-    "internship_focus": "Issuer processing, performance, security"
-    },
-    "RELAY (DIRECTI ALUMNI VENTURE, INDIA)": {
-    "description": "Developer tools and productivity suite with India teams.",
-    "sector": "SaaS / DevTools",
-    "specializations": ["Web", "APIs", "Integrations", "Design"],
-    "preferred_roles": [
-    "Full-Stack Intern",
-    "Backend Intern",
-    "Product Design Intern",
-    "QA Intern"
-    ],
-    "required_skills": ["Node/Go", "React", "SQL", "Figma", "Testing"],
-    "company_culture": "Builder DNA, craft, rapid iteration",
-    "internship_focus": "Collab features, SDKs, QA"
-    },
-    "SHOPTIMIZE": {
-    "description": "Indian D2C e-commerce enablement platform.",
-    "sector": "E-commerce / SaaS",
-    "specializations": ["Web", "Conversion", "Analytics", "Marketing"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "Data Analyst Intern",
-    "SEO Intern",
-    "Performance Intern"
-    ],
-    "required_skills": ["React", "SQL", "GA4", "Excel", "Ads"],
-    "company_culture": "Merchant outcomes, practical",
-    "internship_focus": "Storefronts, CRO, funnels"
-    },
-    "IIMCALCUTTA INNOVATION PARK (STARTUPS)": {
-    "description": "Startup incubator with data, fintech, and social impact ventures.",
-    "sector": "Incubator / Startup",
-    "specializations": ["Web", "AI/ML", "Ops", "Design"],
-    "preferred_roles": [
-    "Full-Stack Intern",
-    "ML Intern",
-    "Operations Intern",
-    "UI/UX Intern"
-    ],
-    "required_skills": ["React/Node", "Python", "SQL", "Figma"],
-    "company_culture": "Startup-in-a-box, mentorship",
-    "internship_focus": "MVP builds, pilots, research"
-    },
-    "IIT BOMBAY SINE (STARTUPS)": {
-    "description": "Deep tech incubator hosting AI, robotics, and SaaS startups.",
-    "sector": "Incubator / Deep Tech",
-    "specializations": ["AI/ML", "Robotics", "SaaS", "IoT"],
-    "preferred_roles": [
-    "ML Intern",
-    "Robotics Intern",
-    "Full-Stack Intern",
-    "Embedded Intern"
-    ],
-    "required_skills": ["Python", "C++", "ROS", "React/Node", "Git"],
-    "company_culture": "Research-to-product, grit",
-    "internship_focus": "Prototypes, PoCs, pilots"
-    },
-    "HASURA INDIA (R&D)": {
-    "description": "GraphQL engine company with India engineering teams.",
-    "sector": "SaaS / DevTools",
-    "specializations": ["GraphQL", "Databases", "Security", "DX"],
-    "preferred_roles": [
-    "Backend Intern",
-    "DevRel Intern",
-    "Security Intern",
-    "Product Intern"
-    ],
-    "required_skills": ["Go/Haskell", "Postgres", "GraphQL", "Linux"],
-    "company_culture": "Open-source, developer-first",
-    "internship_focus": "Engine features, connectors, docs"
-    },
-    "REDFOX LABS INDIA (COMPUTER VISION STARTUP)": {
-    "description": "Indian CV startup working on retail and manufacturing vision.",
-    "sector": "AI / Computer Vision",
-    "specializations": ["CV", "Edge", "Data", "MLOps"],
-    "preferred_roles": [
-    "Computer Vision Intern",
-    "Data Engineer Intern",
-    "MLOps Intern",
-    "Frontend Intern"
-    ],
-    "required_skills": ["Python", "OpenCV", "PyTorch", "SQL", "React"],
-    "company_culture": "Applied AI, on-ground deployments",
-    "internship_focus": "Detection/Tracking, pipelines, dashboards"
-    },
-    "INNEFU LABS": {
-    "description": "Indian cybersecurity and AI company for law enforcement and BFSI.",
-    "sector": "Cybersecurity / AI",
-    "specializations": ["OSINT", "Face/Voice Biometrics", "SIEM"],
-    "preferred_roles": [
-    "Security Analyst Intern",
-    "ML Intern",
-    "Data Intern",
-    "Backend Intern"
-    ],
-    "required_skills": ["Python", "NLP/CV", "Linux", "SQL"],
-    "company_culture": "Gov/BFSI-grade, R&D",
-    "internship_focus": "Forensics, analytics, detections"
-    },
-    "DATARESOLVE TECHNOLOGIES": {
-    "description": "Indian insider threat and DLP company.",
-    "sector": "Cybersecurity",
-    "specializations": ["DLP", "UEBA", "Endpoint", "Analytics"],
-    "preferred_roles": [
-    "Security Intern",
-    "QA Intern",
-    "Backend Intern",
-    "Data Analyst Intern"
-    ],
-    "required_skills": ["Windows internals", "Python", "SQL", "Testing"],
-    "company_culture": "Security + analytics, enterprise",
-    "internship_focus": "DLP features, detections, dashboards"
-    },
-    "QUANTIPHI ANALYTICS": {
-    "description": "AI-first India-founded analytics company.",
-    "sector": "Analytics / AI",
-    "specializations": ["ML/AI", "Data Engineering", "Cloud", "CV/NLP"],
-    "preferred_roles": [
-    "ML Intern",
-    "Data Engineer Intern",
-    "BI Intern",
-    "MLOps Intern"
-    ],
-    "required_skills": ["Python", "SQL", "Spark", "AWS/GCP", "Git"],
-    "company_culture": "Solutioning, certifications, pace",
-    "internship_focus": "Applied ML, pipelines, dashboards"
-    },
-    "CARTESIAN CONSULTING": {
-    "description": "Indian marketing analytics firm focusing on personalization.",
-    "sector": "Analytics / MarTech",
-    "specializations": ["Segmentation", "Attribution", "BI", "ML"],
-    "preferred_roles": [
-    "Data Analyst Intern",
-    "ML Intern",
-    "BI Intern",
-    "Consulting Intern"
-    ],
-    "required_skills": ["SQL", "Python", "Excel", "Power BI/Tableau"],
-    "company_culture": "Client outcomes, experimentation",
-    "internship_focus": "Customer 360, uplift models, reports"
-    },
-    "ABSOLUTDATA (INFOSYS ARM, INDIA)": {
-    "description": "Analytics and AI company with India teams.",
-    "sector": "Analytics / AI",
-    "specializations": ["ML", "BI", "Data Eng", "Consulting"],
-    "preferred_roles": [
-    "Data Science Intern",
-    "BI Intern",
-    "Data Engineer Intern",
-    "Analyst Intern"
-    ],
-    "required_skills": ["Python", "SQL", "Tableau/Power BI", "Spark"],
-    "company_culture": "Consulting-led, pragmatic AI",
-    "internship_focus": "Forecasting, dashboards, pipelines"
-    },
-    "EPAM INDIA (INDIA ENTITY)": {
-    "description": "Engineering services firm with India delivery centers.",
-    "sector": "Technology / Product Engineering",
-    "specializations": ["Web", "Cloud", "Data", "QA"],
-    "preferred_roles": [
-    "Full-Stack Intern",
-    "Cloud Intern",
-    "QA Automation Intern",
-    "Data Engineer Intern"
-    ],
-    "required_skills": ["Java/Node", "React", "AWS/Azure", "Selenium", "SQL"],
-    "company_culture": "Engineering rigor, craftsmanship",
-    "internship_focus": "Product builds, migrations, test automation"
-    },
-    "THOUGHTWORKS INDIA": {
-    "description": "Software consultancy with strong agile and engineering culture.",
-    "sector": "Technology / Consulting",
-    "specializations": ["Web", "DevOps", "Data", "UI/UX"],
-    "preferred_roles": [
-    "Developer Intern",
-    "DevOps Intern",
-    "Data Engineer Intern",
-    "Experience Design Intern"
-    ],
-    "required_skills": ["Java/Kotlin", "React", "CI/CD", "TDD", "Cloud"],
-    "company_culture": "Craftsmanship, agile, social impact",
-    "internship_focus": "XP practices, microservices, design"
-    },
-    "PERSISTENT SYSTEMS": {
-    "description": "Pune-based product engineering and digital transformation company.",
-    "sector": "Technology / Product Engineering",
-    "specializations": ["Web", "Cloud", "Data", "Security"],
-    "preferred_roles": [
-    "Full-Stack Intern",
-    "Cloud Intern",
-    "Data Analyst Intern",
-    "Security Intern"
-    ],
-    "required_skills": ["Java/Node", "React", "AWS/Azure", "SQL", "OWASP"],
-    "company_culture": "Engineering-led, delivery focus",
-    "internship_focus": "Platforms, integrations, analytics"
-    },
-    "ZENSAR TECHNOLOGIES": {
-    "description": "Indian IT services company with CX and engineering practices.",
-    "sector": "Technology / IT Services",
-    "specializations": ["Web", "Cloud", "Data", "QA"],
-    "preferred_roles": [
-    "Frontend Intern",
-    "Backend Intern",
-    "QA Intern",
-    "Data Analyst Intern"
-    ],
-    "required_skills": ["React", "Java", "Selenium", "SQL", "Git"],
-    "company_culture": "Delivery, training, growth",
-    "internship_focus": "Web apps, QA automation, BI"
-    },
-    "MINDTREE (NOW LTIM)": {
-    "description": "Digital engineering unit under LTIM with India presence.",
-    "sector": "Technology / IT Services",
-    "specializations": ["Mobile", "Web", "Cloud", "Data"],
-    "preferred_roles": [
-    "Android/iOS Intern",
-    "Full-Stack Intern",
-    "Cloud Intern",
-    "Data Engineer Intern"
-    ],
-    "required_skills": ["Kotlin/Swift", "JavaScript", "AWS/Azure", "SQL"],
-    "company_culture": "Agile, collaborative, client-centric",
-    "internship_focus": "Digital experiences, integrations, data"
+      "description": "Top Indian digital agency offering creative branding, design, and influencer marketing services.",
+      "sector": "Advertising / Marketing / Branding",
+      "specializations": ["Branding", "Graphic Design", "Social Media"],
+      "preferred_roles": [
+        "Brand Strategy Intern",
+        "Graphic Design Intern",
+        "Influencer Marketing Intern"
+      ],
+      "required_skills": ["Photoshop", "Illustrator", "Canva", "Storytelling"],
+      "company_culture": "Fast-paced, creative, and strategy-led.",
+      "internship_focus": "Visual storytelling, brand identity design, and campaign ideation."
+    },
+
+    "PEPPER CONTENT PRIVATE LIMITED": {
+      "description": "India’s largest content marketplace connecting freelance writers, designers, and creators with businesses.",
+      "sector": "Content / Marketing / Creative",
+      "specializations": ["Content Writing", "Copywriting", "Editing"],
+      "preferred_roles": [
+        "Content Writing Intern",
+        "SEO Intern",
+        "Editorial Intern"
+      ],
+      "required_skills": ["Writing", "Research", "SEO", "Grammarly"],
+      "company_culture": "Flexible, creative, and performance-oriented.",
+      "internship_focus": "Content creation and editorial optimization for brand clients."
+    },
+
+    "DESIGN CAFE PRIVATE LIMITED": {
+      "description": "Interior and product design company offering end-to-end home design powered by tech and creativity.",
+      "sector": "Interior Design / Product / Creative",
+      "specializations": ["Product Design", "UI/UX", "Graphic Design"],
+      "preferred_roles": [
+        "Product Design Intern",
+        "UI Intern",
+        "3D Visualization Intern"
+      ],
+      "required_skills": ["AutoCAD", "SketchUp", "Figma", "Illustrator"],
+      "company_culture": "Artistic, innovative, and research-led.",
+      "internship_focus": "Space design, digital product visualization, and customer journey mapping."
+    },
+
+    "BEHIND THE SCENES MEDIA PRIVATE LIMITED": {
+      "description": "Photography and visual production house specializing in brand shoots, commercial content, and creative storytelling.",
+      "sector": "Photography / Media / Branding",
+      "specializations": ["Photography", "Video Editing", "Branding"],
+      "preferred_roles": [
+        "Photography Intern",
+        "Video Editing Intern",
+        "Creative Production Intern"
+      ],
+      "required_skills": [
+        "Lightroom",
+        "Premiere Pro",
+        "After Effects",
+        "Cinematography"
+      ],
+      "company_culture": "Art-driven and visually expressive with collaborative storytelling.",
+      "internship_focus": "Visual content creation and post-production editing."
+    },
+
+    "SOCIAL PANGA": {
+      "description": "Digital marketing and creative design agency known for bold campaigns and integrated branding.",
+      "sector": "Digital Marketing / Advertising / Branding",
+      "specializations": ["Branding", "Graphic Design", "Social Media"],
+      "preferred_roles": [
+        "Graphic Design Intern",
+        "Social Media Intern",
+        "Campaign Strategist Intern"
+      ],
+      "required_skills": ["Illustrator", "Photoshop", "Canva", "Communication"],
+      "company_culture": "Vibrant, experimental, and people-focused.",
+      "internship_focus": "Social brand campaigns and digital asset creation."
+    },
+
+    "POSTERHOUSE": {
+      "description": "Creative studio specializing in poster design, typography, and visual branding for entertainment and brands.",
+      "sector": "Design / Media / Creative",
+      "specializations": ["Graphic Design", "Branding", "Visual Communication"],
+      "preferred_roles": [
+        "Graphic Design Intern",
+        "Illustration Intern",
+        "Typography Intern"
+      ],
+      "required_skills": ["Illustrator", "InDesign", "Photoshop", "Typography"],
+      "company_culture": "Detail-oriented and creatively fearless.",
+      "internship_focus": "Poster and brand visual system creation."
+    },
+
+    "NIELSENIQ INDIA PRIVATE LIMITED": {
+      "description": "Global data and analytics firm with major Indian operations providing retail and consumer market insights.",
+      "sector": "Analytics / Market Research / Consulting",
+      "specializations": ["Analytics", "Market Research", "Data Science"],
+      "preferred_roles": [
+        "Data Analyst Intern",
+        "Market Research Intern",
+        "Insight Analyst Intern"
+      ],
+      "required_skills": ["Excel", "SQL", "Power BI", "Python"],
+      "company_culture": "Analytical, data-centric, and client-focused.",
+      "internship_focus": "Market analytics, consumer research, and retail data modeling."
+    },
+
+    "KANTAR INDIA PRIVATE LIMITED": {
+      "description": "One of India’s largest marketing research and consulting firms helping brands with data-driven insights.",
+      "sector": "Market Research / Analytics / Consulting",
+      "specializations": ["Market Research", "Analytics", "Consulting"],
+      "preferred_roles": [
+        "Market Research Intern",
+        "Data Analyst Intern",
+        "Brand Research Intern"
+      ],
+      "required_skills": [
+        "Excel",
+        "SPSS",
+        "PowerPoint",
+        "Research Methodology"
+      ],
+      "company_culture": "Insight-driven and intellectually collaborative.",
+      "internship_focus": "Brand studies, consumer trends, and behavioral data analytics."
+    },
+
+    "TATA INSTITUTE OF SOCIAL SCIENCES (TISS)": {
+      "description": "Renowned Indian research institute focusing on social sciences, education, and policy development.",
+      "sector": "Education / Research / Public Policy",
+      "specializations": ["Research", "Education", "Analytics"],
+      "preferred_roles": [
+        "Research Intern",
+        "Data Analyst Intern",
+        "Education Policy Intern"
+      ],
+      "required_skills": [
+        "Research Design",
+        "SPSS",
+        "Excel",
+        "Qualitative Analysis"
+      ],
+      "company_culture": "Academic, social-impact-driven, and research-focused.",
+      "internship_focus": "Field research, academic data analysis, and education strategy."
+    },
+
+    "NITI AAYOG": {
+      "description": "Government think tank focusing on economic, social, and technological research and policy strategy.",
+      "sector": "Government / Policy / Research",
+      "specializations": ["Research", "Analytics", "Public Policy"],
+      "preferred_roles": [
+        "Research Intern",
+        "Policy Analyst Intern",
+        "Project Management Intern"
+      ],
+      "required_skills": [
+        "Data Analysis",
+        "Excel",
+        "Policy Research",
+        "Report Writing"
+      ],
+      "company_culture": "Policy-driven and evidence-based with emphasis on national impact.",
+      "internship_focus": "Research in economic reforms, education, and governance models."
+    },
+
+    "EXL SERVICE INDIA PRIVATE LIMITED": {
+      "description": "Data analytics and operations management company helping businesses optimize processes using AI and analytics.",
+      "sector": "Analytics / Consulting / Operations",
+      "specializations": ["Analytics", "Project Management", "Operations"],
+      "preferred_roles": [
+        "Data Analyst Intern",
+        "Project Management Intern",
+        "Operations Analyst Intern"
+      ],
+      "required_skills": ["Excel", "SQL", "Power BI", "Communication"],
+      "company_culture": "Professional, analytical, and process-oriented.",
+      "internship_focus": "Business analytics and operational intelligence for enterprise clients."
+    },
+
+    "MU SIGMA BUSINESS SOLUTIONS PRIVATE LIMITED": {
+      "description": "One of India’s largest pure-play analytics firms providing decision sciences services to Fortune 500 companies.",
+      "sector": "Analytics / Consulting / Data Science",
+      "specializations": ["Analytics", "Data Science", "Consulting"],
+      "preferred_roles": [
+        "Data Analyst Intern",
+        "Business Analyst Intern",
+        "Decision Scientist Intern"
+      ],
+      "required_skills": ["Python", "SQL", "Excel", "Statistical Modeling"],
+      "company_culture": "Collaborative, problem-solving, and data-obsessed.",
+      "internship_focus": "Data-driven decision-making and business forecasting."
+    },
+
+    "GENPACT INDIA PRIVATE LIMITED": {
+      "description": "Global professional services firm specializing in digital transformation, operations, and customer support.",
+      "sector": "Operations / BPO / Analytics",
+      "specializations": [
+        "Project Management",
+        "Customer Support",
+        "Operations"
+      ],
+      "preferred_roles": [
+        "Customer Support Intern",
+        "Operations Intern",
+        "Process Analyst Intern"
+      ],
+      "required_skills": [
+        "Communication",
+        "CRM Tools",
+        "Excel",
+        "Problem Solving"
+      ],
+      "company_culture": "Process-oriented, structured, and global delivery-focused.",
+      "internship_focus": "Customer success management and operational workflows."
+    },
+
+    "HCL TECHNOLOGIES (INFRA OPS DIVISION)": {
+      "description": "HCL’s operations and support division handling enterprise-level customer experience and project delivery.",
+      "sector": "Technology / Support / Project Management",
+      "specializations": [
+        "Customer Support",
+        "Project Management",
+        "Operations"
+      ],
+      "preferred_roles": [
+        "Technical Support Intern",
+        "Project Intern",
+        "Service Desk Intern"
+      ],
+      "required_skills": [
+        "Customer Communication",
+        "ITIL",
+        "Excel",
+        "Problem Solving"
+      ],
+      "company_culture": "Service-driven, structured, and team-oriented.",
+      "internship_focus": "Enterprise customer support and project process optimization."
+    },
+
+    "UPGRAD EDUCATION PRIVATE LIMITED": {
+      "description": "Leading Indian edtech platform offering online degree programs in collaboration with universities worldwide.",
+      "sector": "EdTech / Learning / AI",
+      "specializations": ["Education", "Content Writing", "Analytics"],
+      "preferred_roles": [
+        "Content Intern",
+        "Instructional Design Intern",
+        "Education Analyst Intern"
+      ],
+      "required_skills": ["Writing", "Research", "Excel", "Storyboarding"],
+      "company_culture": "Learner-first, tech-enabled, and performance-driven.",
+      "internship_focus": "Content creation and learning experience analytics."
+    },
+
+    "UNACADEMY EDUCATION PRIVATE LIMITED": {
+      "description": "EdTech unicorn democratizing education through live interactive classes and AI-based learning analytics.",
+      "sector": "EdTech / Technology / Learning",
+      "specializations": ["Education", "Research", "Analytics"],
+      "preferred_roles": [
+        "Research Intern",
+        "Education Content Intern",
+        "Data Analyst Intern"
+      ],
+      "required_skills": [
+        "Python",
+        "Excel",
+        "Educational Research",
+        "Statistics"
+      ],
+      "company_culture": "Dynamic, inclusive, and growth-driven.",
+      "internship_focus": "AI-driven educational research and platform analytics."
+    },
+
+    "BYJU’S (THINK AND LEARN PRIVATE LIMITED) - RESEARCH DIVISION": {
+      "description": "EdTech major with a research division dedicated to learning behavior analytics and adaptive AI models.",
+      "sector": "EdTech / Research / AI",
+      "specializations": ["Research", "AI", "Education"],
+      "preferred_roles": [
+        "Research Intern",
+        "AI Analyst Intern",
+        "Education Strategist Intern"
+      ],
+      "required_skills": [
+        "Python",
+        "SPSS",
+        "Data Visualization",
+        "Educational Psychology"
+      ],
+      "company_culture": "Innovative, academic, and student-focused.",
+      "internship_focus": "Learning data modeling and pedagogical innovation."
+    },
+
+    "PWC INDIA PRIVATE LIMITED": {
+      "description": "Top consulting firm offering audit, assurance, legal, and business advisory services across industries.",
+      "sector": "Consulting / Legal / Strategy",
+      "specializations": ["Legal", "Consulting", "Project Management"],
+      "preferred_roles": [
+        "Legal Intern",
+        "Compliance Intern",
+        "Project Intern"
+      ],
+      "required_skills": ["Law", "Documentation", "Excel", "Communication"],
+      "company_culture": "Professional, ethical, and integrity-driven.",
+      "internship_focus": "Legal compliance, documentation, and corporate governance."
+    },
+
+    "TRILEGAL SERVICES LLP": {
+      "description": "Premier Indian law firm providing corporate legal services, arbitration, and compliance advisory.",
+      "sector": "Legal / Corporate / Consulting",
+      "specializations": ["Legal", "Corporate Law", "Research"],
+      "preferred_roles": [
+        "Legal Intern",
+        "Corporate Law Intern",
+        "Research Intern"
+      ],
+      "required_skills": [
+        "Legal Drafting",
+        "Case Law Research",
+        "Communication"
+      ],
+      "company_culture": "Professional, client-centric, and ethics-driven.",
+      "internship_focus": "Legal research, compliance, and corporate structuring."
+    },
+
+    "INDIAN SCHOOL OF BUSINESS (ISB)": {
+      "description": "India’s premier business school conducting advanced research and education in management and strategy.",
+      "sector": "Education / Research / Business Strategy",
+      "specializations": ["Research", "Education", "Analytics"],
+      "preferred_roles": [
+        "Research Assistant Intern",
+        "Teaching Assistant Intern",
+        "Academic Intern"
+      ],
+      "required_skills": ["Excel", "Research Writing", "SPSS", "Data Analysis"],
+      "company_culture": "Academic, analytical, and mentorship-driven.",
+      "internship_focus": "Management research and educational data analysis."
+    },
+
+    "TALISMA CORPORATION PRIVATE LIMITED": {
+      "description": "Indian CRM and customer engagement company offering automation and omnichannel support platforms.",
+      "sector": "Customer Support / CRM / SaaS",
+      "specializations": ["Customer Support", "Operations", "Analytics"],
+      "preferred_roles": [
+        "Support Intern",
+        "CRM Analyst Intern",
+        "Data Intern"
+      ],
+      "required_skills": [
+        "CRM Tools",
+        "Excel",
+        "Customer Handling",
+        "Analytics"
+      ],
+      "company_culture": "Customer-obsessed, technically focused, and growth-oriented.",
+      "internship_focus": "CRM automation and customer lifecycle analytics."
     }
-    }
+  }
 }

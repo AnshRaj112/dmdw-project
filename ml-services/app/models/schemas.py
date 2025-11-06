@@ -12,7 +12,7 @@ class Recommendation(BaseModel):
     skills: List[str] = Field(default_factory=list)
     requirements: List[str] = Field(default_factory=list)
     benefits: List[str] = Field(default_factory=list)
-    matchScore: int
+    matchScore: float  # Confidence score (0.0 to 1.0, e.g., 0.88, 0.82, 0.78)
     applyUrl: Optional[str] = None
 
 

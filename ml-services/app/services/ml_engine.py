@@ -473,8 +473,9 @@ class AdvancedMLEngine:
         """Get relevant skills for a company based on its name and sector"""
         company_lower = company.lower()
         
-        # Tech companies
-        if any(tech in company_lower for tech in ['microsoft', 'google', 'amazon', 'meta', 'apple']):
+        # Tech companies - only match exact company names, not substrings
+        tech_companies = ['microsoft', 'google', 'amazon', 'meta', 'apple']
+        if any(company_lower == tc or company_lower.startswith(tc + " ") for tc in tech_companies):
             return ['python', 'javascript', 'machine learning', 'cloud computing', 'data structures']
         elif any(tech in company_lower for tech in ['tcs', 'infosys', 'wipro', 'hcl']):
             return ['java', 'sql', 'testing', 'agile', 'project management']
@@ -487,8 +488,9 @@ class AdvancedMLEngine:
         """Get company reputation score"""
         company_lower = company.lower()
         
-        # Tier 1 companies (FAANG, etc.)
-        if any(tier1 in company_lower for tier1 in ['microsoft', 'google', 'amazon', 'meta', 'apple', 'netflix']):
+        # Tier 1 companies (FAANG, etc.) - only match exact company names, not substrings
+        tier1_companies = ['microsoft', 'google', 'amazon', 'meta', 'apple', 'netflix']
+        if any(company_lower == t1 or company_lower.startswith(t1 + " ") for t1 in tier1_companies):
             return 10.0
         # Tier 2 companies (Major tech, consulting)
         elif any(tier2 in company_lower for tier2 in ['tcs', 'infosys', 'wipro', 'accenture', 'deloitte', 'mckinsey']):

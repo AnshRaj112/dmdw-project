@@ -38,8 +38,8 @@ const Recommendations: React.FC<RecommendationsProps> = ({ recommendations }) =>
           <div key={rec.id} className="recommendations__card">
             <div className="recommendations__header">
               <h3 className="recommendations__company">{rec.company}</h3>
-              <span className={`recommendations__match-score ${getMatchScoreColor(rec.matchScore)}`}>
-                {rec.matchScore}% match
+              <span className={`recommendations__match-score ${getMatchScoreColor(rec.matchScore * 100)}`}>
+                {(rec.matchScore * 100).toFixed(0)}% match (Confidence: {rec.matchScore.toFixed(2)})
               </span>
             </div>
             
