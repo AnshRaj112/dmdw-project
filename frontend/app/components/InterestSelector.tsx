@@ -80,24 +80,22 @@ const InterestSelector: React.FC<InterestSelectorProps> = ({
   return (
     <div className="interests-selection">
       <div className="mb-6">
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">
+        <h3 className="interests-selection__title">
           Select your interests and skills
         </h3>
         
         {/* Search and Filter */}
-        <div className="flex flex-col sm:flex-row gap-4 mb-4">
+        <div className="interests-selection__search-filter">
           <input
             type="text"
             placeholder="Search interests..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           />
           
           <select
             value={selectedCategory}
             onChange={(e) => setSelectedCategory(e.target.value)}
-            className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           >
             {categories.map(category => (
               <option key={category} value={category}>
@@ -108,7 +106,7 @@ const InterestSelector: React.FC<InterestSelectorProps> = ({
         </div>
 
         {/* Selected Count */}
-        <p className="text-sm text-gray-600 mb-4">
+        <p className="interests-selection__count">
           {selectedInterests.length} interest{selectedInterests.length !== 1 ? 's' : ''} selected
         </p>
       </div>
@@ -133,7 +131,7 @@ const InterestSelector: React.FC<InterestSelectorProps> = ({
       </div>
 
       {filteredInterests.length === 0 && (
-        <div className="text-center py-8 text-gray-500">
+        <div className="interests-selection__empty">
           No interests found matching your search criteria.
         </div>
       )}

@@ -92,7 +92,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="page-wrapper">
       {/* Hero Section */}
       <section className="hero">
         <div className="container">
@@ -159,22 +159,10 @@ export default function Home() {
                 className="button-primary"
                 onClick={handleGetRecommendations}
                 disabled={!canGetRecommendations() || isLoading}
-                style={{
-                  padding: '12px 32px',
-                  fontSize: '16px',
-                  fontWeight: '600',
-                  borderRadius: '8px',
-                  border: 'none',
-                  cursor: canGetRecommendations() && !isLoading ? 'pointer' : 'not-allowed',
-                  opacity: canGetRecommendations() && !isLoading ? 1 : 0.6,
-                  background: '#0ea5e9',
-                  color: 'white',
-                  transition: 'all 0.2s ease-in-out'
-                }}
               >
                 {isLoading ? (
                   <>
-                    <Loader2 className="inline-block w-4 h-4 mr-2 animate-spin" />
+                    <Loader2 className="animate-spin" />
                     Getting Recommendations...
                   </>
                 ) : (
