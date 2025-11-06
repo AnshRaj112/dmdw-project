@@ -527,20 +527,8 @@ def _infer_from_text(text: str) -> dict:
             if any(h in line_stripped for h in ["b.tech", "btech", "bachelor", "master", "university", "college", "degree", "education", "graduated"]):
                 education.append(line.strip())
 
-        # Enhanced location extraction
+        # Location is not parsed from resume - always set to None
         location = None
-        loc_patterns = [
-            r"\b(location|based in|residing in|located in|from)[:\s]+([a-zA-Z ,.-]+)\b",
-            r"\b([A-Z][a-z]+ [A-Z][a-z]+)\b",  # City names
-            r"\b(New York|San Francisco|London|Mumbai|Delhi|Bangalore|Chennai|Hyderabad|Pune|Kolkata)\b"
-        ]
-        
-        for pattern in loc_patterns:
-            loc_match = re.search(pattern, text, re.IGNORECASE)
-            if loc_match:
-                location = loc_match.group(2) if len(loc_match.groups()) > 1 else loc_match.group(1)
-                location = location.title()
-                break
 
         # Ensure at least one interest to avoid downstream errors
         if not inferred_interests and found_skills:
@@ -990,7 +978,7 @@ def _make_recommendation(company: str, confidence_score: float, location_hint: O
     # Select role based on company-specific information and interests
     role = _select_role_for_company(company, sector, interests)
     job_type: Literal["internship", "full-time", "part-time"] = "internship"
-    location = location_hint or "Remote"
+    location = "Remote"  # Always set to Remote, not parsed from resume or location_hint
     
     # Use company-specific data from database, fallback to sector defaults
     if company_info:
