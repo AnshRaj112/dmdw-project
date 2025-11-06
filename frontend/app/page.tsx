@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Upload, FileText, CheckCircle, XCircle, Loader2 } from 'lucide-react';
+import { Upload, FileText, Loader2 } from 'lucide-react';
 import FileUpload from './components/FileUpload';
 import InterestSelector from './components/InterestSelector';
 import Recommendations from './components/Recommendations';
